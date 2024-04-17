@@ -96,7 +96,7 @@ WHERE "ITEM_ID" IN ('I311',
 GROUP BY "ITEM_ID", "LABEL", "VALUE_CHAR"
 ORDER BY "ITEM_ID";
 
------------------Mesurements_var_char----------------------------------
+-----------------Measurements_var_char----------------------------------
 SELECT "ADMISSION_ID","ITEM_ID", "LABEL", "VALUE_CHAR", COUNT("ADMISSION_ID") AS COUNT
 FROM "lu.kuang".measurements_24hr
 WHERE "ITEM_ID" IN ('I004', 'I016', 'I019')
