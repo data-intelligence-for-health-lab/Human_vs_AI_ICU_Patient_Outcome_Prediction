@@ -27,7 +27,7 @@ JOIN
 JOIN
     public."ITEMS" IT ON IT."ITEM_ID" = I."ITEM_ID"
 WHERE
-EXTRACT(epoch FROM I."START_DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24
+EXTRACT(epoch FROM I."START_DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24;
 
 ----------------FIRST 24 MEASUREMENT-------------------- 
 SELECT 
@@ -46,7 +46,7 @@ JOIN
 JOIN 
     public."ITEMS" IT ON IT."ITEM_ID" = M."ITEM_ID" 
 WHERE 
-    EXTRACT(epoch FROM M."DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24 
+    EXTRACT(epoch FROM M."DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24;
 
 -------------FIRST 24 Prescription-------------------
 SELECT 
@@ -67,7 +67,7 @@ JOIN
 JOIN 
     public."ITEMS" IT ON IT."ITEM_ID" = P."ITEM_ID" 
 WHERE 
-    EXTRACT(epoch FROM P."START_DATETIME"- A."ICU_ADMIT_DATETIME") / 3600 < 24 
+    EXTRACT(epoch FROM P."START_DATETIME"- A."ICU_ADMIT_DATETIME") / 3600 < 24; 
 
 ----------------Measurements_value_char > 30%----------------------
 SELECT "ITEM_ID", "LABEL", COUNT(DISTINCT "ADMISSION_ID") AS COUNT
