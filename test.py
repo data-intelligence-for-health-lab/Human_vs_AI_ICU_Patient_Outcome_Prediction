@@ -1,22 +1,22 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
+
 from imblearn.pipeline import Pipeline
+from imblearn.under_sampling import RandomUnderSampler
+from imblearn.over_sampling import SMOTE
+
+from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.decomposition import PCA
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
-from imblearn.over_sampling import SMOTE
-from imblearn.under_sampling import RandomUnderSampler
 from sklearn.model_selection import GridSearchCV, cross_val_score, StratifiedKFold
-import xgboost as xgb
 from sklearn import metrics
+
+import xgboost as xgb
 
 # Load data from file
 df = pd.read_csv("final_df_317_1.csv")
 # Randomly select 10% of the data for testing
-test_df = df.sample(frac=0.1, random_state=42)
+test_df = df.sample(frac=0.0001, random_state=42)
 # Remove the selected rows from the original DataFrame to create the training DataFrame
 df = df.drop(test_df.index)
 
