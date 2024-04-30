@@ -19,3 +19,9 @@ Data preprocessing steps
    4. impute missing values numeric (median) and categorical (most frequent)
    5. scale values
    6. Turn gender into binary
+   7. PCA to select 100 features 
+   8. SMOTE to medigate class imbalance
+
+4) Training
+   1. Predict in hospital mortality
+     classification: logistic regression
