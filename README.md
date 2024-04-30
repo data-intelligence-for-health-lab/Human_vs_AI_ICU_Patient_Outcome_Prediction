@@ -19,9 +19,16 @@ Data preprocessing steps
    4. impute missing values numeric (median) and categorical (most frequent)
    5. scale values
    6. Turn gender into binary
-   7. PCA to select 100 features 
-   8. SMOTE to medigate class imbalance
+   7. PCA to select 100 features (alt: SelectKBest)
+   8. SMOTE to medigate class imbalance (set random_state = 42)
 
 4) Training
-   1. Predict in hospital mortality
-     classification: logistic regression
+   1. Predict Outcomes:'ICU_LOS', 'HOSP_LOS', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG'
+   - Regression:
+   'ICU_LOS', 'HOSP_LOS'
+   - Classification:
+   'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG'
+
+   Models:
+   classification: logistic regression, SVM, Random Forest, XGBoost, NN
+   regression: Elastic net, SVM, Random Forest, XGBoost, NN
