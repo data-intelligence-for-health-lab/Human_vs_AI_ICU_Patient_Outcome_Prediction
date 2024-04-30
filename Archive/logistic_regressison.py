@@ -107,7 +107,7 @@ print("finished preprocessing!")
 
 #------------------------model begins here--------------------------------#
 # parameter grid definition
-param_grid = [{'solver':['newton-cg','lbfgs','sag'],'penalty':['l2'],'C':np.arange(0.01,10.0,0.01)},
+param_grid = [{'solver':['newton-cg','lbfgs','sag'],'penalty':['l2'],'C':np.arange(0.01,10.0,0.01)}, #0.001, 0.1, 1, 10
                 {'solver': ['liblinear','saga'],'penalty': ['l1','l2'],'C':np.arange(0.01,10.0,0.01)},
                 {'solver':['newton-cg', 'lbfgs', 'sag', 'saga'], 'penalty': ['none']}]
 

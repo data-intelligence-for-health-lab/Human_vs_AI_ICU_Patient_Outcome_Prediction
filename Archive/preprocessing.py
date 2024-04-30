@@ -26,7 +26,7 @@ print("Data Loaded...")
 
 #----comment out in actual training---#
 # Randomly select 10% of the data for testing
-test_df = df.sample(frac=0.001, random_state=42)
+test_df = df.sample(frac=0.1, random_state=42)
 # Remove the selected rows from the original DataFrame to create the training DataFrame
 df = df.drop(test_df.index)
 #----comment out in actual training---#
