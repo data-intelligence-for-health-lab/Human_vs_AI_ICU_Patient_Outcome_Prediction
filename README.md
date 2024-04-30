@@ -23,12 +23,16 @@ Data preprocessing steps
    8. SMOTE to medigate class imbalance (set random_state = 42)
 
 4) Training
-   1. Predict Outcomes:'ICU_LOS', 'HOSP_LOS', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG'
-   - Regression:
-   'ICU_LOS', 'HOSP_LOS'
-   - Classification:
-   'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG'
-
-   Models:
-   classification: logistic regression, SVM, Random Forest, XGBoost, NN
-   regression: Elastic net, SVM, Random Forest, XGBoost, NN
+   1. Predict Outcomes:
+      'ICU_LOS', 'HOSP_LOS', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG', 'AKI'
+   2. Regression:
+   - 'ICU_LOS',
+   - 'HOSP_LOS'
+   3. Classification:
+   - 'HOSP_EXPIRE_FLAG',
+   - '30_DAYS_EXPIRE_FLAG',
+   - 'DELIRIUM_FLAG'
+   - 'AKI'
+   4. Models:
+   - classification: logistic regression, SVM, Random Forest, XGBoost, NN
+   - regression: Elastic net, SVM, Random Forest, XGBoost, NN
