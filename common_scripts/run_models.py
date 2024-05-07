@@ -1,5 +1,8 @@
-from common_scripts.hyperopt_models import lr_hyperopt
+from common_scripts.hyperopt_models import lr_hyperopt, svm_hyperopt
+
 from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+
 from sklearn.metrics import classification_report
 from sklearn.metrics import roc_auc_score
 import pickle
@@ -21,3 +24,13 @@ def lr_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, 
     #pikle dump 
     pickle.dump(lr_pipeline, open('lr_model.pkl', 'wb')) #put in outputs folder
     return lr_pipeline
+
+def svm_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
+    svm_hyperparameters = svm_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
+    tuned_svm_model = SVC(**svm_hyperparameters)
+    svm_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, tuned_svm_model)
+    svm_pipeline = svm_pipeline.fit(X_train, y_train)
+    generate_metrics(svm_pipeline, X_test, y_test)
+    #pickle dump
+    pickle.dump(svm_pipeline, open('svm_model.pkl', 'wb')) #put in outputs folder
+    return svm_pipeline

@@ -1,6 +1,7 @@
 # import sys
 # sys.path.insert(1, "/Users/corinkuang/Documents/GitHub/Human_vs_AI_ICU_Patient_Outcome_Prediction/common_scripts/")
-from common_scripts.run_models import lr_model
+from common_scripts.run_models import lr_model, svm_model
+
 import numpy as np
 import pandas as pd
 
@@ -14,6 +15,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.decomposition import PCA
 # from sklearn.model_selection import GridSearchCV
 from sklearn.linear_model import LogisticRegression
+from sklearn import svm
 
 
 #define column transformers
@@ -46,16 +48,24 @@ key_columns = ['PATIENT_ID', 'ADMISSION_ID', 'ICU_LOS', 'HOSP_LOS', 'ICU_EXPIRE_
 X_train = training_set.drop(columns=key_columns)
 X_test = testing_set.drop(columns=key_columns)
 
-#'Extract the target values to create y_train
+#Extract the target values to create y_train
 y_train = training_set[target_column]
 y_test = testing_set[target_column]
 
+#define componets in the pipline
 preprocessor = make_preprocessor(X_train)
 pca = PCA(n_components=100)
-over_sampler = SMOTE(sampling_strategy=0.5)
-under_sampler = RandomUnderSampler(sampling_strategy=1.0)
-model = LogisticRegression()
+over_sampler = SMOTE(random_state=42, sampling_strategy=0.5)
+under_sampler = RandomUnderSampler(random_state=42, sampling_strategy=1.0)
 
+#define models
+#model = LogisticRegression()
 
+model = svm.SVC()
 
-final_lr_pipeline = lr_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+#Logistic Regression Pipeline
+#final_lr_pipeline = lr_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+
+#SVM Pipeline
+final_svm_pipline = svm_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+
