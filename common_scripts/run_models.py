@@ -71,7 +71,7 @@ def nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler
     nn_pipeline = nn_pipeline.fit(X_train, y_train)
     generate_metrics(nn_pipeline, X_test, y_test)
     # pickle dump
-    pickle.dump(nn_pipeline, open('Outputs/nn_model.pkl/Classification', 'wb'))  # put in outputs folder
+    pickle.dump(nn_pipeline, open('Outputs/Classification/nn_model.pkl', 'wb'))  # put in outputs folder
     return nn_pipeline
 
 #=============================Regression models and metrics=============================#
