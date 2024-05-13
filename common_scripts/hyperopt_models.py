@@ -5,7 +5,7 @@ from statistics import median
 #from hyperopt.pyll.base import scope
 from hyperopt import Trials, STATUS_OK, tpe, fmin, hp
 
-
+#========================================= Logistic Regression   ============================================#
 def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
     def objective(params):
         hyp_lr_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
@@ -25,6 +25,7 @@ def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler
     trials = Trials()
     
     np.random.seed(42)
+    
     lr_opt = fmin(
         fn=objective,
         space=search_space,
@@ -45,44 +46,161 @@ def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler
         lr_opt["solver"] = "sag"
     if lr_opt["solver"] == 4:
         lr_opt["solver"] = "saga"
+    
+    print(lr_opt)
+    print(trials.best_trial['result']['loss'])
+    
     return lr_opt
 
 #=========================================    SVM   ============================================#
-def svm_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
+def svm_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
     def objective(params):
-        hyp_svm_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
-        hyp_svm_pipeline.get_params().keys()
-        hyp_svm_pipeline.set_params(**params)
-        average_precision = median(cross_val_score(hyp_svm_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
+        hyp_svm_c_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        hyp_svm_c_pipeline.get_params().keys()
+        hyp_svm_c_pipeline.set_params(**params)
+        average_precision = median(cross_val_score(hyp_svm_c_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
         return {'loss': -average_precision, 'status': STATUS_OK}
 
     search_space = {
-        'svc__C': hp.uniform('C', 0.001, 100),
-        'svc__kernel': hp.choice('kernel', ['linear', 'poly', 'rbf', 'sigmoid']),
-        'svc__gamma': hp.uniform('gamma', 0.001, 10),
-        'svc__class_weight': 'balanced'
-    }
+    'svc__C': hp.loguniform('C', 0, 20),
+    'svc__kernel': hp.choice('kernel', ['linear', 'poly', 'rbf', 'sigmoid']),
+    'svc__gamma': hp.loguniform('gamma', 0, 20),
+    'svc__class_weight': hp.choice('class_weight', [None, 'balanced'])
+}
 
     trials = Trials()
     
     np.random.seed(42)
-    svm_opt = fmin(
+    
+    svm_c_opt = fmin(
         fn=objective,
         space=search_space,
         algo=tpe.suggest,
-        max_evals=10,  # Adjust the number of evaluations as desired
+        max_evals=10,  # Adjust the number of evaluations to 100 for actual run
         trials=trials,
         verbose=True,
         rstate=np.random.default_rng(42)
     )
 
-    if svm_opt["kernel"] == 0:
-        svm_opt["kernel"] = "linear"
-    if svm_opt["kernel"] == 1:
-        svm_opt["kernel"] = "poly"
-    if svm_opt["kernel"] == 2:
-        svm_opt["kernel"] = "rbf"
-    if svm_opt["kernel"] == 3:
-        svm_opt["kernel"] = "sigmoid"
+    if svm_c_opt["kernel"] == 0:
+        svm_c_opt["kernel"] = "linear"
+    if svm_c_opt["kernel"] == 1:
+        svm_c_opt["kernel"] = "poly"
+    if svm_c_opt["kernel"] == 2:
+        svm_c_opt["kernel"] = "rbf"
+    if svm_c_opt["kernel"] == 3:
+        svm_c_opt["kernel"] = "sigmoid"
 
-    return svm_opt
+    return svm_c_opt
+
+#================================ Random Forest========================================#
+def rf_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
+    def objective(params):
+        hyp_rf_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        hyp_rf_pipeline.set_params(**params)
+        average_precision = median(cross_val_score(hyp_rf_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
+        return {'loss': -average_precision, 'status': STATUS_OK}
+
+    search_space = {
+        'randomforestclassifier__n_estimators': hp.choice('n_estimators', range(10,50)),
+        'randomforestclassifier__max_depth': hp.choice('max_depth', range(1,20)),
+        'randomforestclassifier__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
+        'randomforestclassifier__min_samples_leaf': hp.choice('min_samples_leaf', [1, 2, 4])
+        # 'randomforestclassifier__max_features': hp.choice('max_features', ['log2', 'sqrt']),
+        # 'randomforestclassifier__bootstrap': hp.choice('bootstrap', [True, False])
+    }
+
+    trials = Trials()
+
+    np.random.seed(42)
+    
+    rf_opt = fmin(
+        fn=objective,
+        space=search_space,
+        algo=tpe.suggest,
+        max_evals=10,  # Adjust the number of evaluations to the desired value
+        trials=trials,
+        verbose=True,
+        rstate=np.random.default_rng(42)
+    )
+
+    return rf_opt
+
+#=========================================    XGBoost   ============================================#
+def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
+    def objective(params):
+        hyp_xgb_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        hyp_xgb_pipeline.set_params(**params)
+        average_precision = median(cross_val_score(hyp_xgb_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
+        return {'loss': -average_precision, 'status': STATUS_OK}
+
+    search_space = {
+        'xgbclassifier__learning_rate': hp.loguniform('learning_rate', np.log(0.01), np.log(0.5)),
+        'xgbclassifier__n_estimators': hp.choice('n_estimators', [50, 100, 200]),
+        'xgbclassifier__max_depth': hp.choice('max_depth', [3, 5, 7]),
+        'xgbclassifier__min_child_weight': hp.choice('min_child_weight', [1, 3, 5]),
+        'xgbclassifier__subsample': hp.uniform('subsample', 0.5, 1.0),
+        'xgbclassifier__gamma': hp.uniform('gamma', 0.0, 1.0),
+        'xgbclassifier__colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),
+        'xgbclassifier__reg_alpha': hp.uniform('reg_alpha', 0.0, 1.0),
+        'xgbclassifier__reg_lambda': hp.uniform('reg_lambda', 0.0, 1.0),
+    }
+
+    trials = Trials()
+
+    np.random.seed(42)
+    xgb_opt = fmin(
+        fn=objective,
+        space=search_space,
+        algo=tpe.suggest,
+        max_evals=10,  # 100
+        trials=trials,
+        verbose=True,
+        rstate=np.random.default_rng(42)
+    )
+
+    return xgb_opt
+
+#================================ Neural Network ========================================#
+def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
+    def objective(params):
+        hyp_nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        hyp_nn_pipeline.set_params(**params)
+        average_precision = median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
+        return {'loss': -average_precision, 'status': STATUS_OK}
+
+    search_space = {
+        'mlpclassifier__hidden_layer_sizes': hp.choice('hidden_layer_sizes', [(50,), (100,), (200,)]),
+        'mlpclassifier__activation': hp.choice('activation', ['relu', 'tanh']),
+        'mlpclassifier__solver': hp.choice('solver', ['adam', 'lbfgs']),
+        'mlpclassifier__alpha': hp.loguniform('alpha', np.log(0.0001), np.log(0.01)),
+        'mlpclassifier__learning_rate_init': hp.loguniform('learning_rate_init', np.log(0.001), np.log(0.1)),
+        'mlpclassifier__max_iter': hp.choice('max_iter', range(100, 1000)),
+    }
+
+    trials = Trials()
+
+    np.random.seed(42)
+    
+    nn_opt = fmin(
+        fn=objective,
+        space=search_space,
+        algo=tpe.suggest,
+        max_evals=10,  # 100
+        trials=trials,
+        verbose=True,
+        rstate=np.random.default_rng(42)
+    )
+
+    if nn_opt["solver"] == 0:
+        nn_opt["solver"] = "adam"
+    if nn_opt["solver"] == 1:
+        nn_opt["solver"] = "lbfgs"
+    
+    if nn_opt["activation"] == 0:
+        nn_opt["activation"] = "relu"
+    if nn_opt["activation"] == 1:
+        nn_opt["activation"] = "tanh"
+    
+    
+    return nn_opt

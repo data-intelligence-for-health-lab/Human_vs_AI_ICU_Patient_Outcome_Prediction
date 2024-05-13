@@ -1,6 +1,5 @@
-# import sys
-# sys.path.insert(1, "/Users/corinkuang/Documents/GitHub/Human_vs_AI_ICU_Patient_Outcome_Prediction/common_scripts/")
-from common_scripts.run_models import lr_model, svm_model
+#Classification
+from common_scripts.run_models import lr_c_model, svm_c_model, rf_c_model, xgb_c_model, nn_c_model, en_r_model, svm_r_model, rf_r_model, xgb_r_model, nn_r_model
 
 import numpy as np
 import pandas as pd
@@ -13,9 +12,19 @@ from sklearn.compose import make_column_transformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.decomposition import PCA
-# from sklearn.model_selection import GridSearchCV
+
+# Classification Models
 from sklearn.linear_model import LogisticRegression
 from sklearn import svm
+from sklearn.ensemble import RandomForestClassifier
+import xgboost as xgb
+from sklearn.neural_network import MLPClassifier
+
+
+#Regression Models
+from sklearn.linear_model import ElasticNet
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.neural_network import MLPRegressor
 
 
 #define column transformers
@@ -30,6 +39,13 @@ def make_preprocessor(X_train):
 
 # Load data from file
 df = pd.read_csv("final_df_317_1.csv")
+
+#----comment out in actual training---#
+# Randomly select 10% of the data for testing
+test_df = df.sample(frac=0.0001, random_state=42)
+# Remove the selected rows from the original DataFrame to create the training DataFrame
+df = df.drop(test_df.index)
+#----comment out in actual training---#
 
 print("Data Loaded...")
 
@@ -59,13 +75,56 @@ over_sampler = SMOTE(random_state=42, sampling_strategy=0.5)
 under_sampler = RandomUnderSampler(random_state=42, sampling_strategy=1.0)
 
 #define models
-#model = LogisticRegression()
+lrmodel_c = LogisticRegression()
+svmmodel_c = svm.SVC()
+rfmodel_c = RandomForestClassifier()
+xgbmodel_c = xgb.XGBClassifier()
+nnmodel_c = MLPClassifier()
 
-model = svm.SVC()
+enmodel_r = ElasticNet()
+svmmodel_r = svm.SVR()
+rfmodel_r = RandomForestRegressor()
+xgbmodel_r = xgb.XGBRegressor()
+nnmodel_r = MLPRegressor()
 
+#------------------------------------------Classification------------------------------------------#
 #Logistic Regression Pipeline
-#final_lr_pipeline = lr_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+print("Run Logistic Regression Pipeline...")
+final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, lrmodel_c)
 
 #SVM Pipeline
-final_svm_pipline = svm_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+print("Run SVM Pipeline...")
+final_svm_pipline = svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
 
+#Random Forest Pipeline
+print("Run Random Forest Pipeline...")
+final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
+
+#XGBoost
+print("Run XGBoost Pipeline...")
+final_xgb_pipline = xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
+
+#Neural Network
+print("Run Neural Network...")
+final_nn_pipline = nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
+
+
+#------------------------------------------Regression------------------------------------------#
+#Elastic Net Pipeline
+final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, enmodel_r)
+
+#SVM Pipeline
+print("Regression: Run SVM Pipeline...")
+final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
+
+#Random Forest Pipeline
+print("Regression: Run Random Forest Pipeline...")
+final_rf_pipline = rf_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
+
+#XGBoost
+print("Regression: Run XGBoost Pipeline...")
+final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
+
+#Neural Network
+print("Regression: Run Neural Network...")
+final_nn_pipline = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
