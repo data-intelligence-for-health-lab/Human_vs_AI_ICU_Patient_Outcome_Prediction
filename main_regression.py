@@ -36,7 +36,7 @@ df = pd.read_csv("final_df_513.csv")
 
 #----comment out in actual training---#
 # Randomly select 10% of the data for testing
-test_df = df.sample(frac=0.0001, random_state=42)
+test_df = df.sample(frac=0.1, random_state=42)
 # Remove the selected rows from the original DataFrame to create the training DataFrame
 df = df.drop(test_df.index)
 #----comment out in actual training---#
@@ -44,15 +44,15 @@ df = df.drop(test_df.index)
 print("Data Loaded...")
 
 # Define the target column
-target_column = "HOSP_LOS"
+target_column = "hosp_los"
 
 #Extract 1000 testing samples
 test1000 = pd.read_csv("1000Patients.csv")
-testing_ids = test1000['Patient_id']
+testing_ids = test1000['PATIENT_ID']
 admission_ids = test1000['ADMISSION_ID']
 testing_set = df[df['ADMISSION_ID'].isin(admission_ids)]
 training_set = df[~df['PATIENT_ID'].isin(testing_ids)]
-key_columns = ['PATIENT_ID', 'ADMISSION_ID', 'ICU_LOS', 'HOSP_LOS', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG']
+key_columns = ['PATIENT_ID', 'ADMISSION_ID', 'icu_los', 'hosp_los', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG']
 
 # Drop the target columns and patient identifiers to create X_train, X_test
 X_train = training_set.drop(columns=key_columns)
