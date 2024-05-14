@@ -101,13 +101,20 @@ def rf_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampl
         average_precision = median(cross_val_score(hyp_rf_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
         return {'loss': -average_precision, 'status': STATUS_OK}
 
+    # search_space = {
+    #     'randomforestclassifier__n_estimators': hp.choice('n_estimators', range(10,50)),
+    #     'randomforestclassifier__max_depth': hp.choice('max_depth', range(1,20))
+    #     # 'randomforestclassifier__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
+    #     # 'randomforestclassifier__min_samples_leaf': hp.choice('min_samples_leaf', [1, 2, 4])
+    #     # 'randomforestclassifier__max_features': hp.choice('max_features', ['log2', 'sqrt']),
+    #     # 'randomforestclassifier__bootstrap': hp.choice('bootstrap', [True, False])
+    # }
+    
     search_space = {
-        'randomforestclassifier__n_estimators': hp.choice('n_estimators', range(10,50)),
-        'randomforestclassifier__max_depth': hp.choice('max_depth', range(1,20)),
-        'randomforestclassifier__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
-        'randomforestclassifier__min_samples_leaf': hp.choice('min_samples_leaf', [1, 2, 4])
-        # 'randomforestclassifier__max_features': hp.choice('max_features', ['log2', 'sqrt']),
-        # 'randomforestclassifier__bootstrap': hp.choice('bootstrap', [True, False])
+    'randomforestclassifier__n_estimators': [25, 50, 100, 150],
+    'randomforestclassifier__max_features': ['sqrt', 'log2', None],
+    'randomforestclassifier__max_depth': [3, 6, 9],
+    'randomforestclassifier__max_leaf_nodes': [3, 6, 9]
     }
 
     trials = Trials()
@@ -135,15 +142,15 @@ def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
         return {'loss': -average_precision, 'status': STATUS_OK}
 
     search_space = {
-        'xgbclassifier__learning_rate': hp.loguniform('learning_rate', np.log(0.01), np.log(0.5)),
-        'xgbclassifier__n_estimators': hp.choice('n_estimators', [50, 100, 200]),
-        'xgbclassifier__max_depth': hp.choice('max_depth', [3, 5, 7]),
-        'xgbclassifier__min_child_weight': hp.choice('min_child_weight', [1, 3, 5]),
-        'xgbclassifier__subsample': hp.uniform('subsample', 0.5, 1.0),
-        'xgbclassifier__gamma': hp.uniform('gamma', 0.0, 1.0),
-        'xgbclassifier__colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),
-        'xgbclassifier__reg_alpha': hp.uniform('reg_alpha', 0.0, 1.0),
-        'xgbclassifier__reg_lambda': hp.uniform('reg_lambda', 0.0, 1.0),
+    'xgbclassifier__learning_rate': hp.loguniform('learning_rate', np.log(0.01), np.log(0.5)),
+    'xgbclassifier__n_estimators': hp.choice('n_estimators', [50, 100, 200]),
+    'xgbclassifier__max_depth': hp.choice('max_depth', [3, 5, 7]),
+    'xgbclassifier__min_child_weight': hp.choice('min_child_weight', [1, 3, 5]),
+    'xgbclassifier__subsample': hp.uniform('subsample', 0.5, 1.0),
+    'xgbclassifier__gamma': hp.uniform('gamma', 0.0, 1.0),
+    'xgbclassifier__colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),
+    'xgbclassifier__reg_alpha': hp.uniform('reg_alpha', 0.0, 1.0),
+    'xgbclassifier__reg_lambda': hp.uniform('reg_lambda', 0.0, 1.0)
     }
 
     trials = Trials()
@@ -169,6 +176,15 @@ def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampl
         average_precision = median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
         return {'loss': -average_precision, 'status': STATUS_OK}
 
+    # search_space = {
+    #     'mlpclassifier__hidden_layer_sizes': hp.choice('hidden_layer_sizes', [(50,), (100,), (200,)]),
+    #     'mlpclassifier__activation': hp.choice('activation', ['relu', 'tanh']),
+    #     'mlpclassifier__solver': hp.choice('solver', ['adam', 'lbfgs']),
+    #     'mlpclassifier__alpha': hp.loguniform('alpha', np.log(0.0001), np.log(0.01)),
+    #     'mlpclassifier__learning_rate_init': hp.loguniform('learning_rate_init', np.log(0.001), np.log(0.1)),
+    #     'mlpclassifier__max_iter': hp.choice('max_iter', range(100, 1000)),
+    # }
+    
     search_space = {
         'mlpclassifier__hidden_layer_sizes': hp.choice('hidden_layer_sizes', [(50,), (100,), (200,)]),
         'mlpclassifier__activation': hp.choice('activation', ['relu', 'tanh']),
@@ -177,6 +193,8 @@ def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampl
         'mlpclassifier__learning_rate_init': hp.loguniform('learning_rate_init', np.log(0.001), np.log(0.1)),
         'mlpclassifier__max_iter': hp.choice('max_iter', range(100, 1000)),
     }
+    
+    
 
     trials = Trials()
 

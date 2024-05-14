@@ -64,12 +64,12 @@ y_test = testing_set[target_column]
 
 # Identify rows with NaN values in y_train
 nan_indices = np.isnan(y_train)
-print(nan_indices)
+#print(nan_indices)
 # Drop rows with NaN values from X_train and y_train
 X_train = X_train[~nan_indices]
 y_train = y_train[~nan_indices]
 
-print(y_train)
+#print(y_train)
 
 #define componets in the pipline
 preprocessor = make_preprocessor(X_train)
@@ -86,22 +86,22 @@ xgbmodel_r = xgb.XGBRegressor()
 nnmodel_r = MLPRegressor()
 
 #------------------------------------------Regression------------------------------------------#
-#Elastic Net Pipeline
-print("Regression: Run Elastic Net Pipeline...")
-final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, enmodel_r)
+# #Elastic Net Pipeline
+# print("Regression: Run Elastic Net Pipeline...")
+# final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, enmodel_r)
 
-#SVM Pipeline
-print("Regression: Run SVM Pipeline...")
-final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, svmmodel_r)
+# #SVM Pipeline
+# print("Regression: Run SVM Pipeline...")
+# final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, svmmodel_r)
 
-#Random Forest Pipeline
+# #Random Forest Pipeline
 print("Regression: Run Random Forest Pipeline...")
 final_rf_pipline = rf_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, rfmodel_r)
 
-#XGBoost
-print("Regression: Run XGBoost Pipeline...")
-final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, xgbmodel_r)
+# #XGBoost
+# print("Regression: Run XGBoost Pipeline...")
+# final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, xgbmodel_r)
 
-#Neural Network
-print("Regression: Run Neural Network...")
-final_nn_pipline = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, nnmodel_r)
+# #Neural Network
+# print("Regression: Run Neural Network...")
+# final_nn_pipline = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, nnmodel_r)

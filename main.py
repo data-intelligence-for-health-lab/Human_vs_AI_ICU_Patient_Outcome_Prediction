@@ -98,12 +98,12 @@ nnmodel_r = MLPRegressor()
 # final_svm_pipline = svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
 
 # #Random Forest Pipeline
-print("Run Random Forest Pipeline...")
-final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
+# print("Run Random Forest Pipeline...")
+# final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
 
 # #XGBoost
-# print("Run XGBoost Pipeline...")
-# final_xgb_pipline = xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
+print("Run XGBoost Pipeline...")
+final_xgb_pipline = xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
 
 # #Neural Network
 # print("Run Neural Network...")

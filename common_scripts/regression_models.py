@@ -86,13 +86,13 @@ def rf_r_hyperopt(X_train, y_train, preprocessor, pca, model):
         hyp_rf_r_pipeline = make_pipeline(preprocessor, pca, model)
         hyp_rf_r_pipeline.get_params().keys()
         hyp_rf_r_pipeline.set_params(**params)
-        r2_score = median(cross_val_score(hyp_rf_r_pipeline, X_train, y_train, cv=10, scoring="r2"))
+        r2_score = median(cross_val_score(hyp_rf_r_pipeline, X_train, y_train, cv=10, scoring="r2", n_jobs=-1))
         return {'loss': -r2_score, 'status': STATUS_OK}
 
     search_space = {
-        'randomforestregressor__n_estimators': hp.choice('n_estimators', [100, 200, 300]),
-        'randomforestregressor__max_depth': hp.choice('max_depth', [None, 5, 10, 20]),
-        'randomforestregressor__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
+        'randomforestregressor__n_estimators': hp.choice('n_estimators', [100, 200, 300])
+        # 'randomforestregressor__max_depth': hp.choice('max_depth', [None, 5, 10, 20]),
+        # 'randomforestregressor__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
     }
 
     trials = Trials()
@@ -108,9 +108,6 @@ def rf_r_hyperopt(X_train, y_train, preprocessor, pca, model):
         verbose=True,
         rstate=np.random.default_rng(42)
     )
-
-    if rf_r_opt["max_depth"] == 0:
-        rf_r_opt["max_depth"] = None
 
     return rf_r_opt
 
