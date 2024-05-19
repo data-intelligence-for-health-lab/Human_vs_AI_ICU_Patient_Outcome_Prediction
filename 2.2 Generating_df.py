@@ -1,3 +1,8 @@
+"""
+    This scipt connects with SQL tables prepared in postgres admin and clean the data further to generate df from model training
+    Cleanning steps include: pivoting, filtering missing data columns, prepare value character vaiables and join dataset into one final dataframe
+    Last Updated: 2024-05-13 
+"""
 import pandas as pd
 from sqlalchemy import create_engine
 
