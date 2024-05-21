@@ -11,25 +11,63 @@ from sklearn.linear_model import ElasticNet
 from sklearn.svm import SVR
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neural_network import MLPRegressor
-
+from sklearn.metrics import average_precision_score
 
 from sklearn.metrics import classification_report, roc_auc_score, mean_squared_error, r2_score
 import pickle
 from imblearn.pipeline import make_pipeline
 
+import pandas as pd
+import os
 #=============================Classification models and metrics=============================#
-def generate_metrics(pipeline, X_test, y_test):
-    lr_y_pred = pipeline.predict(X_test)
-    report = classification_report(y_test, lr_y_pred)
-    print(report)
-    print(roc_auc_score(y_test, pipeline.predict_proba(X_test)[:,1]))
+# def generate_metrics(pipeline, X_test, y_test):
+#     lr_y_pred = pipeline.predict(X_test)
+#     report = classification_report(y_test, lr_y_pred)
+#     print(report)
+#     print(roc_auc_score(y_test, pipeline.predict_proba(X_test)[:,1]))
+
+def generate_metrics(pipeline, X_test, y_test, model_name, target):
+    y_pred = pipeline.predict(X_test)
+    y_proba = pipeline.predict_proba(X_test)[:, 1]
     
-def lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
+    report = classification_report(y_test, y_pred)
+    auc = roc_auc_score(y_test, y_proba)
+    avg_precision = average_precision_score(y_test, y_proba)
+    
+    metrics = {
+        'Target': target,
+        'Model': model_name,
+        'Classification Report': report,
+        'AUC': auc,
+        'Average Precision': avg_precision
+    }
+    
+    # Create output folder if it doesn't exist
+    output_folder = 'Outputs'
+    os.makedirs(output_folder, exist_ok=True)
+    
+    # Save metrics as a table
+    metrics_df = pd.DataFrame([metrics])
+    output_filename = f'performance_metrics_{model_name}.csv'
+    output_path = os.path.join(output_folder, output_filename)
+    
+    if os.path.isfile(output_path):
+        # Append to existing file if it exists
+        existing_metrics_df = pd.read_csv(output_path)
+        metrics_df = pd.concat([existing_metrics_df, metrics_df], ignore_index=True)
+    
+    metrics_df.to_csv(output_path, index=False)
+    
+    print("Metrics saved successfully.")
+    
+def lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model, target):
     lr_hyperparameters = lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
+    print(lr_hyperparameters)
     tuned_lr_model = LogisticRegression(**lr_hyperparameters)
     lr_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, tuned_lr_model)
     lr_pipeline = lr_pipeline.fit(X_train, y_train)
-    generate_metrics(lr_pipeline, X_test, y_test)
+    model_name = 'Logistic_regression_Classification'
+    generate_metrics(lr_pipeline, X_test, y_test, model_name, target)
     #pikle dump 
     pickle.dump(lr_pipeline, open('Outputs/Classification/lr_model.pkl', 'wb')) #put in outputs folder
     return lr_pipeline

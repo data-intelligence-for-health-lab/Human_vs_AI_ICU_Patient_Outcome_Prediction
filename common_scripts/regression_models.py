@@ -15,7 +15,7 @@ def elastic_net_hyperopt(X_train, y_train, preprocessor, pca, model):
         return {'loss': -r2_score, 'status': STATUS_OK}
 
     search_space = {
-        'elasticnet__alpha': hp.uniform('alpha', 0.0001, 1.0),
+        'elasticnet__alpha': hp.uniform('alpha', 0.001, 10),
         'elasticnet__l1_ratio': hp.uniform('l1_ratio', 0.0, 1.0),
     }
 
@@ -51,7 +51,8 @@ def svm_r_hyperopt(X_train, y_train, preprocessor, pca, model):
     search_space = {
         'svr__C': hp.loguniform('C', 0, 20),
         'svr__kernel': hp.choice('kernel', ['linear', 'poly', 'rbf', 'sigmoid']),
-        'svr__gamma': hp.loguniform('gamma', 0, 20),
+        'svr__gamma': hp.loguniform('gamma', 0, 20), #[scale, auto]
+        #add degree
     }
 
     trials = Trials()
@@ -90,10 +91,11 @@ def rf_r_hyperopt(X_train, y_train, preprocessor, pca, model):
         return {'loss': -r2_score, 'status': STATUS_OK}
 
     search_space = {
-        'randomforestregressor__n_estimators': hp.choice('n_estimators', [100, 200, 300])
-        # 'randomforestregressor__max_depth': hp.choice('max_depth', [None, 5, 10, 20]),
-        # 'randomforestregressor__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
+        'randomforestregressor__n_estimators': hp.choice('n_estimators', [100, 200, 300]),
+        'randomforestregressor__max_depth': hp.choice('max_depth', [None, 5, 10, 20]),
+        'randomforestregressor__min_samples_split': hp.choice('min_samples_split', [2, 5, 10]),
     }
+     #use same as rf_c
 
     trials = Trials()
 
@@ -125,6 +127,8 @@ def xgb_r_hyperopt(X_train, y_train, preprocessor, pca, model):
         'xgbregressor__max_depth': hp.choice('max_depth', [None, 5, 10, 20]),
         'xgbregressor__learning_rate': hp.loguniform('learning_rate', -5, 0),
     }
+    
+    #use same as class
 
     trials = Trials()
 

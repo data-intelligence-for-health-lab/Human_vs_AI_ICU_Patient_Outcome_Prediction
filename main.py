@@ -26,6 +26,8 @@ from sklearn.linear_model import ElasticNet
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neural_network import MLPRegressor
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = '2' # change to available 
 
 #define column transformers
 def make_preprocessor(X_train):
@@ -91,7 +93,7 @@ nnmodel_r = MLPRegressor()
 #------------------------------------------Classification------------------------------------------#
 #Logistic Regression Pipeline
 print("Run Logistic Regression Pipeline...")
-final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, lrmodel_c)
+final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, lrmodel_c, target = target_column)
 
 #SVM Pipeline
 print("Run SVM Pipeline...")
