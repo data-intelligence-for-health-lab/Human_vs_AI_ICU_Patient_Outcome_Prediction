@@ -60,8 +60,8 @@ for admission_id, patient_data in df.groupby('ADMISSION_ID'):
         # print("recent_data_7d:\n", recent_data_7d)
         
         # Calculate baseline creatinine levels
-        baseline_creatinine_48h = recent_data_48h['VALUE_NUM'].min() if not recent_data_48h.empty else current_creatinine
-        baseline_creatinine_7d = recent_data_7d['VALUE_NUM'].min() if not recent_data_7d.empty else current_creatinine
+        baseline_creatinine_48h = recent_data_48h['VALUE_NUM'].min() if not recent_data_48h.empty else current_creatinine #SET AKI TO ''
+        baseline_creatinine_7d = recent_data_7d['VALUE_NUM'].min() if not recent_data_7d.empty else current_creatinine #SET AKI TO ''
         
         # Determine AKI status
         aki_status = determine_aki_status(current_creatinine, baseline_creatinine_48h, baseline_creatinine_7d)

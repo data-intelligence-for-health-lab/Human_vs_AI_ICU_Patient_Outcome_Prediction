@@ -18,16 +18,19 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
-from sklearn.neural_network import MLPClassifier
-
 
 #Regression Models
 from sklearn.linear_model import ElasticNet
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.neural_network import MLPRegressor
 
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = '2' # change to available 
+# Add Keras imports
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import Dense, Dropout
+# from tensorflow.keras.optimizers import Adam
+# from tensorflow.keras.wrappers.scikit_learn import KerasClassifier, KerasRegressor
+
+# import os
+# os.environ["CUDA_VISIBLE_DEVICES"] = '2' # change to available 
 
 #define column transformers
 def make_preprocessor(X_train):
@@ -43,7 +46,7 @@ def make_preprocessor(X_train):
 df = pd.read_csv("final_df_513.csv")
 
 #----comment out in actual training---#
-# Randomly select 10% of the data for testing
+# Randomly select 10% of the data for testing 
 test_df = df.sample(frac=0.001, random_state=42)
 # Remove the selected rows from the original DataFrame to create the training DataFrame
 df = df.drop(test_df.index)
@@ -77,57 +80,84 @@ pca = PCA(n_components=100)
 over_sampler = SMOTE(random_state=42, sampling_strategy=0.5)
 under_sampler = RandomUnderSampler(random_state=42, sampling_strategy=1.0)
 
+input_shape = X_train.shape[1]  # Define the input shape 
+
+# # Define a function to create a Keras classification model
+# def create_keras_classification_model(hidden_layer_sizes=(100,), activation='relu', learning_rate=0.001):
+#     model = Sequential()
+#     for units in hidden_layer_sizes:
+#         model.add(Dense(units=units, activation=activation))
+#         model.add(Dropout(0.2))  # Add dropout for regularization
+#     model.add(Dense(1, activation='sigmoid'))
+    
+#     optimizer = Adam(learning_rate=learning_rate)
+#     model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
+#     return model
+
+# # Define a function to create a Keras regression model
+# def create_keras_regression_model(hidden_layer_sizes=(100,), activation='relu', learning_rate=0.001):
+#     model = Sequential()
+#     for units in hidden_layer_sizes:
+#         model.add(Dense(units=units, activation=activation))
+#         model.add(Dropout(0.2))  # Add dropout for regularization
+#     model.add(Dense(1, activation='linear'))
+    
+#     optimizer = Adam(learning_rate=learning_rate)
+#     model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=['mse'])
+#     return model
+
 #define models
 lrmodel_c = LogisticRegression()
 svmmodel_c = svm.SVC()
 rfmodel_c = RandomForestClassifier()
 xgbmodel_c = xgb.XGBClassifier()
-nnmodel_c = MLPClassifier()
+#nnmodel_c = KerasClassifier(model=create_keras_classification_model, epochs=200, batch_size=32, verbose=0)
 
 enmodel_r = ElasticNet()
 svmmodel_r = svm.SVR()
 rfmodel_r = RandomForestRegressor()
 xgbmodel_r = xgb.XGBRegressor()
-nnmodel_r = MLPRegressor()
+#nnmodel_r = KerasRegressor(model=create_keras_regression_model, epochs=200, batch_size=32, verbose=0)
+
 
 #------------------------------------------Classification------------------------------------------#
-#Logistic Regression Pipeline
+# #Logistic Regression Pipeline
 print("Run Logistic Regression Pipeline...")
 final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, lrmodel_c, target = target_column)
 
-#SVM Pipeline
-print("Run SVM Pipeline...")
-final_svm_pipline = svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
+# #SVM Pipeline
+# print("Run SVM Pipeline...")
+# final_svm_pipline = svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
 
-#Random Forest Pipeline
-print("Run Random Forest Pipeline...")
-final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
+# #Random Forest Pipeline
+# print("Run Random Forest Pipeline...")
+# final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
 
-#XGBoost
-print("Run XGBoost Pipeline...")
-final_xgb_pipline = xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
-
-#Neural Network
-print("Run Neural Network...")
-final_nn_pipline = nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
-
-
-#------------------------------------------Regression------------------------------------------#
-#Elastic Net Pipeline
-final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, enmodel_r)
-
-#SVM Pipeline
-print("Regression: Run SVM Pipeline...")
-final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
-
-#Random Forest Pipeline
-print("Regression: Run Random Forest Pipeline...")
-final_rf_pipline = rf_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
-
-#XGBoost
-print("Regression: Run XGBoost Pipeline...")
-final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
+# #XGBoost
+# print("Run XGBoost Pipeline...")
+# final_xgb_pipline = xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
 
 #Neural Network
-print("Regression: Run Neural Network...")
-final_nn_pipline = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
+# print("Run Neural Network...")
+# final_nn_pipline = nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
+
+
+# #------------------------------------------Regression------------------------------------------#
+# #Elastic Net Pipeline
+# final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, enmodel_r)
+
+# #SVM Pipeline
+# print("Regression: Run SVM Pipeline...")
+# final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
+
+# #Random Forest Pipeline
+# print("Regression: Run Random Forest Pipeline...")
+# final_rf_pipline = rf_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
+
+# #XGBoost
+# print("Regression: Run XGBoost Pipeline...")
+# final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
+
+# #Neural Network
+# print("Regression: Run Neural Network...")
+# final_nn_pipline = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)

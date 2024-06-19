@@ -4,6 +4,12 @@ from sklearn.model_selection import cross_val_score
 from statistics import median
 from hyperopt import Trials, STATUS_OK, tpe, fmin, hp
 
+# Add Keras imports
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import Dense, Dropout
+# from tensorflow.keras.optimizers import Adam
+# from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+
 #========================================= Logistic Regression   ============================================#
 def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
     # Define the objective function
@@ -15,26 +21,14 @@ def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler
 
         print('solverparams:', solver_params)
 
-        if solver_params['type'] == 'lbfgs':
-            params['logisticregression__solver'] = 'lbfgs'
-            params['logisticregression__penalty'] = solver_params['penalty']
-        elif solver_params['type'] == 'newton-cg':
-            params['logisticregression__solver'] = 'newton-cg'
-            params['logisticregression__penalty'] = solver_params['penalty']
-        elif solver_params['type'] == 'liblinear':
-            params['logisticregression__solver'] = 'liblinear'
-            params['logisticregression__penalty'] = solver_params['penalty']
-        elif solver_params['type'] == 'sag':
-            params['logisticregression__solver'] = 'sag'
-            params['logisticregression__penalty'] = solver_params['penalty']
-        elif solver_params['type'] == 'saga':
-            params['logisticregression__solver'] = 'saga'
-            params['logisticregression__penalty'] = solver_params['penalty']
-       
+        solver_type = solver_params['type']
+        penalty = solver_params['penalty']
+
+        params['logisticregression__solver'] = solver_type
+        params['logisticregression__penalty'] = penalty
         
         # Create and configure the pipeline
         hyp_lr_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
-        hyp_lr_pipeline.get_params().keys()
         hyp_lr_pipeline.set_params(**params)
         average_precision = median(cross_val_score(hyp_lr_pipeline, X_train, y_train, cv=10, scoring="average_precision", n_jobs=-1))
         return {'loss': -average_precision, 'status': STATUS_OK}
@@ -77,74 +71,35 @@ def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler
         fn=objective,
         space=search_space,
         algo=tpe.suggest,
-        max_evals=1, # Increase this number to perform more thorough hyperparameter search
+        max_evals=100,  # Increase this number to perform a more thorough hyperparameter search
         trials=trials,
         verbose=True,
         rstate=np.random.default_rng(42)
     )
 
-    #print(lr_opt)
-    
-    if lr_opt['solver'] == 0:
-        lr_opt['solver'] = 'lbfgs'
-        if lr_opt['lbfgs_penalty'] == 0:
-            lr_opt['penalty'] = 'l2'
-        if lr_opt['lbfgs_penalty'] == 1:
-            lr_opt['penalty'] = None
-        del lr_opt['lbfgs_penalty']
-    elif lr_opt['solver'] == 1:
-        lr_opt['solver'] = 'newton-cg'
-        if lr_opt['newton_penalty'] == 0:
-            lr_opt['penalty'] = 'l2'
-        else:
-            lr_opt['penalty'] = None
-        del lr_opt['newton_penalty']
-    elif lr_opt['solver'] == 2:
-        lr_opt['solver'] = 'liblinear'
-        if lr_opt['liblinear_penalty'] == 0:
-            lr_opt['penalty'] = 'l1'
-        else:
-            lr_opt['penalty'] = 'l2'
-        del lr_opt['liblinear_penalty']
-    elif lr_opt['solver'] == 3:
-        lr_opt['solver'] = 'sag'
-        if lr_opt['sag_penalty'] == 0:
-            lr_opt['penalty'] = 'l2'
-        else:
-            lr_opt['penalty'] = None
-        del lr_opt['sag_penalty']
-    elif lr_opt['solver'] == 4:
-        lr_opt['solver'] = 'saga'
-        if lr_opt['saga_penalty'] == 0:
-            lr_opt['penalty'] = 'l1'
-        elif lr_opt['saga_penalty'] == 1:
-            lr_opt['penalty'] = 'l2'
-        elif lr_opt['saga_penalty'] == 2:
-            lr_opt['penalty'] = 'elasticnet'
-        else:
-            lr_opt['penalty'] = None
-        del lr_opt['saga_penalty']
+    print('lr_opt:', lr_opt)
 
-    
-    # elif lr_opt['solver'] == 'newton-cg':
-    #     lr_opt['penalty'] = lr_opt['newton_penalty']
-    # elif lr_opt['solver'] == 'liblinear':
-    #     lr_opt['penalty'] = lr_opt['liblinear_penalty']
-    # elif lr_opt['solver'] == 'sag':
-    #     lr_opt['penalty'] = lr_opt['sag_penalty']
-    # elif lr_opt['solver'] == 'saga':
-    #     lr_opt['penalty'] = lr_opt['saga_penalty']
+    solver_mapping = {
+        0: ('lbfgs', ['l2', None]),
+        1: ('newton-cg', ['l2', None]),
+        2: ('liblinear', ['l1', 'l2']),
+        3: ('sag', ['l2', None]),
+        4: ('saga', ['l1', 'l2', 'elasticnet', None])
+    }
+
+    solver_type, solver_penalties = solver_mapping[lr_opt['solver']]
+    lr_opt['logisticregression__solver'] = solver_type
+
+    penalty_index = lr_opt[f'{solver_type}_penalty']
+    penalty = solver_penalties[penalty_index]
+    lr_opt['logisticregression__penalty'] = penalty
+
+    del lr_opt[f'{solver_type}_penalty']
 
     if lr_opt['class_weight'] == 0:
-        lr_opt['class_weight'] = None
+        lr_opt['logisticregression__class_weight'] = None
     elif lr_opt['class_weight'] == 1:
-        lr_opt['class_weight'] = 'balanced'
-    
-    # class_weight_mapping = {0: None, 1: 'balanced'}
-    
-   
-    print(lr_opt)
-    print(trials.best_trial['result']['loss'])
+        lr_opt['logisticregression__class_weight'] = 'balanced'
 
     return lr_opt
 
@@ -160,7 +115,7 @@ def svm_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
     search_space = {
     'svc__C': hp.loguniform('C', 0, 20),
     'svc__kernel': hp.choice('kernel', ['linear', 'poly', 'rbf', 'sigmoid']),
-    #add degree for poly
+    'svc__degree': hp.choice('degree', range(1, 10)),  # Add degree hyperparameter
     'svc__gamma': hp.loguniform('gamma', 0, 20),
     'svc__class_weight': hp.choice('class_weight', [None, 'balanced'])
 }
@@ -203,10 +158,9 @@ def rf_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampl
         'randomforestclassifier__max_depth': hp.choice('max_depth', range(1,50)),
         'randomforestclassifier__min_samples_split': hp.choice('min_samples_split', range(1, 50)),
         'randomforestclassifier__min_samples_leaf': hp.choice('min_samples_leaf',  range(1, 50)),
-        'randomforestclassifier__max_features': hp.choice('max_features', ['log2', 'sqrt', None])
-        #add criterion 3 choices
+        'randomforestclassifier__max_features': hp.choice('max_features', ['log2', 'sqrt', None]),
+        'randomforestclassifier__criterion': hp.choice('criterion', ['gini', 'entropy', 'log_loss']) #add criterion 3 choices
     }
-    
 
     trials = Trials()
 
@@ -224,6 +178,7 @@ def rf_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampl
 
     return rf_opt
 
+
 #=========================================    XGBoost   ============================================#
 def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
     def objective(params):
@@ -233,15 +188,15 @@ def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
         return {'loss': -average_precision, 'status': STATUS_OK}
 
     search_space = {
-    'xgbclassifier__learning_rate': hp.loguniform('learning_rate', np.log(0.01), np.log(0.5)), #[0.001, 0.01, 0.1, 1, 5, 10]
-    'xgbclassifier__n_estimators': hp.choice('n_estimators', [50, 100, 200]), #10, 1000
-    'xgbclassifier__max_depth': hp.choice('max_depth', [3, 5, 7]), #1,50
-    'xgbclassifier__min_child_weight': hp.choice('min_child_weight', [1, 3, 5]),
-    'xgbclassifier__subsample': hp.uniform('subsample', 0.5, 1.0),
-    'xgbclassifier__gamma': hp.uniform('gamma', 0.0, 1.0),
-    'xgbclassifier__colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),
-    'xgbclassifier__reg_alpha': hp.uniform('reg_alpha', 0.0, 1.0),
-    'xgbclassifier__reg_lambda': hp.uniform('reg_lambda', 0.0, 1.0)
+        'xgbclassifier__learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]), #changed to specified learning rates
+        'xgbclassifier__n_estimators': hp.quniform('n_estimators', 10, 1000, 1),
+        'xgbclassifier__max_depth': hp.quniform('max_depth', 1, 50, 1),
+        'xgbclassifier__min_child_weight': hp.choice('min_child_weight', [1, 3, 5]),
+        'xgbclassifier__subsample': hp.uniform('subsample', 0.5, 1.0),
+        'xgbclassifier__gamma': hp.uniform('gamma', 0.0, 1.0),
+        'xgbclassifier__colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),
+        'xgbclassifier__reg_alpha': hp.uniform('reg_alpha', 0.0, 1.0),
+        'xgbclassifier__reg_lambda': hp.uniform('reg_lambda', 0.0, 1.0)
     }
 
     trials = Trials()
@@ -256,60 +211,79 @@ def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
         verbose=True,
         rstate=np.random.default_rng(42)
     )
+    
+    learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
+    min_child_weight_mapping = [1, 3, 5]
+
+    if 'learning_rate' in xgb_opt:
+        xgb_opt['learning_rate'] = learning_rate_mapping[xgb_opt['learning_rate']]
+    
+    if 'min_child_weight' in xgb_opt:
+        xgb_opt['min_child_weight'] = min_child_weight_mapping[xgb_opt['min_child_weight']]
+
 
     return xgb_opt
 
 #================================ Neural Network ========================================#
-def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
-    def objective(params):
-        hyp_nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
-        hyp_nn_pipeline.set_params(**params)
-        average_precision = median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
-        return {'loss': -average_precision, 'status': STATUS_OK}
+# def create_model(layers, neurons, learning_rate, dropout_rate, input_shape = 100):
+#     model = Sequential()
+#     model.add(Dense(neurons, input_dim=input_shape, activation='relu'))
+#     model.add(Dropout(dropout_rate))
 
-    # search_space = {
-    #     'mlpclassifier__hidden_layer_sizes': hp.choice('hidden_layer_sizes', [(50,), (100,), (200,)]),
-    #     'mlpclassifier__activation': hp.choice('activation', ['relu', 'tanh']),
-    #     'mlpclassifier__solver': hp.choice('solver', ['adam', 'lbfgs']),
-    #     'mlpclassifier__alpha': hp.loguniform('alpha', np.log(0.0001), np.log(0.01)),
-    #     'mlpclassifier__learning_rate_init': hp.loguniform('learning_rate_init', np.log(0.001), np.log(0.1)),
-    #     'mlpclassifier__max_iter': hp.choice('max_iter', range(100, 1000)),
-    # }
-    
-    search_space = {
-        'mlpclassifier__hidden_layer_sizes': hp.choice('hidden_layer_sizes', [(50,), (100,), (200,)]),
-        'mlpclassifier__activation': hp.choice('activation', ['relu', 'tanh']),
-        'mlpclassifier__solver': hp.choice('solver', ['adam', 'lbfgs']),
-        'mlpclassifier__alpha': hp.loguniform('alpha', np.log(0.0001), np.log(0.01)),
-        'mlpclassifier__learning_rate_init': hp.loguniform('learning_rate_init', np.log(0.001), np.log(0.1)),
-        'mlpclassifier__max_iter': hp.choice('max_iter', range(100, 1000)),
-    }
-    
-    
+#     for _ in range(layers):
+#         model.add(Dense(neurons, activation='relu'))
+#         model.add(Dropout(dropout_rate))
 
-    trials = Trials()
+#     model.add(Dense(1, activation='sigmoid'))
+#     optimizer = Adam(learning_rate=learning_rate)
+#     model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+#     return model
 
-    np.random.seed(42)
-    
-    nn_opt = fmin(
-        fn=objective,
-        space=search_space,
-        algo=tpe.suggest,
-        max_evals=10,  # 100
-        trials=trials,
-        verbose=True,
-        rstate=np.random.default_rng(42)
-    )
+# def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_shape):
+#     def objective(params):
+#         model = KerasClassifier(
+#             build_fn=create_model,
+#             layers=int(params['layers']),
+#             neurons=int(params['neurons']),
+#             learning_rate=params['learning_rate'],
+#             dropout_rate=params['dropout_rate'],
+#             epochs=int(params['epochs']),
+#             batch_size=int(params['batch_size']),
+#             verbose=0
+#         )
+#         hyp_nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+#         average_precision = np.median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
+#         return {'loss': -average_precision, 'status': STATUS_OK}
 
-    if nn_opt["solver"] == 0:
-        nn_opt["solver"] = "adam"
-    if nn_opt["solver"] == 1:
-        nn_opt["solver"] = "lbfgs"
+#     search_space = {
+#         'layers': hp.quniform('layers', 1, 20, 1),
+#         'neurons': hp.quniform('neurons', 10, 500, 10),
+#         'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
+#         'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
+#         'epochs': hp.choice('epochs', [200]),
+#         'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
+#     }
+
+#     trials = Trials()
+
+#     np.random.seed(42)
+#     nn_opt = fmin(
+#         fn=objective,
+#         space=search_space,
+#         algo=tpe.suggest,
+#         max_evals=100,
+#         trials=trials,
+#         verbose=True,
+#         rstate=np.random.default_rng(42)
+#     )
+
+#     learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
+#     batch_size_mapping = [32, 64, 128, 256, 512]
+
+#     if 'learning_rate' in nn_opt:
+#         nn_opt['learning_rate'] = learning_rate_mapping[nn_opt['learning_rate']]
     
-    if nn_opt["activation"] == 0:
-        nn_opt["activation"] = "relu"
-    if nn_opt["activation"] == 1:
-        nn_opt["activation"] = "tanh"
-    
-    
-    return nn_opt
+#     if 'batch_size' in nn_opt:
+#         nn_opt['batch_size'] = batch_size_mapping[nn_opt['batch_size']]
+
+#     return nn_opt
