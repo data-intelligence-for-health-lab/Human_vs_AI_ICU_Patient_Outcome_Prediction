@@ -10,6 +10,7 @@ from sklearn.linear_model import ElasticNet
 from sklearn.svm import SVR
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neural_network import MLPRegressor
+from sklearn.metrics import average_precision_score
 
 from sklearn.metrics import roc_auc_score, average_precision_score, precision_score, recall_score, f1_score, confusion_matrix
 from sklearn.metrics import  mean_squared_error, r2_score, mean_absolute_error, mean_absolute_percentage_error, median_absolute_error
@@ -113,57 +114,11 @@ def xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sample
     pickle.dump(xgb_pipeline, open('Outputs/Classification/xgb_model.pkl', 'wb'))  # put in outputs folder
     return xgb_pipeline
 
-# Define the neural network model function
-# def create_model(input_dim, output_dim, hidden_layers, activation='relu', optimizer='adam'):
-#     model = Sequential()
-#     model.add(Dense(hidden_layers[0], input_dim=input_dim, activation=activation))
-#     for layer_size in hidden_layers[1:]:
-#         model.add(Dense(layer_size, activation=activation))
-#     model.add(Dense(output_dim, activation='sigmoid'))
-#     model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
-#     return model
+def nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
+    nn_c_hyperparameters = nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
+    
+    return nn_c_hyperparameters
 
-# def create_model(layers, neurons, learning_rate, dropout_rate):
-#     model = Sequential()
-#     model.add(Dense(neurons, input_dim=100, activation='relu'))
-#     model.add(Dropout(dropout_rate))
-
-#     for _ in range(layers):
-#         model.add(Dense(neurons, activation='relu'))
-#         model.add(Dropout(dropout_rate))
-
-#     model.add(Dense(1, activation='sigmoid'))
-#     optimizer = Adam(learning_rate=learning_rate)
-#     model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
-#     return model
-
-def nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler):
-    # Optimize hyperparameters
-    nn_hyperparameters = nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, KerasClassifier(build_fn=create_model))
-
-    # Build the tuned Keras model
-    tuned_nn_model = KerasClassifier(
-        build_fn=create_model,
-        layers=nn_hyperparameters['layers'],
-        neurons=nn_hyperparameters['neurons'],
-        learning_rate=nn_hyperparameters['learning_rate'],
-        dropout_rate=nn_hyperparameters['dropout_rate'],
-        epochs=nn_hyperparameters['epochs'],
-        batch_size=nn_hyperparameters['batch_size'],
-        verbose=0
-    )
-
-    # Create and fit the pipeline
-    nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, tuned_nn_model)
-    nn_pipeline.fit(X_train, y_train)
-
-    # Generate metrics
-    generate_metrics(nn_pipeline, X_test, y_test)
-
-    # Save the model
-    pickle.dump(nn_pipeline, open('Outputs/Classification/nn_model.pkl', 'wb'))  # put in outputs folder
-
-    return nn_pipeline
 #=============================Regression models and metrics=============================#
 # def generate_regression_metrics(pipeline, X_test, y_test):
 #     y_pred = pipeline.predict(X_test)
@@ -262,4 +217,3 @@ def nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, model):
     # Pickle dump
     pickle.dump(nn_r_pipeline, open('Outputs/Regression/nn_r_model.pkl', 'wb'))
     return nn_r_pipeline
-

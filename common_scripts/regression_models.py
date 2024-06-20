@@ -4,10 +4,10 @@ from sklearn.model_selection import cross_val_score
 from statistics import median
 from hyperopt import Trials, STATUS_OK, tpe, fmin, hp
 
-from keras.wrappers.scikit_learn import KerasRegressor
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from keras.optimizers import Adam
+# from keras.wrappers.scikit_learn import KerasRegressor
+# from keras.models import Sequential
+# from keras.layers import Dense, Dropout
+# from keras.optimizers import Adam
 
 #Elastic Net
 def elastic_net_hyperopt(X_train, y_train, preprocessor, pca, model):
@@ -161,73 +161,73 @@ def xgb_r_hyperopt(X_train, y_train, preprocessor, pca, model):
 
 #NN_R
 # Define a function to create a Keras regression model
-def create_keras_regression_model(hidden_layer_sizes=(100,), activation='relu', dropout_rate=0.0, learning_rate=0.001):
-    model = Sequential()
-    model.add(Dense(hidden_layer_sizes[0], input_dim=100, activation=activation))
-    model.add(Dropout(dropout_rate))
+# def create_keras_regression_model(hidden_layer_sizes=(100,), activation='relu', dropout_rate=0.0, learning_rate=0.001):
+#     model = Sequential()
+#     model.add(Dense(hidden_layer_sizes[0], input_dim=100, activation=activation))
+#     model.add(Dropout(dropout_rate))
     
-    for units in hidden_layer_sizes[1:]:
-        model.add(Dense(units, activation=activation))
-        model.add(Dropout(dropout_rate))
+#     for units in hidden_layer_sizes[1:]:
+#         model.add(Dense(units, activation=activation))
+#         model.add(Dropout(dropout_rate))
         
-    model.add(Dense(1, activation='linear'))
-    model.compile(loss='mean_squared_error', optimizer=Adam(learning_rate=learning_rate))
-    return model
+#     model.add(Dense(1, activation='linear'))
+#     model.compile(loss='mean_squared_error', optimizer=Adam(learning_rate=learning_rate))
+#     return model
 
-def nn_r_hyperopt(X_train, y_train, preprocessor, pca):
-    #input_shape = X_train.shape[1]
+# def nn_r_hyperopt(X_train, y_train, preprocessor, pca):
+#     #input_shape = X_train.shape[1]
 
-    def objective(params):
-        model = KerasRegressor(build_fn=create_keras_regression_model,
-                               hidden_layer_sizes=params['hidden_layer_sizes'],
-                               activation=params['activation'],
-                               dropout_rate=params['dropout_rate'],
-                               learning_rate=params['learning_rate'],
-                               epochs=200,
-                               batch_size=params['batch_size'],
-                               verbose=0)
+#     def objective(params):
+#         model = KerasRegressor(build_fn=create_keras_regression_model,
+#                                hidden_layer_sizes=params['hidden_layer_sizes'],
+#                                activation=params['activation'],
+#                                dropout_rate=params['dropout_rate'],
+#                                learning_rate=params['learning_rate'],
+#                                epochs=200,
+#                                batch_size=params['batch_size'],
+#                                verbose=0)
 
-        hyp_nn_r_pipeline = make_pipeline(preprocessor, pca, model)
-        neg_mse = median(cross_val_score(hyp_nn_r_pipeline, X_train, y_train, cv=10, scoring="neg_mean_squared_error"))
-        return {'loss': -neg_mse, 'status': STATUS_OK}
+#         hyp_nn_r_pipeline = make_pipeline(preprocessor, pca, model)
+#         neg_mse = median(cross_val_score(hyp_nn_r_pipeline, X_train, y_train, cv=10, scoring="neg_mean_squared_error"))
+#         return {'loss': -neg_mse, 'status': STATUS_OK}
 
-    search_space = {
-        'hidden_layer_sizes': hp.choice('hidden_layer_sizes', [
-            tuple([hp.choice(f'units_{i}', np.arange(10, 501, 10)) for i in range(h)]) for h in range(1, 21)
-        ]),
-        'activation': hp.choice('activation', ['relu', 'tanh']),
-        'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
-        'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
-        'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
-    }
+#     search_space = {
+#         'hidden_layer_sizes': hp.choice('hidden_layer_sizes', [
+#             tuple([hp.choice(f'units_{i}', np.arange(10, 501, 10)) for i in range(h)]) for h in range(1, 21)
+#         ]),
+#         'activation': hp.choice('activation', ['relu', 'tanh']),
+#         'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
+#         'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
+#         'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
+#     }
 
-    trials = Trials()
+#     trials = Trials()
 
-    np.random.seed(42)
+#     np.random.seed(42)
 
-    nn_r_opt = fmin(
-        fn=objective,
-        space=search_space,
-        algo=tpe.suggest,
-        max_evals=10,  # Adjust the number of evaluations to 100 for actual run
-        trials=trials,
-        verbose=True,
-        rstate=np.random.default_rng(42)
-    )
+#     nn_r_opt = fmin(
+#         fn=objective,
+#         space=search_space,
+#         algo=tpe.suggest,
+#         max_evals=10,  # Adjust the number of evaluations to 100 for actual run
+#         trials=trials,
+#         verbose=True,
+#         rstate=np.random.default_rng(42)
+#     )
 
-    hidden_layer_sizes_mapping = [
-        tuple([n for n in range(10, 501, 10) for _ in range(h)]) for h in range(1, 21)
-    ]
-    activation_mapping = ['relu', 'tanh']
-    learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
-    batch_size_mapping = [32, 64, 128, 256, 512]
+#     hidden_layer_sizes_mapping = [
+#         tuple([n for n in range(10, 501, 10) for _ in range(h)]) for h in range(1, 21)
+#     ]
+#     activation_mapping = ['relu', 'tanh']
+#     learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
+#     batch_size_mapping = [32, 64, 128, 256, 512]
 
-    nn_r_opt['hidden_layer_sizes'] = hidden_layer_sizes_mapping[nn_r_opt['hidden_layer_sizes']]
-    nn_r_opt['activation'] = activation_mapping[nn_r_opt['activation']]
-    nn_r_opt['learning_rate'] = learning_rate_mapping[nn_r_opt['learning_rate']]
-    nn_r_opt['batch_size'] = batch_size_mapping[nn_r_opt['batch_size']]
+#     nn_r_opt['hidden_layer_sizes'] = hidden_layer_sizes_mapping[nn_r_opt['hidden_layer_sizes']]
+#     nn_r_opt['activation'] = activation_mapping[nn_r_opt['activation']]
+#     nn_r_opt['learning_rate'] = learning_rate_mapping[nn_r_opt['learning_rate']]
+#     nn_r_opt['batch_size'] = batch_size_mapping[nn_r_opt['batch_size']]
 
-    return nn_r_opt
+#     return nn_r_opt
 
 
 

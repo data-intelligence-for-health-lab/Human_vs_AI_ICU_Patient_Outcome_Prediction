@@ -5,10 +5,10 @@ from statistics import median
 from hyperopt import Trials, STATUS_OK, tpe, fmin, hp
 
 # Add Keras imports
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import Dense, Dropout
-# from tensorflow.keras.optimizers import Adam
-# from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 
 #========================================= Logistic Regression   ============================================#
 def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
@@ -225,65 +225,67 @@ def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
     return xgb_opt
 
 #================================ Neural Network ========================================#
-# def create_model(layers, neurons, learning_rate, dropout_rate, input_shape = 100):
-#     model = Sequential()
-#     model.add(Dense(neurons, input_dim=input_shape, activation='relu'))
-#     model.add(Dropout(dropout_rate))
+def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_shape):
+    def create_model(layers, neurons, learning_rate, dropout_rate, input_shape):
+        model = Sequential()
+        #tune hidden layer 
+        model.add(Dense(neurons, input_dim=input_shape, activation='relu'))
+        model.add(Dropout(dropout_rate))
 
-#     for _ in range(layers):
-#         model.add(Dense(neurons, activation='relu'))
-#         model.add(Dropout(dropout_rate))
+        for i in range(layers):
+            model.add(Dense(neurons, activation='relu'))
+            model.add(Dropout(dropout_rate))
 
-#     model.add(Dense(1, activation='sigmoid'))
-#     optimizer = Adam(learning_rate=learning_rate)
-#     model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
-#     return model
+        model.add(Dense(1, activation='sigmoid'))
+        optimizer = Adam(learning_rate=learning_rate)
+        model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+        return model
+   
+    def objective(params):
+        model = KerasClassifier(
+            build_fn=create_model,
+            layers=int(params['layers']),
+            neurons=int(params['neurons']),
+            learning_rate=params['learning_rate'],
+            dropout_rate=params['dropout_rate'],
+            epochs=int(params['epochs']),
+            batch_size=int(params['batch_size']),
+            verbose=0
+        )
+        hyp_nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        average_precision = np.median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
+        return {'loss': -average_precision, 'status': STATUS_OK}
 
-# def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_shape):
-#     def objective(params):
-#         model = KerasClassifier(
-#             build_fn=create_model,
-#             layers=int(params['layers']),
-#             neurons=int(params['neurons']),
-#             learning_rate=params['learning_rate'],
-#             dropout_rate=params['dropout_rate'],
-#             epochs=int(params['epochs']),
-#             batch_size=int(params['batch_size']),
-#             verbose=0
-#         )
-#         hyp_nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
-#         average_precision = np.median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
-#         return {'loss': -average_precision, 'status': STATUS_OK}
+    search_space = {
+        'layers': hp.quniform('layers', 1, 20, 1),
+        'neurons': hp.quniform('neurons', 10, 500, 10),
+        'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
+        'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
+        'epochs': hp.choice('epochs', [200]),
+        'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
+    }
 
-#     search_space = {
-#         'layers': hp.quniform('layers', 1, 20, 1),
-#         'neurons': hp.quniform('neurons', 10, 500, 10),
-#         'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
-#         'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
-#         'epochs': hp.choice('epochs', [200]),
-#         'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
-#     }
+    trials = Trials()
 
-#     trials = Trials()
+    np.random.seed(42)
+    nn_opt = fmin(
+        fn=objective,
+        space=search_space,
+        algo=tpe.suggest,
+        max_evals=100,
+        trials=trials,
+        verbose=True,
+        rstate=np.random.default_rng(42)
+    )
 
-#     np.random.seed(42)
-#     nn_opt = fmin(
-#         fn=objective,
-#         space=search_space,
-#         algo=tpe.suggest,
-#         max_evals=100,
-#         trials=trials,
-#         verbose=True,
-#         rstate=np.random.default_rng(42)
-#     )
+    learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
+    batch_size_mapping = [32, 64, 128, 256, 512]
 
-#     learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
-#     batch_size_mapping = [32, 64, 128, 256, 512]
-
-#     if 'learning_rate' in nn_opt:
-#         nn_opt['learning_rate'] = learning_rate_mapping[nn_opt['learning_rate']]
+    if 'learning_rate' in nn_opt:
+        nn_opt['learning_rate'] = learning_rate_mapping[nn_opt['learning_rate']]
     
-#     if 'batch_size' in nn_opt:
-#         nn_opt['batch_size'] = batch_size_mapping[nn_opt['batch_size']]
+    if 'batch_size' in nn_opt:
+        nn_opt['batch_size'] = batch_size_mapping[nn_opt['batch_size']]
 
-#     return nn_opt
+    return nn_opt
+

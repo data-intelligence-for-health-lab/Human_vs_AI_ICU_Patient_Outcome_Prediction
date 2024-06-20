@@ -1,5 +1,5 @@
 #Classification
-from common_scripts.run_models import lr_c_model, svm_c_model, rf_c_model, xgb_c_model, nn_c_model, en_r_model, svm_r_model, rf_r_model, xgb_r_model, nn_r_model
+from common_scripts.run_models import lr_c_model, svm_c_model, rf_c_model, xgb_c_model, en_r_model, svm_r_model, rf_r_model, xgb_r_model, nn_c_model, nn_r_model
 
 import numpy as np
 import pandas as pd
@@ -82,7 +82,7 @@ under_sampler = RandomUnderSampler(random_state=42, sampling_strategy=1.0)
 
 input_shape = X_train.shape[1]  # Define the input shape 
 
-# # Define a function to create a Keras classification model
+# Define a function to create a Keras classification model
 # def create_keras_classification_model(hidden_layer_sizes=(100,), activation='relu', learning_rate=0.001):
 #     model = Sequential()
 #     for units in hidden_layer_sizes:
@@ -122,8 +122,8 @@ xgbmodel_r = xgb.XGBRegressor()
 
 #------------------------------------------Classification------------------------------------------#
 # #Logistic Regression Pipeline
-print("Run Logistic Regression Pipeline...")
-final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, lrmodel_c, target = target_column)
+# print("Run Logistic Regression Pipeline...")
+# final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, lrmodel_c, target = target_column)
 
 # #SVM Pipeline
 # print("Run SVM Pipeline...")
@@ -160,4 +160,9 @@ final_lr_pipeline = lr_c_model(X_train, y_train, X_test, y_test, preprocessor, p
 
 # #Neural Network
 # print("Regression: Run Neural Network...")
-# final_nn_pipline = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
+
+nn_c_hyperparameters = nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, nnmodel_c)
+opt = ''
+#tunning
+#save model 
+
