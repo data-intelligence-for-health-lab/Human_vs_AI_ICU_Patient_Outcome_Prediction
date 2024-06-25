@@ -3,11 +3,14 @@ from imblearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_val_score
 from statistics import median
 from hyperopt import Trials, STATUS_OK, tpe, fmin, hp
+from sklearn.metrics import average_precision_score
 
-# from keras.wrappers.scikit_learn import KerasRegressor
-# from keras.models import Sequential
-# from keras.layers import Dense, Dropout
-# from keras.optimizers import Adam
+import tensorflow as tf
+from keras.wrappers.scikit_learn import KerasRegressor
+from keras.models import Sequential
+from keras.layers import Dense
+
+from hyperopt.pyll.base import scope
 
 #Elastic Net
 def elastic_net_hyperopt(X_train, y_train, preprocessor, pca, model):
@@ -160,74 +163,61 @@ def xgb_r_hyperopt(X_train, y_train, preprocessor, pca, model):
     return xgb_r_opt
 
 #NN_R
-# Define a function to create a Keras regression model
-# def create_keras_regression_model(hidden_layer_sizes=(100,), activation='relu', dropout_rate=0.0, learning_rate=0.001):
-#     model = Sequential()
-#     model.add(Dense(hidden_layer_sizes[0], input_dim=100, activation=activation))
-#     model.add(Dropout(dropout_rate))
-    
-#     for units in hidden_layer_sizes[1:]:
-#         model.add(Dense(units, activation=activation))
-#         model.add(Dropout(dropout_rate))
-        
-#     model.add(Dense(1, activation='linear'))
-#     model.compile(loss='mean_squared_error', optimizer=Adam(learning_rate=learning_rate))
-#     return model
+def average_precision(y_true, y_pred):
+    return tf.py_function(average_precision_score, (y_true, y_pred), tf.float32)
 
-# def nn_r_hyperopt(X_train, y_train, preprocessor, pca):
-#     #input_shape = X_train.shape[1]
 
-#     def objective(params):
-#         model = KerasRegressor(build_fn=create_keras_regression_model,
-#                                hidden_layer_sizes=params['hidden_layer_sizes'],
-#                                activation=params['activation'],
-#                                dropout_rate=params['dropout_rate'],
-#                                learning_rate=params['learning_rate'],
-#                                epochs=200,
-#                                batch_size=params['batch_size'],
-#                                verbose=0)
+def nn_r_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim):
 
-#         hyp_nn_r_pipeline = make_pipeline(preprocessor, pca, model)
-#         neg_mse = median(cross_val_score(hyp_nn_r_pipeline, X_train, y_train, cv=10, scoring="neg_mean_squared_error"))
-#         return {'loss': -neg_mse, 'status': STATUS_OK}
+    # build model function, pass in input dimension from the main file
+    def create_model(num_hidden_layers, hidden_units, activation, optimizer):
+        model = Sequential()
+        model.add(Dense(units=hidden_units[0], activation=activation))
+        for i in range(1, num_hidden_layers):
+            model.add(Dense(units=hidden_units[i], activation=activation))
+            model.add(Dense(units=1, activation='sigmoid'))
+            model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=[average_precision])
+        return model
 
-#     search_space = {
-#         'hidden_layer_sizes': hp.choice('hidden_layer_sizes', [
-#             tuple([hp.choice(f'units_{i}', np.arange(10, 501, 10)) for i in range(h)]) for h in range(1, 21)
-#         ]),
-#         'activation': hp.choice('activation', ['relu', 'tanh']),
-#         'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
-#         'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
-#         'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
-#     }
+    space = {
+        'input_dim': input_dim,
+        'num_hidden_layers': scope.int(hp.quniform('num_hidden_layers', 1, 8, 1)),
+        'hidden_units': [scope.int(hp.quniform('hidden_units_' + str(i), 16, 256, 16)) for i in range(8)],
+        'activation': hp.choice('activation', ['relu', 'sigmoid', 'tanh']),
+        'optimizer': hp.choice('optimizer', ['adam', 'sgd'])
+    }
 
-#     trials = Trials()
+    # create pipeline in objective function
+    def objective(params):
+        model = KerasRegressor(build_fn=create_model, epochs=100, batch_size=32, verbose=2, **params)
+        pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        score = median(cross_val_score(pipeline, X_train, y_train, cv=10, scoring="average_precision", error_score='raise',n_jobs=10))
+        return {'loss': -score, 'status': STATUS_OK}
 
-#     np.random.seed(42)
+    trials = Trials()
 
-#     nn_r_opt = fmin(
-#         fn=objective,
-#         space=search_space,
-#         algo=tpe.suggest,
-#         max_evals=10,  # Adjust the number of evaluations to 100 for actual run
-#         trials=trials,
-#         verbose=True,
-#         rstate=np.random.default_rng(42)
-#     )
+    np.random.seed(42)
+    nn_opt = fmin(fn=objective,
+                space=space,
+                algo=tpe.suggest,
+                max_evals=100,
+                trials=trials,
+                rstate=np.random.default_rng(42)
+    )
 
-#     hidden_layer_sizes_mapping = [
-#         tuple([n for n in range(10, 501, 10) for _ in range(h)]) for h in range(1, 21)
-#     ]
-#     activation_mapping = ['relu', 'tanh']
-#     learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
-#     batch_size_mapping = [32, 64, 128, 256, 512]
+    if nn_opt["activation"] == 0:
+        nn_opt["activation"] = "relu"
+    elif nn_opt["activation"] == 1:
+        nn_opt["activation"] = "sigmoid"
+    elif nn_opt["activation"] == 2:
+        nn_opt["activation"] = "tanh"
+    if nn_opt["optimizer"] == 0:
+        nn_opt["optimizer"] = "adam"
+    if nn_opt["optimizer"] == 1:
+        nn_opt["optimizer"] = "sgd"
 
-#     nn_r_opt['hidden_layer_sizes'] = hidden_layer_sizes_mapping[nn_r_opt['hidden_layer_sizes']]
-#     nn_r_opt['activation'] = activation_mapping[nn_r_opt['activation']]
-#     nn_r_opt['learning_rate'] = learning_rate_mapping[nn_r_opt['learning_rate']]
-#     nn_r_opt['batch_size'] = batch_size_mapping[nn_r_opt['batch_size']]
+    nn_opt["num_hidden_layers"] = int(nn_opt["num_hidden_layers"]) # number hidden layers as integer instead of string
 
-#     return nn_r_opt
-
+    return nn_opt
 
 

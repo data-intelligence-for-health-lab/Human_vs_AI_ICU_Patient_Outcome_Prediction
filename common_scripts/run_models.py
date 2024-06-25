@@ -9,8 +9,6 @@ import xgboost as xgb
 from sklearn.linear_model import ElasticNet
 from sklearn.svm import SVR
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.neural_network import MLPRegressor
-from sklearn.metrics import average_precision_score
 
 from sklearn.metrics import roc_auc_score, average_precision_score, precision_score, recall_score, f1_score, confusion_matrix
 from sklearn.metrics import  mean_squared_error, r2_score, mean_absolute_error, mean_absolute_percentage_error, median_absolute_error
@@ -84,12 +82,13 @@ def lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler
     pickle.dump(lr_pipeline, open('Outputs/Classification/lr_model.pkl', 'wb')) #put in outputs folder
     return lr_pipeline
 
-def svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
+def svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model, target):
     svm_hyperparameters = svm_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
-    tuned_svm_model = SVC(**svm_hyperparameters)
+    tuned_svm_model = SVC(probability=True, **svm_hyperparameters)
     svm_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, tuned_svm_model)
     svm_pipeline = svm_pipeline.fit(X_train, y_train)
-    generate_metrics(svm_pipeline, X_test, y_test)
+    model_name = 'SVM_Classification'
+    generate_metrics(svm_pipeline, X_test, y_test, model_name, target)
     #pickle dump
     pickle.dump(svm_pipeline, open('Outputs/Classification/svm_model.pkl', 'wb')) #put in outputs folder
     return svm_pipeline
@@ -114,19 +113,11 @@ def xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sample
     pickle.dump(xgb_pipeline, open('Outputs/Classification/xgb_model.pkl', 'wb'))  # put in outputs folder
     return xgb_pipeline
 
-def nn_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
-    nn_c_hyperparameters = nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
-    
+def nn_c_model(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim):
+    nn_c_hyperparameters = nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim)
     return nn_c_hyperparameters
 
 #=============================Regression models and metrics=============================#
-# def generate_regression_metrics(pipeline, X_test, y_test):
-#     y_pred = pipeline.predict(X_test)
-#     mse = mean_squared_error(y_test, y_pred)
-#     r2 = r2_score(y_test, y_pred)
-
-#     print("Mean Squared Error:", mse)
-#     print("R2 Score:", r2)
 def generate_regression_metrics(pipeline, X_test, y_test, model_name):
     y_pred = pipeline.predict(X_test)
     
@@ -208,12 +199,6 @@ def xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, model):
     pickle.dump(xgb_r_pipeline, open('Outputs/Regression/xgb_r_model.pkl', 'wb'))
     return xgb_r_pipeline
 
-def nn_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, model):
-    nn_r_hyperparameters = nn_r_hyperopt(X_train, y_train, preprocessor, pca, model)
-    tuned_nn_r_model = MLPRegressor(**nn_r_hyperparameters)
-    nn_r_pipeline = make_pipeline(preprocessor, pca, tuned_nn_r_model)
-    nn_r_pipeline = nn_r_pipeline.fit(X_train, y_train)
-    generate_regression_metrics(nn_r_pipeline, X_test, y_test)
-    # Pickle dump
-    pickle.dump(nn_r_pipeline, open('Outputs/Regression/nn_r_model.pkl', 'wb'))
-    return nn_r_pipeline
+def nn_r_model(X_train, y_train, preprocessor, pca):
+    nn_r_hyperparameters = nn_r_hyperopt(X_train, y_train, preprocessor, pca)
+    return nn_r_hyperparameters

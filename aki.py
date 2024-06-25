@@ -20,9 +20,9 @@ def determine_aki_status(current_creatinine, baseline_48h, baseline_7d):
 df['aki_status'] = ''
 
 # # Initialize the AKI status columns
-df['aki_status_24h'] = False
-df['aki_status_24_48h'] = False
-df['aki_status_48h'] = False
+df['aki_status_24h'] = ''
+df['aki_status_24_48h'] = ''
+df['aki_status_48h'] = ''
 
 # Convert measurement_hour to numeric type
 df['measurement_hour'] = pd.to_numeric(df['measurement_hour']).round(2)

@@ -3,12 +3,16 @@ from imblearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_val_score
 from statistics import median
 from hyperopt import Trials, STATUS_OK, tpe, fmin, hp
+from sklearn.metrics import average_precision_score
 
 # Add Keras imports
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
+from keras.optimizers import Adam
+from keras.wrappers.scikit_learn import KerasClassifier
+
+from hyperopt.pyll.base import scope
 
 #========================================= Logistic Regression   ============================================#
 def lr_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model):
@@ -113,7 +117,7 @@ def svm_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
         return {'loss': -average_precision, 'status': STATUS_OK}
 
     search_space = {
-    'svc__C': hp.loguniform('C', 0, 20),
+    'svc__C': hp.loguniform('C', np.log(1e-5), np.log(10)),
     'svc__kernel': hp.choice('kernel', ['linear', 'poly', 'rbf', 'sigmoid']),
     'svc__degree': hp.choice('degree', range(1, 10)),  # Add degree hyperparameter
     'svc__gamma': hp.loguniform('gamma', 0, 20),
@@ -128,20 +132,17 @@ def svm_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
         fn=objective,
         space=search_space,
         algo=tpe.suggest,
-        max_evals=10,  # Adjust the number of evaluations to 100 for actual run
+        max_evals=1,  # Adjust the number of evaluations to 100 for actual run
         trials=trials,
         verbose=True,
         rstate=np.random.default_rng(42)
     )
 
-    if svm_c_opt["kernel"] == 0:
-        svm_c_opt["kernel"] = "linear"
-    if svm_c_opt["kernel"] == 1:
-        svm_c_opt["kernel"] = "poly"
-    if svm_c_opt["kernel"] == 2:
-        svm_c_opt["kernel"] = "rbf"
-    if svm_c_opt["kernel"] == 3:
-        svm_c_opt["kernel"] = "sigmoid"
+    kernel_mapping = ['linear', 'poly', 'rbf', 'sigmoid']
+    class_weight_mapping = [None, 'balanced']
+    
+    svm_c_opt["kernel"] = kernel_mapping[svm_c_opt["kernel"]]
+    svm_c_opt["class_weight"] = class_weight_mapping[svm_c_opt["class_weight"]]
 
     return svm_c_opt
 
@@ -225,67 +226,59 @@ def xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_samp
     return xgb_opt
 
 #================================ Neural Network ========================================#
-def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_shape):
-    def create_model(layers, neurons, learning_rate, dropout_rate, input_shape):
+def average_precision(y_true, y_pred):
+    return tf.py_function(average_precision_score, (y_true, y_pred), tf.float32)
+
+
+def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim):
+
+    # build model function, pass in input dimension from the main file
+    def create_model(input_dim, num_hidden_layers, hidden_units, activation, optimizer):
         model = Sequential()
-        #tune hidden layer 
-        model.add(Dense(neurons, input_dim=input_shape, activation='relu'))
-        model.add(Dropout(dropout_rate))
-
-        for i in range(layers):
-            model.add(Dense(neurons, activation='relu'))
-            model.add(Dropout(dropout_rate))
-
-        model.add(Dense(1, activation='sigmoid'))
-        optimizer = Adam(learning_rate=learning_rate)
-        model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+        model.add(Dense(units=hidden_units[0], activation=activation))
+        for i in range(1, num_hidden_layers):
+            model.add(Dense(units=hidden_units[i], activation=activation))
+            model.add(Dense(units=1, activation='sigmoid'))
+            model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=[average_precision])
         return model
-   
-    def objective(params):
-        model = KerasClassifier(
-            build_fn=create_model,
-            layers=int(params['layers']),
-            neurons=int(params['neurons']),
-            learning_rate=params['learning_rate'],
-            dropout_rate=params['dropout_rate'],
-            epochs=int(params['epochs']),
-            batch_size=int(params['batch_size']),
-            verbose=0
-        )
-        hyp_nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
-        average_precision = np.median(cross_val_score(hyp_nn_pipeline, X_train, y_train, cv=10, scoring="average_precision"))
-        return {'loss': -average_precision, 'status': STATUS_OK}
 
-    search_space = {
-        'layers': hp.quniform('layers', 1, 20, 1),
-        'neurons': hp.quniform('neurons', 10, 500, 10),
-        'learning_rate': hp.choice('learning_rate', [0.001, 0.01, 0.1, 1, 5, 10]),
-        'dropout_rate': hp.uniform('dropout_rate', 0.0, 0.5),
-        'epochs': hp.choice('epochs', [200]),
-        'batch_size': hp.choice('batch_size', [32, 64, 128, 256, 512])
+    space = {
+        'input_dim': input_dim,
+        'num_hidden_layers': scope.int(hp.quniform('num_hidden_layers', 1, 8, 1)),
+        'hidden_units': [scope.int(hp.quniform('hidden_units_' + str(i), 16, 256, 16)) for i in range(8)],
+        'activation': hp.choice('activation', ['relu', 'sigmoid', 'tanh']),
+        'optimizer': hp.choice('optimizer', ['adam', 'sgd'])
     }
+
+    # create pipeline in objective function
+    def objective(params):
+        model = KerasClassifier(build_fn=create_model, epochs=100, batch_size=32, verbose=2, **params)
+        pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
+        score = median(cross_val_score(pipeline, X_train, y_train, cv=10, scoring="average_precision", error_score='raise',n_jobs=10))
+        return {'loss': -score, 'status': STATUS_OK}
 
     trials = Trials()
 
     np.random.seed(42)
-    nn_opt = fmin(
-        fn=objective,
-        space=search_space,
-        algo=tpe.suggest,
-        max_evals=100,
-        trials=trials,
-        verbose=True,
-        rstate=np.random.default_rng(42)
+    nn_opt = fmin(fn=objective,
+                space=space,
+                algo=tpe.suggest,
+                max_evals=1,
+                trials=trials,
+                rstate=np.random.default_rng(42)
     )
 
-    learning_rate_mapping = [0.001, 0.01, 0.1, 1, 5, 10]
-    batch_size_mapping = [32, 64, 128, 256, 512]
+    if nn_opt["activation"] == 0:
+        nn_opt["activation"] = "relu"
+    elif nn_opt["activation"] == 1:
+        nn_opt["activation"] = "sigmoid"
+    elif nn_opt["activation"] == 2:
+        nn_opt["activation"] = "tanh"
+    if nn_opt["optimizer"] == 0:
+        nn_opt["optimizer"] = "adam"
+    if nn_opt["optimizer"] == 1:
+        nn_opt["optimizer"] = "sgd"
 
-    if 'learning_rate' in nn_opt:
-        nn_opt['learning_rate'] = learning_rate_mapping[nn_opt['learning_rate']]
-    
-    if 'batch_size' in nn_opt:
-        nn_opt['batch_size'] = batch_size_mapping[nn_opt['batch_size']]
+    nn_opt["num_hidden_layers"] = int(nn_opt["num_hidden_layers"]) # number hidden layers as integer instead of string
 
     return nn_opt
-
