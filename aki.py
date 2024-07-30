@@ -4,6 +4,10 @@ import pandas as pd
 df = pd.read_csv('AKI_Cr.csv')
 
 def determine_aki_status(current_creatinine, baseline_48h, baseline_7d):
+   # Check if either baseline is None
+    if baseline_48h is None or baseline_7d is None:
+        return None  # Set status to None if any baseline is missing
+    
     # AKI criteria
     aki_criteria_1 = (current_creatinine - baseline_48h) >= 26.5
     aki_criteria_2 = current_creatinine >= 1.5 * baseline_7d
@@ -60,8 +64,8 @@ for admission_id, patient_data in df.groupby('ADMISSION_ID'):
         # print("recent_data_7d:\n", recent_data_7d)
         
         # Calculate baseline creatinine levels
-        baseline_creatinine_48h = recent_data_48h['VALUE_NUM'].min() if not recent_data_48h.empty else current_creatinine #SET AKI TO ''
-        baseline_creatinine_7d = recent_data_7d['VALUE_NUM'].min() if not recent_data_7d.empty else current_creatinine #SET AKI TO ''
+        baseline_creatinine_48h = recent_data_48h['VALUE_NUM'].min() if not recent_data_48h.empty else None #SET AKI TO ''
+        baseline_creatinine_7d = recent_data_7d['VALUE_NUM'].min() if not recent_data_7d.empty else None #SET AKI TO ''
         
         # Determine AKI status
         aki_status = determine_aki_status(current_creatinine, baseline_creatinine_48h, baseline_creatinine_7d)
@@ -79,7 +83,7 @@ for admission_id, patient_data in df.groupby('ADMISSION_ID'):
         
 # Print the updated DataFrame
 print(df)
-df.to_csv('check_aki_status.csv', index=False)
+df.to_csv('U_check_aki_status.csv', index=False)
 
 # Aggregate by ADMISSION_ID and update the AKI status columns
 aggregated_df = df.groupby('ADMISSION_ID').agg(
@@ -91,4 +95,4 @@ aggregated_df = df.groupby('ADMISSION_ID').agg(
 
 # Print the aggregated DataFrame
 print(aggregated_df)
-aggregated_df.to_csv('aggregated_aki_status.csv', index=False)
+aggregated_df.to_csv('U_aggregated_aki_status.csv', index=False)

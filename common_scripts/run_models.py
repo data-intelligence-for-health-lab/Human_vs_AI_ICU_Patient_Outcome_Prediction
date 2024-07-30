@@ -93,22 +93,24 @@ def svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sample
     pickle.dump(svm_pipeline, open('Outputs/Classification/svm_model.pkl', 'wb')) #put in outputs folder
     return svm_pipeline
 
-def rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
+def rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model, target):
     rf_hyperparameters = rf_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
     tuned_rf_model = RandomForestClassifier(**rf_hyperparameters)
     rf_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, tuned_rf_model)
     rf_pipeline = rf_pipeline.fit(X_train, y_train)
-    generate_metrics(rf_pipeline, X_test, y_test)
+    model_name = 'RF_Classification'
+    generate_metrics(rf_pipeline, X_test, y_test, model_name, target)
     #pickle dump
     pickle.dump(rf_pipeline, open('Outputs/Classification/rf_model.pkl', 'wb'))  # put in outputs folder
     return rf_pipeline
 
-def xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model):
+def xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model, target):
     xgb_hyperparameters = xgb_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, model)
     tuned_xgb_model = xgb.XGBClassifier(**xgb_hyperparameters)
     xgb_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, tuned_xgb_model)
     xgb_pipeline = xgb_pipeline.fit(X_train, y_train)
-    generate_metrics(xgb_pipeline, X_test, y_test)
+    model_name = 'XGB_Classification'
+    generate_metrics(xgb_pipeline, X_test, y_test, model_name, target)
     # pickle dump
     pickle.dump(xgb_pipeline, open('Outputs/Classification/xgb_model.pkl', 'wb'))  # put in outputs folder
     return xgb_pipeline

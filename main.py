@@ -1,6 +1,6 @@
 #Classification
-from common_scripts.run_models import lr_c_model, svm_c_model, rf_c_model, xgb_c_model, en_r_model, svm_r_model, rf_r_model, xgb_r_model, nn_c_model, nn_r_model
-from common_scripts import hyperopt_models
+from common_scripts.run_models import lr_c_model, svm_c_model, rf_c_model, xgb_c_model, nn_c_model, en_r_model, svm_r_model, rf_r_model, xgb_r_model, nn_r_model, generate_metrics
+from common_scripts.hyperopt_models import average_precision
 import pickle
 
 import numpy as np
@@ -68,7 +68,7 @@ admission_ids = test1000['ADMISSION_ID']
 testing_set = df[df['ADMISSION_ID'].isin(admission_ids)]
 training_set = df[~df['PATIENT_ID'].isin(testing_ids)]
 #print(training_set)
-key_columns = ['PATIENT_ID', 'ADMISSION_ID', 'icu_los', 'hosp_los', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG']
+key_columns = ['PATIENT_ID', 'ADMISSION_ID', 'icu_los', 'hosp_los', 'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 'DELIRIUM_FLAG', 'delirium_flag_24h', 'delirium_flag_24_48h', 'delirium_flag_48h_plus']
 
 # Drop the target columns and patient identifiers to create X_train, X_test
 X_train = training_set.drop(columns=key_columns)
@@ -148,9 +148,9 @@ xgbmodel_r = xgb.XGBRegressor()
 print("Run SVM Pipeline...")
 final_svm_pipline = svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c, target = target_column)
 
-# #Random Forest Pipeline
-# print("Run Random Forest Pipeline...")
-# final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c, target = target_column)
+#Random Forest Pipeline
+print("Run Random Forest Pipeline...")
+final_rf_pipline = rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c, target = target_column)
 
 # #XGBoost
 # print("Run XGBoost Pipeline...")
@@ -161,65 +161,71 @@ print("Run Neural Network...")
 nn_c_hyperparameters = nn_c_model(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_shape, target = target_column)
 
 opt = ''
+
 if nn_c_hyperparameters['optimizer'] == "adam":
     opt = Adam()
 elif nn_c_hyperparameters['optimizer'] == "sgd":
     opt = SGD()
+    
 hidden_units = [nn_c_hyperparameters[f'hidden_units_{i}'] for i in range(nn_c_hyperparameters["num_hidden_layers"])]
 
-def save_nn_r_model():
+def save_nn_c_model():
     model = Sequential()
-    model.add(Dense(hidden_units[0], input_dim=input_shape, activation=nn_r_hyperparameters["activation"]))
-    for i in range(1, nn_r_hyperparameters["num_hidden_layers"]):
-        model.add(Dense(hidden_units[i], activation=nn_r_hyperparameters["activation"]))
+    model.add(Dense(hidden_units[0], input_dim=input_shape, activation=nn_c_hyperparameters["activation"]))
+    for i in range(1, nn_c_hyperparameters["num_hidden_layers"]):
+        model.add(Dense(hidden_units[i], activation=nn_c_hyperparameters["activation"]))
     model.add(Dense(1, activation="sigmoid"))
-    model.compile(loss='binary_crossentropy', optimizer=opt, metrics=hyperopt_models.average_precision)
+    model.compile(loss='binary_crossentropy', optimizer=opt, metrics=[average_precision])
     return model
 
-model = KerasClassifier(build_fn=save_nn_r_model, epochs=100, batch_size=32, verbose=0)
-nn_pipeline = make_pipeline(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+model = KerasClassifier(build_fn=save_nn_c_model, epochs=100, batch_size=32, verbose=1)
+
+nn_pipeline = make_pipeline(preprocessor, pca, over_sampler, under_sampler, model)
 nn_pipeline = nn_pipeline.fit(X_train, y_train)
-pickle.dump(nn_pipeline, open('Outputs/Regression/nn_r_model.pkl', 'wb'))
+
+generate_metrics(nn_pipeline, X_test, y_test, model, target = target_column)
+
+pickle.dump(nn_pipeline, open(f'Outputs/Classification/nn_model_{target_column}.pkl', 'wb'))
 
 
-# #------------------------------------------Regression------------------------------------------#
-# #Elastic Net Pipeline
-# final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, enmodel_r)
+# # #------------------------------------------Regression------------------------------------------#
+# # #Elastic Net Pipeline
+# # final_en_pipeline = en_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, enmodel_r)
 
-# #SVM Pipeline
-# print("Regression: Run SVM Pipeline...")
-# final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
+# # #SVM Pipeline
+# # print("Regression: Run SVM Pipeline...")
+# # final_svm_pipline = svm_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, svmmodel_c)
 
-# #Random Forest Pipeline
-# print("Regression: Run Random Forest Pipeline...")
-# final_rf_pipline = rf_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
+# # #Random Forest Pipeline
+# # print("Regression: Run Random Forest Pipeline...")
+# # final_rf_pipline = rf_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, rfmodel_c)
 
-# #XGBoost
-# print("Regression: Run XGBoost Pipeline...")
-# final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
+# # #XGBoost
+# # print("Regression: Run XGBoost Pipeline...")
+# # final_xgb_pipline = xgb_r_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, xgbmodel_c)
 
-#Neural Network
-print("Regression: Run Neural Network...")
+# #Neural Network
+# print("Regression: Run Neural Network...")
 
-nn_r_hyperparameters = nn_r_model(X_train, y_train, preprocessor, pca, over_sampler, under_sampler)
+# nn_r_hyperparameters = nn_r_model(X_train, y_train, preprocessor, pca, over_sampler, under_sampler)
 
-opt_r = ''
-if nn_r_hyperparameters['optimizer'] == "adam":
-    opt_r = Adam()
-elif nn_r_hyperparameters['optimizer'] == "sgd":
-    opt_r = SGD()
-hidden_units = [nn_r_hyperparameters[f'hidden_units_{i}'] for i in range(nn_r_hyperparameters["num_hidden_layers"])]
+# opt_r = ''
+# if nn_r_hyperparameters['optimizer'] == "adam":
+#     opt_r = Adam()
+# elif nn_r_hyperparameters['optimizer'] == "sgd":
+#     opt_r = SGD()
+# hidden_units = [nn_r_hyperparameters[f'hidden_units_{i}'] for i in range(nn_r_hyperparameters["num_hidden_layers"])]
 
-def save_nn_r_model():
-    model = Sequential()
-    model.add(Dense(hidden_units[0], input_dim=input_shape, activation=nn_r_hyperparameters["activation"]))
-    for i in range(1, nn_r_hyperparameters["num_hidden_layers"]):
-        model.add(Dense(hidden_units[i], activation=nn_r_hyperparameters["activation"]))
-    model.add(Dense(1, activation="sigmoid"))
-    model.compile(loss='binary_crossentropy', optimizer=opt, metrics=hyperopt_models.average_precision)
-    return model
+# def save_nn_r_model():
+#     model = Sequential()
+#     model.add(Dense(hidden_units[0], input_dim=input_shape, activation=nn_r_hyperparameters["activation"]))
+#     for i in range(1, nn_r_hyperparameters["num_hidden_layers"]):
+#         model.add(Dense(hidden_units[i], activation=nn_r_hyperparameters["activation"]))
+#     model.add(Dense(1, activation="sigmoid"))
+#     model.compile(loss='binary_crossentropy', optimizer=opt, metrics=hyperopt_models.average_precision)
+#     return model
 
-model = KerasClassifier(build_fn=save_nn_r_model, epochs=100, batch_size=32, verbose=0)
-nn_pipeline = make_pipeline(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
-nn_pipeline = nn_pipeline.fit(X_train, y_train)
-pickle.dump(nn_pipeline, open('Outputs/Regression/nn_r_model.pkl', 'wb'))
+# model = KerasClassifier(build_fn=save_nn_r_model, epochs=100, batch_size=32, verbose=0)
+# nn_pipeline = make_pipeline(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler, under_sampler, model)
+# nn_pipeline = nn_pipeline.fit(X_train, y_train)
+# pickle.dump(nn_pipeline, open('Outputs/Regression/nn_r_model.pkl', 'wb'))
