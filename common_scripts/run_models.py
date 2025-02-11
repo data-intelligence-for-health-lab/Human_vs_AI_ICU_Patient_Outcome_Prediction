@@ -115,8 +115,8 @@ def xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sample
     pickle.dump(xgb_pipeline, open('Outputs/Classification/xgb_model.pkl', 'wb'))  # put in outputs folder
     return xgb_pipeline
 
-def nn_c_model(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim):
-    nn_c_hyperparameters = nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim)
+def nn_c_model(X_train, y_train, preprocessor, pca):
+    nn_c_hyperparameters = nn_c_hyperopt(X_train, y_train, preprocessor, pca)
     return nn_c_hyperparameters
 
 #=============================Regression models and metrics=============================#

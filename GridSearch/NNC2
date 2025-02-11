@@ -1,0 +1,194 @@
+#Old code
+import numpy as np
+import pandas as pd
+import joblib
+import os
+from datetime import datetime
+from imblearn.pipeline import make_pipeline
+from imblearn.under_sampling import RandomUnderSampler
+from imblearn.over_sampling import SMOTE
+from sklearn.compose import make_column_transformer
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.decomposition import PCA
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import (
+    accuracy_score, precision_score, recall_score, f1_score, roc_auc_score,
+    average_precision_score, confusion_matrix
+)
+from collections import Counter
+import tensorflow as tf
+from keras.wrappers.scikit_learn import KerasClassifier
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
+
+### Helper Functions ###
+
+# Create the Keras model
+def create_model(input_dim, num_hidden_layers, hidden_units, activation, optimizer, dropout_rate):
+    model = Sequential()
+    model.add(Dense(units=hidden_units[0], activation=activation, input_dim=input_dim))
+    model.add(Dropout(dropout_rate))
+    for i in range(1, num_hidden_layers):
+        model.add(Dense(units=hidden_units[i], activation=activation))
+        model.add(Dropout(dropout_rate))
+    model.add(Dense(units=1, activation='sigmoid'))
+    model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=[tf.keras.metrics.AUC()])
+    return model
+
+# Create preprocessor function
+def make_preprocessor(X_train):
+    print("Creating preprocessor...")
+    cont_feats = X_train.columns[0:1].tolist() + X_train.columns[2:].tolist()
+    gender_transformer = OneHotEncoder(drop='first')
+    cont_transformer = make_pipeline(SimpleImputer(missing_values=np.nan, strategy='median'), StandardScaler())
+
+    preprocessor = make_column_transformer(
+        (gender_transformer, ['GENDER']),
+        (cont_transformer, cont_feats),
+        sparse_threshold=0
+    )
+    return preprocessor
+
+# Train model and return the best estimator
+def train_model(X_train, y_train, preprocessor):
+    print("Training model...")
+
+    # PCA for dimensionality reduction
+    pca = PCA(n_components=100)
+
+    # Class distribution
+    class_counts = Counter(y_train)
+    print(f"Class distribution in y_train: {class_counts}")
+
+    majority_class = max(class_counts, key=class_counts.get)
+    minority_class = min(class_counts, key=class_counts.get)
+    minority_target_count = int(class_counts[majority_class] * 0.6)  # 60% of majority class size
+
+    # Configure the samplers
+    over_sampler = SMOTE(random_state=42, sampling_strategy={minority_class: minority_target_count})
+    under_sampler = RandomUnderSampler(random_state=42, sampling_strategy='auto')
+
+    # Create KerasClassifier
+    keras_model = KerasClassifier(build_fn=create_model, input_dim=100, verbose=0)
+
+    # Define pipeline
+    pipeline = make_pipeline(
+        preprocessor,
+        over_sampler,
+        under_sampler,
+        pca,
+        keras_model
+    )
+
+    # Define hyperparameter grid
+    hidden_units_combinations = [
+        [x] * i for i in range(1, 4) for x in [16, 32, 64, 128, 256]
+    ]
+    param_grid = {
+        'kerasclassifier__num_hidden_layers': [1, 2, 3],
+        'kerasclassifier__hidden_units': hidden_units_combinations,
+        'kerasclassifier__activation': ['relu', 'tanh'],
+        'kerasclassifier__optimizer': ['Adam', 'SGD'],
+        'kerasclassifier__epochs': [50, 100],
+        'kerasclassifier__batch_size': [10, 20, 50],
+        'kerasclassifier__dropout_rate': [0.2, 0.5]
+    }
+
+    # GridSearchCV with cross-validation
+    grid_search = GridSearchCV(pipeline, param_grid, cv=3, scoring='average_precision', n_jobs=-1, verbose=1)
+    grid_search.fit(X_train, y_train)
+
+    # Save the best parameters to CSV
+    date_str = datetime.now().strftime("%m%d")
+    best_params_filename = f"best_model_params_{date_str}.csv"
+    pd.DataFrame([grid_search.best_params_]).to_csv(best_params_filename, index=False)
+    print(f"Best Hyperparameters saved to {best_params_filename}")
+
+    return grid_search.best_estimator_
+
+# Evaluate the model and return metrics
+def evaluate_model(model, X_test, y_test):
+    print("Evaluating model...")
+    y_pred = model.predict(X_test)
+    y_pred_proba = model.predict_proba(X_test)[:, 1]
+
+    accuracy = accuracy_score(y_test, y_pred)
+    precision = precision_score(y_test, y_pred)
+    recall = recall_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
+    roc_auc = roc_auc_score(y_test, y_pred_proba)
+    avg_precision = average_precision_score(y_test, y_pred_proba)
+
+    print(f"Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1-Score: {f1:.4f}")
+    print(f"AUC: {roc_auc:.4f}, Average Precision: {avg_precision:.4f}")
+
+    metrics = {
+        'Accuracy': accuracy,
+        'Precision': precision,
+        'Recall': recall,
+        'F1-Score': f1,
+        'AUC': roc_auc,
+        'Average Precision': avg_precision
+    }
+    return metrics, y_pred, y_pred_proba
+
+# Save results and predictions to CSV
+def save_results(metrics, predictions, results_file, predictions_file):
+    metrics_df = pd.DataFrame([metrics])
+    if os.path.isfile(results_file):
+        existing_results = pd.read_csv(results_file)
+        updated_results = pd.concat([existing_results, metrics_df], ignore_index=True)
+    else:
+        updated_results = metrics_df
+    updated_results.to_csv(results_file, index=False)
+
+    y_pred, y_pred_proba = predictions
+    predictions_df = pd.DataFrame({'Predicted_Label': y_pred, 'Predicted_Probability': y_pred_proba})
+    predictions_df.to_csv(predictions_file, index=False)
+
+    print(f"Metrics saved to {results_file}. Predictions saved to {predictions_file}.")
+
+# Main function to run the experiment
+def run_experiment(df, target, key_columns):
+    print(f"\nRunning experiment for target: {target}")
+    test1000 = pd.read_csv("1000Patients.csv")
+    testing_ids = test1000['PATIENT_ID']
+    admission_ids = test1000['ADMISSION_ID']
+    testing_set = df[df['ADMISSION_ID'].isin(admission_ids)]
+    training_set = df[~df['PATIENT_ID'].isin(testing_ids)]
+
+    testing_set = testing_set.dropna(subset=[target])
+    training_set = training_set.dropna(subset=[target])
+
+    X_train = training_set.drop(columns=key_columns)
+    X_test = testing_set.drop(columns=key_columns)
+    y_train = training_set[target]
+    y_test = testing_set[target]
+
+    preprocessor = make_preprocessor(X_train)
+    best_model = train_model(X_train, y_train, preprocessor)
+    metrics, y_pred, y_pred_proba = evaluate_model(best_model, X_test, y_test)
+
+    date_str = datetime.now().strftime("%m%d")
+    model_dir = "GridSearch/Outputs/Classification"
+    os.makedirs(model_dir, exist_ok=True)
+
+    model_filename = os.path.join(model_dir, f"best_keras_model_{target}_{date_str}.joblib")
+    joblib.dump(best_model, model_filename)
+
+    results_file = os.path.join(model_dir, f"keras_model_{target}_results_{date_str}.csv")
+    predictions_file = os.path.join(model_dir, f"keras_model_{target}_predictions_{date_str}.csv")
+    save_results(metrics, (y_pred, y_pred_proba), results_file, predictions_file)
+
+# Load dataset
+df = pd.read_csv("final_df_818.csv")
+key_columns = [
+    'PATIENT_ID', 'ADMISSION_ID', 'ICU_LOS', 'HOSP_LOS', 
+    'ICU_EXPIRE_FLAG', 'HOSP_EXPIRE_FLAG', '30_DAYS_EXPIRE_FLAG', 
+    'DELIRIUM_LABEL','AKI_LABEL'
+]
+target_columns = ['DELIRIUM_LABEL', 'AKI_LABEL']
+
+for target in target_columns:
+    run_experiment(df, target, key_columns)

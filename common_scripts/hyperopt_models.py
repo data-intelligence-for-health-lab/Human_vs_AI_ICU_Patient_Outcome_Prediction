@@ -233,7 +233,7 @@ def average_precision(y_true, y_pred):
 def nn_c_hyperopt(X_train, y_train, preprocessor, pca, over_sampler, under_sampler, input_dim):
 
     # build model function, pass in input dimension from the main file
-    def create_model(input_dim, num_hidden_layers, hidden_units, activation, optimizer):
+    def create_model(num_hidden_layers, hidden_units, activation, optimizer):
         model = Sequential()
         model.add(Dense(units=hidden_units[0], activation=activation))
         for i in range(1, num_hidden_layers):
