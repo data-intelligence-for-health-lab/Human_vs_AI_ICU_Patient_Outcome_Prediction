@@ -36,3 +36,6 @@ Data preprocessing steps
    4. Models:
    - classification: logistic regression, SVM, Random Forest, XGBoost, NN
    - regression: Elastic net, SVM, Random Forest, XGBoost, NN
+
+5) Select best model on 1000 test samples
+6) Predicting on 1k testing set
