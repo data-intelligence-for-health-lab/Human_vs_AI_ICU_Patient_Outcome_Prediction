@@ -78,7 +78,6 @@ def lr_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler
     lr_pipeline = lr_pipeline.fit(X_train, y_train)
     model_name = 'Logistic_regression_Classification'
     generate_metrics(lr_pipeline, X_test, y_test, model_name, target)
-    #pikle dump 
     pickle.dump(lr_pipeline, open('Outputs/Classification/lr_model.pkl', 'wb')) #put in outputs folder
     return lr_pipeline
 
@@ -89,7 +88,6 @@ def svm_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sample
     svm_pipeline = svm_pipeline.fit(X_train, y_train)
     model_name = 'SVM_Classification'
     generate_metrics(svm_pipeline, X_test, y_test, model_name, target)
-    #pickle dump
     pickle.dump(svm_pipeline, open('Outputs/Classification/svm_model.pkl', 'wb')) #put in outputs folder
     return svm_pipeline
 
@@ -100,7 +98,6 @@ def rf_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sampler
     rf_pipeline = rf_pipeline.fit(X_train, y_train)
     model_name = 'RF_Classification'
     generate_metrics(rf_pipeline, X_test, y_test, model_name, target)
-    #pickle dump
     pickle.dump(rf_pipeline, open('Outputs/Classification/rf_model.pkl', 'wb'))  # put in outputs folder
     return rf_pipeline
 
@@ -111,7 +108,6 @@ def xgb_c_model(X_train, y_train, X_test, y_test, preprocessor, pca, over_sample
     xgb_pipeline = xgb_pipeline.fit(X_train, y_train)
     model_name = 'XGB_Classification'
     generate_metrics(xgb_pipeline, X_test, y_test, model_name, target)
-    # pickle dump
     pickle.dump(xgb_pipeline, open('Outputs/Classification/xgb_model.pkl', 'wb'))  # put in outputs folder
     return xgb_pipeline
 

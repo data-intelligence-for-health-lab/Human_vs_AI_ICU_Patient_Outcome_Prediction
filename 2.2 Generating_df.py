@@ -6,13 +6,13 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-engine = create_engine('postgresql+psycopg2://lu.kuang:EFTd66Qa3QhnMeA7\@10.44.113.30/ABeICU')
+engine = create_engine('postgresql+psycopg2://username:password\@hostname/ABeICU')
 
 # Connect to the database (last updated 2024.5.13)
-master_df = pd.read_sql_query('Select * from "lu.kuang".final_mastertable',con=engine)
-interventions_df = pd.read_sql_query('SELECT * FROM "lu.kuang".intervention_24_agg',con=engine)
-measurements_df = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_24_agg',con=engine)
-prescription_df = pd.read_sql_query('SELECT * FROM "lu.kuang".final_prescriptions',con=engine)
+master_df = pd.read_sql_query('Select * from "username".final_mastertable',con=engine)
+interventions_df = pd.read_sql_query('SELECT * FROM "username".intervention_24_agg',con=engine)
+measurements_df = pd.read_sql_query('SELECT * FROM "username".measurements_24_agg',con=engine)
+prescription_df = pd.read_sql_query('SELECT * FROM "username".final_prescriptions',con=engine)
 
 #=========================Interventions========================#
 # Select the desired columns
@@ -41,7 +41,7 @@ selected_interventions_columns = nan_percentage_interventions[nan_percentage_int
 interventions_final_df = pivoted_interventions_df[selected_interventions_columns]
 
 #interventions_value_char
-interventions_value_char = pd.read_sql_query('SELECT * FROM "lu.kuang".interventions_value_char',con=engine)
+interventions_value_char = pd.read_sql_query('SELECT * FROM "username".interventions_value_char',con=engine)
 selected_interventions_vc = interventions_value_char.columns[4]
 pivoted_interventions_vc = interventions_value_char.pivot_table(index='ADMISSION_ID', columns=['ITEM_ID','VALUE_CHAR'], values=selected_interventions_vc)
 
@@ -75,7 +75,7 @@ measurements_selected_columns = nan_percentage_measurements[nan_percentage_measu
 measurements_final_df = pivoted_measurements_df[measurements_selected_columns]
 
 #measurements_value_char
-measurements_value_char = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_value_char',con=engine)
+measurements_value_char = pd.read_sql_query('SELECT * FROM "username".measurements_value_char',con=engine)
 # Select the columns from measurements
 selected_measurements_vc = measurements_value_char.columns[4]
 pivoted_measurements_vc = measurements_value_char.pivot_table(index='ADMISSION_ID', columns=['ITEM_ID','VALUE_CHAR'], values=selected_measurements_vc)

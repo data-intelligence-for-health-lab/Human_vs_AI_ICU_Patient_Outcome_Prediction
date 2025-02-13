@@ -1,3 +1,4 @@
+--This script creates a table that flags delirium for each patient at 24 hours, 24-48 hours, and 48 hours plus
 SELECT 
         M."ADMISSION_ID",
         -- Delirium flag for <= 24 hours

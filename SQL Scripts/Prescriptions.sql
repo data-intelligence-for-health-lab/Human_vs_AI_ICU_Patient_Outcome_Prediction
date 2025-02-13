@@ -1,3 +1,4 @@
+--This script is used for engineering features from the prescriptions table
 DROP TABLE IF EXISTS "lu.kuang".final_prescriptions;
 CREATE TABLE IF NOT EXISTS "lu.kuang".final_prescriptions AS
 SELECT 

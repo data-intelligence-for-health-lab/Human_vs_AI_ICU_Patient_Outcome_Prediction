@@ -1,3 +1,4 @@
+--This table prepares the raw data for AKI flag to be derived in AKI.py
 SELECT 
     M."ADMISSION_ID", 
     M."ITEM_ID", 
