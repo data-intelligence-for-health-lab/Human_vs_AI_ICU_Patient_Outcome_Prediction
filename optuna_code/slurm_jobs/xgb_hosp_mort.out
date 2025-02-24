@@ -1,0 +1,6019 @@
+1. Cleaning dataset...
+2. Splitting dataset...
+3. Tunning model...
+Tuned Hyperparameters: {'C': 0.005519575875891575, 'kernel': 'linear', 'gamma': 8.349765554159637, 'class_weight': None}
+[03:01:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+getting boostrapped metrics...
+[23:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:22:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:27:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:32:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:37:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:42:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:46:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:51:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:56:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:00:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:05:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:09:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:14:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:18:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:27:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:31:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:36:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:40:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:44:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:49:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:53:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:57:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:01:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:06:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:10:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:14:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:19:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:23:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:27:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:31:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:36:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:40:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:44:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:48:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:53:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:57:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:01:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:05:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:10:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:14:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:18:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:22:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:27:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:31:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:35:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:39:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:44:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:48:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:52:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:56:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+Running bootstrapped performance analysis (1000 iterations)... |¸.·´¯`·.·´¯`·.¸¸.·´¯`·.¸.·´¯`·.·´¯`·.¸¸.| 1000/1000 [100%] in 1:24.8 (11.79/s) 
+              Model  ...     Median ROC AUC [95% CI]
+0  HOSP_EXPIRE_FLAG  ...  [0.8532, [0.8524, 0.8542]]
+
+[1 rows x 9 columns]
+Metrics saved to: /home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/output/classification/bootstrap_metrics_HOSP_EXPIRE_FLAG_XGB_C_C005.csv
+save_output_model /home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/output/classification/xgb_c_model_HOSP_EXPIRE_FLAG_C005.pkl
+Model saved at: /home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/output/classification/xgb_c_model_HOSP_EXPIRE_FLAG_C005.pkl
+Best parameters saved in: /home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/output/classification/best_params_xgb_c_model_HOSP_EXPIRE_FLAG_C005.csv
+
+Total Execution Time: 13267.03 seconds
+[23:23:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:02] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:02:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:23:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:02:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:23:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:11:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:23:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:11:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:58] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:23:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:33:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:43:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:48:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:52:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:57:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:01:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:06:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:10:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:15:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:20:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:24:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:28:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:33:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:37:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:41:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:45:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:50:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:54:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:58:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:03:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:07:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:11:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:15:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:20:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:24:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:28:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:32:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:37:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:41:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:45:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:49:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:54:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:58:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:02:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:06:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:11:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:15:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:19:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:24:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:28:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:32:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:36:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:40:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:45:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:49:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:53:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:57:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:39:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:02] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:17:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:39:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:39:59] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:55] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:24:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:30:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:40:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:44:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:49:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:54:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:58:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:03:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:07:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[00:12:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:16:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:21:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:25:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:34:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:38:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:42:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:46:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:51:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:55:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:59:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:04:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:08:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:12:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:16:57] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:29:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:34:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:42:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:46:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:51:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:55:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[01:59:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:03:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:08:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:12:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:16:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:20:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:25:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:29:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:33:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:37:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:42:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:50:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:54:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:59:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:02] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:02] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:28] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:22] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:43] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:31] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:14] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:26:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:31:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[23:36:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:41:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:45:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:50:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:55:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[23:59:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:04:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:08:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:13:18] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:17:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:22:17] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:26:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:30:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:39:27] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:43:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:48:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:52:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[00:56:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:00:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:05:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:09:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:13:40] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:18:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:22:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:26:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:30:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:35:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:39:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:43:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:47:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:52:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[01:56:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:00:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:04:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:09:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:13:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:17:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:21:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:30:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:34:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:38:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:43:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:47:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+
+[02:51:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[02:55:49] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "kernel" } are not used.
+
+[03:00:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "C", "class_weight", "kernel" } are not used.
+

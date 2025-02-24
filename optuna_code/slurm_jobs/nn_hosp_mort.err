@@ -1,0 +1,49 @@
+[I 2025-02-22 02:28:21,501] Using an existing study with name 'C002_C_HOSP_EXPIRE_FLAG_NN_C' instead of creating a new one.
+[W 2025-02-22 02:29:04,607] Trial 8 failed with parameters: {'hidden_units': 57, 'num_layers': 3, 'dropout_rate': 0.39279757672456206, 'lr': 0.0024810409748678114, 'batch_size': 128, 'epochs': 64} because of the following error: RuntimeError('Found dtype Long but expected Float').
+Traceback (most recent call last):
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 45, in <lambda>
+    study.optimize(lambda trial: objectives.get(mname)(trial, X_train, y_train), n_trials=200)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 287, in nn_c_objective
+    loss = criterion(y_pred, y_batch)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 697, in forward
+    return F.binary_cross_entropy(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/functional.py", line 3554, in binary_cross_entropy
+    return torch._C._nn.binary_cross_entropy(input, target, weight, reduction_enum)
+RuntimeError: Found dtype Long but expected Float
+[W 2025-02-22 02:29:04,608] Trial 8 failed with value None.
+Traceback (most recent call last):
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/main.py", line 93, in <module>
+    best_params_df = nn_c_model(
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/final_models.py", line 278, in nn_c_model
+    nn_c_hyperparameters = tune_c_hyperparameters(
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 45, in tune_c_hyperparameters
+    study.optimize(lambda trial: objectives.get(mname)(trial, X_train, y_train), n_trials=200)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 45, in <lambda>
+    study.optimize(lambda trial: objectives.get(mname)(trial, X_train, y_train), n_trials=200)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 287, in nn_c_objective
+    loss = criterion(y_pred, y_batch)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 697, in forward
+    return F.binary_cross_entropy(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/torch/nn/functional.py", line 3554, in binary_cross_entropy
+    return torch._C._nn.binary_cross_entropy(input, target, weight, reduction_enum)
+RuntimeError: Found dtype Long but expected Float

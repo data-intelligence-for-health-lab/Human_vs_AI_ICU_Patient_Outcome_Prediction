@@ -1,0 +1,603 @@
+[I 2025-02-23 23:21:34,243] Using an existing study with name 'C005_C_HOSP_EXPIRE_FLAG_XGB_C' instead of creating a new one.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:22:50,463] Trial 1 finished with value: 0.38085881864383264 and parameters: {'C': 0.0017670169402947942, 'kernel': 'linear', 'gamma': 22.654823987863484, 'class_weight': None}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:24:15,112] Trial 2 finished with value: 0.1724742493973263 and parameters: {'C': 1.574189004745663, 'kernel': 'rbf', 'gamma': 265784674.1471172, 'class_weight': None}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:25:21,443] Trial 3 finished with value: 0.28571320053694943 and parameters: {'C': 0.00012329623163659834, 'kernel': 'sigmoid', 'gamma': 5647.1166861235915, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:27:00,209] Trial 4 finished with value: 0.1724742493973263 and parameters: {'C': 6.870101665590028e-05, 'kernel': 'sigmoid', 'gamma': 6606200.448419491, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:28:03,339] Trial 5 finished with value: 0.3794712955770024 and parameters: {'C': 0.035849855803404704, 'kernel': 'rbf', 'gamma': 3.673084821083762, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:29:27,537] Trial 6 finished with value: 0.22097204515254476 and parameters: {'C': 0.7085721663941598, 'kernel': 'sigmoid', 'gamma': 6654.508506222648, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:30:33,551] Trial 7 finished with value: 0.32319126415672284 and parameters: {'C': 1.6081669283634658e-05, 'kernel': 'linear', 'gamma': 509.90351512356926, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:31:59,287] Trial 8 finished with value: 0.1724742493973263 and parameters: {'C': 0.0001285661779146793, 'kernel': 'linear', 'gamma': 59206802.98581911, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:33:04,185] Trial 9 finished with value: 0.3012853035030759 and parameters: {'C': 3.395900933162749e-05, 'kernel': 'sigmoid', 'gamma': 2376.884305738444, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:34:28,908] Trial 10 finished with value: 0.1724742493973263 and parameters: {'C': 0.0013820379228636995, 'kernel': 'rbf', 'gamma': 9285267.990432939, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.38085881864383264.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:35:32,050] Trial 11 finished with value: 0.3841675713824294 and parameters: {'C': 0.012077586104401098, 'kernel': 'linear', 'gamma': 1.1629343072294114, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:36:53,293] Trial 12 finished with value: 0.38330291012720663 and parameters: {'C': 0.012031776058563598, 'kernel': 'linear', 'gamma': 1.343453991526703, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:37:57,902] Trial 13 finished with value: 0.3801785312274519 and parameters: {'C': 0.05771675016273914, 'kernel': 'linear', 'gamma': 1.3702089418946455, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:39:21,838] Trial 14 finished with value: 0.3593513522990769 and parameters: {'C': 0.005943845587123152, 'kernel': 'linear', 'gamma': 68.99761556661518, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:40:27,026] Trial 15 finished with value: 0.3635094228497241 and parameters: {'C': 0.13782961406712257, 'kernel': 'linear', 'gamma': 61.69859672239111, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:41:44,881] Trial 16 finished with value: 0.1724742493973263 and parameters: {'C': 0.007525158069264738, 'kernel': 'linear', 'gamma': 195140.9249683186, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:42:50,133] Trial 17 finished with value: 0.1724742493973263 and parameters: {'C': 0.001218429998278867, 'kernel': 'linear', 'gamma': 260994.18598010964, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:44:12,386] Trial 18 finished with value: 0.3795455018960604 and parameters: {'C': 6.377036471267995, 'kernel': 'linear', 'gamma': 1.0712266228471699, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:45:15,094] Trial 19 finished with value: 0.3840362927195197 and parameters: {'C': 0.1459862955236872, 'kernel': 'linear', 'gamma': 12.298562657835454, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:46:19,398] Trial 20 finished with value: 0.3807037288213664 and parameters: {'C': 0.30724882218283944, 'kernel': 'rbf', 'gamma': 16.058796228198556, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:47:25,519] Trial 21 finished with value: 0.3413579422868658 and parameters: {'C': 9.73654458954052, 'kernel': 'linear', 'gamma': 249.43789298974718, 'class_weight': None}. Best is trial 11 with value: 0.3841675713824294.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:48:47,452] Trial 22 finished with value: 0.38445922893900564 and parameters: {'C': 0.03834442888436631, 'kernel': 'linear', 'gamma': 3.6022062830718964, 'class_weight': None}. Best is trial 22 with value: 0.38445922893900564.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:49:50,353] Trial 23 finished with value: 0.3857469855290205 and parameters: {'C': 0.034684125777523334, 'kernel': 'linear', 'gamma': 10.1449901184963, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:50:56,626] Trial 24 finished with value: 0.33635538969816364 and parameters: {'C': 0.0364504669828454, 'kernel': 'linear', 'gamma': 313.6901510766979, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:51:59,108] Trial 25 finished with value: 0.383934656941111 and parameters: {'C': 0.01613783611780352, 'kernel': 'linear', 'gamma': 7.5882884572497975, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:53:23,139] Trial 26 finished with value: 0.35553374629193674 and parameters: {'C': 0.002961388036997271, 'kernel': 'linear', 'gamma': 109.2757602905632, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:54:26,449] Trial 27 finished with value: 0.3815721782716081 and parameters: {'C': 0.0919160347863144, 'kernel': 'linear', 'gamma': 4.314437224098314, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:55:31,463] Trial 28 finished with value: 0.30924137729850054 and parameters: {'C': 0.0006078220707126423, 'kernel': 'linear', 'gamma': 1122.1987568397533, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:56:36,639] Trial 29 finished with value: 0.1724742493973263 and parameters: {'C': 0.0003928460412881467, 'kernel': 'sigmoid', 'gamma': 60559.94112935326, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:57:56,347] Trial 30 finished with value: 0.38000569738120493 and parameters: {'C': 0.6147429675761059, 'kernel': 'rbf', 'gamma': 19.729368170789154, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-23 23:59:01,943] Trial 31 finished with value: 0.37265231685577144 and parameters: {'C': 0.019718824921733005, 'kernel': 'linear', 'gamma': 43.57549410085161, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:00:04,502] Trial 32 finished with value: 0.38530076668380897 and parameters: {'C': 0.1807360662794486, 'kernel': 'linear', 'gamma': 8.180516973350288, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:01:07,955] Trial 33 finished with value: 0.3832988337124136 and parameters: {'C': 1.9150707953817656, 'kernel': 'linear', 'gamma': 5.516300185998772, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:02:29,523] Trial 34 finished with value: 0.37849285841274005 and parameters: {'C': 0.0042072458502920495, 'kernel': 'linear', 'gamma': 2.876735913373252, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:03:33,177] Trial 35 finished with value: 0.3802856233243579 and parameters: {'C': 0.27896144120934585, 'kernel': 'linear', 'gamma': 17.64631768037672, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:04:36,202] Trial 36 finished with value: 0.37772944013443976 and parameters: {'C': 0.034673418670727416, 'kernel': 'rbf', 'gamma': 3.536043651622088, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:05:41,672] Trial 37 finished with value: 0.3519687614927379 and parameters: {'C': 0.06717838061430514, 'kernel': 'sigmoid', 'gamma': 135.7621979490351, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:07:04,943] Trial 38 finished with value: 0.3708390503163729 and parameters: {'C': 1.6897495743640145, 'kernel': 'linear', 'gamma': 28.366574405078648, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:08:09,842] Trial 39 finished with value: 0.1724742493973263 and parameters: {'C': 0.5797297964726114, 'kernel': 'linear', 'gamma': 11031.2781892563, 'class_weight': 'balanced'}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:09:14,599] Trial 40 finished with value: 0.309860138738558 and parameters: {'C': 0.02381966528152343, 'kernel': 'sigmoid', 'gamma': 1164.518714224174, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:10:17,863] Trial 41 finished with value: 0.3810155142045579 and parameters: {'C': 0.288462496603128, 'kernel': 'rbf', 'gamma': 2.435650209997895, 'class_weight': 'balanced'}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:11:37,304] Trial 42 finished with value: 0.3817794434509843 and parameters: {'C': 0.1305823717085976, 'kernel': 'linear', 'gamma': 9.155407584764632, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:12:39,816] Trial 43 finished with value: 0.385305523898108 and parameters: {'C': 0.10538032820436695, 'kernel': 'linear', 'gamma': 9.181195198888542, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:13:42,728] Trial 44 finished with value: 0.3820375260844422 and parameters: {'C': 0.043285414921887734, 'kernel': 'linear', 'gamma': 1.2295694055981399, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:14:47,953] Trial 45 finished with value: 0.37207178072009583 and parameters: {'C': 0.008116634619793823, 'kernel': 'linear', 'gamma': 33.327892187671104, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:16:09,339] Trial 46 finished with value: 0.38393969880280376 and parameters: {'C': 0.011424333322505897, 'kernel': 'linear', 'gamma': 5.246773115529516, 'class_weight': 'balanced'}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:17:15,032] Trial 47 finished with value: 0.1724742493973263 and parameters: {'C': 0.07904003671211968, 'kernel': 'linear', 'gamma': 2456724.338009605, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:18:19,787] Trial 48 finished with value: 0.1724742493973263 and parameters: {'C': 0.003185418690439734, 'kernel': 'sigmoid', 'gamma': 157014233.27378315, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:19:22,942] Trial 49 finished with value: 0.3816288101945023 and parameters: {'C': 0.24193717421711997, 'kernel': 'linear', 'gamma': 2.308652360737372, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:20:36,052] Trial 50 finished with value: 0.3558568033462323 and parameters: {'C': 0.9929002004777564, 'kernel': 'linear', 'gamma': 107.30804957573706, 'class_weight': 'balanced'}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:21:38,170] Trial 51 finished with value: 0.38093345387935007 and parameters: {'C': 0.023725176548613145, 'kernel': 'linear', 'gamma': 9.99808851818927, 'class_weight': None}. Best is trial 23 with value: 0.3857469855290205.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:22:41,258] Trial 52 finished with value: 0.3871667211403488 and parameters: {'C': 0.15651455002967332, 'kernel': 'linear', 'gamma': 12.070904631931569, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:23:47,622] Trial 53 finished with value: 0.37024222397194295 and parameters: {'C': 0.14906418327085494, 'kernel': 'linear', 'gamma': 42.39410416359377, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:24:49,484] Trial 54 finished with value: 0.38596414705255233 and parameters: {'C': 0.06794446210153599, 'kernel': 'linear', 'gamma': 10.271695935265743, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:25:54,638] Trial 55 finished with value: 0.3389361561846611 and parameters: {'C': 0.05499911578806451, 'kernel': 'linear', 'gamma': 272.90454742243486, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:26:57,163] Trial 56 finished with value: 0.386510983924089 and parameters: {'C': 0.4718918149446239, 'kernel': 'linear', 'gamma': 12.548542986419971, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:28:02,857] Trial 57 finished with value: 0.3122783945742041 and parameters: {'C': 3.292855462865389, 'kernel': 'linear', 'gamma': 831.4235506876247, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:29:08,013] Trial 58 finished with value: 0.28825218776681405 and parameters: {'C': 0.4899778644547031, 'kernel': 'rbf', 'gamma': 3697.7032213867597, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:30:13,231] Trial 59 finished with value: 0.3554820237993507 and parameters: {'C': 1.0170962142367697, 'kernel': 'linear', 'gamma': 81.2207437713481, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:31:16,985] Trial 60 finished with value: 0.38596005426985647 and parameters: {'C': 0.1969389938798525, 'kernel': 'linear', 'gamma': 14.147189930292074, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:32:22,325] Trial 61 finished with value: 0.34187086366103114 and parameters: {'C': 0.40541454864663984, 'kernel': 'linear', 'gamma': 172.5190825639525, 'class_weight': 'balanced'}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:33:25,966] Trial 62 finished with value: 0.38596005426985647 and parameters: {'C': 0.19052136853425078, 'kernel': 'linear', 'gamma': 14.140075737675536, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:34:29,929] Trial 63 finished with value: 0.3837853615090998 and parameters: {'C': 0.0973942096096981, 'kernel': 'linear', 'gamma': 19.268836596967436, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:35:36,039] Trial 64 finished with value: 0.3652827438111788 and parameters: {'C': 0.204735548510648, 'kernel': 'linear', 'gamma': 54.75995855237703, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:36:38,923] Trial 65 finished with value: 0.38598726057399 and parameters: {'C': 0.12140850151621348, 'kernel': 'linear', 'gamma': 15.261013894958014, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:37:42,880] Trial 66 finished with value: 0.38134237221691275 and parameters: {'C': 0.9454930577261655, 'kernel': 'linear', 'gamma': 15.929124273521396, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:38:48,448] Trial 67 finished with value: 0.3267577938825348 and parameters: {'C': 0.43235313317973967, 'kernel': 'linear', 'gamma': 448.48473641233255, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:39:51,294] Trial 68 finished with value: 0.37944126023366154 and parameters: {'C': 0.0579394048295946, 'kernel': 'sigmoid', 'gamma': 2.1286286212050305, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:40:56,477] Trial 69 finished with value: 0.37165355628316327 and parameters: {'C': 0.1990579725983345, 'kernel': 'linear', 'gamma': 31.713957699517817, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:41:59,895] Trial 70 finished with value: 0.3827207151503837 and parameters: {'C': 2.7865585567696476, 'kernel': 'linear', 'gamma': 5.642565355605256, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:43:05,701] Trial 71 finished with value: 0.35827325932830345 and parameters: {'C': 0.3836079283915116, 'kernel': 'rbf', 'gamma': 69.92031755437917, 'class_weight': None}. Best is trial 52 with value: 0.3871667211403488.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:44:08,684] Trial 72 finished with value: 0.38852765034989817 and parameters: {'C': 0.10820755724318674, 'kernel': 'linear', 'gamma': 8.360199235161, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:45:12,900] Trial 73 finished with value: 0.38617986160862805 and parameters: {'C': 0.10773636518552396, 'kernel': 'linear', 'gamma': 13.545612412480578, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:46:16,125] Trial 74 finished with value: 0.37863568264455577 and parameters: {'C': 0.10594889140274302, 'kernel': 'linear', 'gamma': 19.848046286357853, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:47:22,226] Trial 75 finished with value: 0.3729755644390636 and parameters: {'C': 0.14974523216619795, 'kernel': 'linear', 'gamma': 31.3906703777434, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:48:25,680] Trial 76 finished with value: 0.38060211220025697 and parameters: {'C': 0.754680547851441, 'kernel': 'linear', 'gamma': 2.045074349945503, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:49:29,268] Trial 77 finished with value: 0.3804601770776024 and parameters: {'C': 0.2797545587431494, 'kernel': 'linear', 'gamma': 4.266162001791369, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:50:32,301] Trial 78 finished with value: 0.38730707710930234 and parameters: {'C': 0.07311684443683629, 'kernel': 'linear', 'gamma': 13.032892743053658, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:51:35,460] Trial 79 finished with value: 0.38553830662966326 and parameters: {'C': 0.06915097890698885, 'kernel': 'linear', 'gamma': 6.45004932738514, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:52:40,961] Trial 80 finished with value: 0.34020385997871166 and parameters: {'C': 0.01693938930204068, 'kernel': 'linear', 'gamma': 188.89841910824947, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:53:44,251] Trial 81 finished with value: 0.3826775610296035 and parameters: {'C': 0.028857805637038363, 'kernel': 'sigmoid', 'gamma': 1.444650037055466, 'class_weight': 'balanced'}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:54:48,825] Trial 82 finished with value: 0.38840994134655327 and parameters: {'C': 0.0533116641868018, 'kernel': 'linear', 'gamma': 14.072998609060226, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:55:52,947] Trial 83 finished with value: 0.38664441560715956 and parameters: {'C': 0.11933540319173293, 'kernel': 'linear', 'gamma': 12.595543540258575, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:56:58,137] Trial 84 finished with value: 0.36678824600150883 and parameters: {'C': 0.04321018931057504, 'kernel': 'linear', 'gamma': 48.36298796626386, 'class_weight': None}. Best is trial 72 with value: 0.38852765034989817.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:58:01,173] Trial 85 finished with value: 0.3899272600645878 and parameters: {'C': 0.085037350570618, 'kernel': 'linear', 'gamma': 3.594707561526458, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 00:59:04,823] Trial 86 finished with value: 0.381233223689266 and parameters: {'C': 0.1067823494799714, 'kernel': 'linear', 'gamma': 3.613877913028132, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:00:10,461] Trial 87 finished with value: 0.1724742493973263 and parameters: {'C': 0.050004641979450315, 'kernel': 'linear', 'gamma': 58086.24418032573, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:01:16,489] Trial 88 finished with value: 0.1724742493973263 and parameters: {'C': 0.1433774136989774, 'kernel': 'linear', 'gamma': 2280611.728144143, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:02:22,439] Trial 89 finished with value: 0.38197657248411143 and parameters: {'C': 0.3108890394964935, 'kernel': 'linear', 'gamma': 24.47449761289876, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:03:25,632] Trial 90 finished with value: 0.3845488522773445 and parameters: {'C': 0.08177066579508521, 'kernel': 'linear', 'gamma': 7.03913424262035, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:04:31,709] Trial 91 finished with value: 0.35757335605900586 and parameters: {'C': 0.029885000772138064, 'kernel': 'rbf', 'gamma': 92.39386156265623, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:05:35,842] Trial 92 finished with value: 0.38469307911825557 and parameters: {'C': 0.06319306284975497, 'kernel': 'linear', 'gamma': 1.0451857654024888, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:06:39,632] Trial 93 finished with value: 0.38733397168852157 and parameters: {'C': 1.639649119986868e-05, 'kernel': 'linear', 'gamma': 10.409916487532875, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:07:42,960] Trial 94 finished with value: 0.38242482051935406 and parameters: {'C': 9.056305379478435e-05, 'kernel': 'linear', 'gamma': 3.6914633862557333, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:08:46,127] Trial 95 finished with value: 0.38408741523567125 and parameters: {'C': 0.0006035589656095498, 'kernel': 'linear', 'gamma': 11.32151785654561, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:09:50,114] Trial 96 finished with value: 0.3810273310584975 and parameters: {'C': 0.0001806875461368718, 'kernel': 'linear', 'gamma': 1.8362587942858672, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:10:53,439] Trial 97 finished with value: 0.3825715625167914 and parameters: {'C': 0.09420964534498139, 'kernel': 'linear', 'gamma': 6.978717944416073, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:11:58,036] Trial 98 finished with value: 0.3755077617782504 and parameters: {'C': 2.1804207783796103e-05, 'kernel': 'linear', 'gamma': 27.913361594249206, 'class_weight': 'balanced'}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:13:01,460] Trial 99 finished with value: 0.3807601257466081 and parameters: {'C': 3.860893439768909e-05, 'kernel': 'linear', 'gamma': 3.0213933963262187, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:14:08,031] Trial 100 finished with value: 0.36902806262473076 and parameters: {'C': 0.13139129980753037, 'kernel': 'linear', 'gamma': 45.27723785028054, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:15:12,243] Trial 101 finished with value: 0.38597620470051375 and parameters: {'C': 0.32228708700427816, 'kernel': 'sigmoid', 'gamma': 13.845586220044709, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:16:18,243] Trial 102 finished with value: 0.3776183540132133 and parameters: {'C': 0.32948472662495104, 'kernel': 'sigmoid', 'gamma': 22.390446181418305, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:17:24,157] Trial 103 finished with value: 0.3820130249135498 and parameters: {'C': 0.6262417325423968, 'kernel': 'sigmoid', 'gamma': 13.119558219913484, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:18:27,010] Trial 104 finished with value: 0.38724062065932385 and parameters: {'C': 0.21407812091530726, 'kernel': 'sigmoid', 'gamma': 8.588468341645985, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:19:29,996] Trial 105 finished with value: 0.3851753252623431 and parameters: {'C': 0.1580947081557826, 'kernel': 'sigmoid', 'gamma': 6.099050998591618, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:20:32,498] Trial 106 finished with value: 0.38320672823503504 and parameters: {'C': 0.24144424686706117, 'kernel': 'sigmoid', 'gamma': 8.741972985947722, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:21:36,095] Trial 107 finished with value: 0.3849863197828167 and parameters: {'C': 0.11336105922202522, 'kernel': 'linear', 'gamma': 5.174586528760379, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:22:40,890] Trial 108 finished with value: 0.38204161001664677 and parameters: {'C': 0.04723752449454647, 'kernel': 'linear', 'gamma': 3.257657749950084, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:23:46,426] Trial 109 finished with value: 0.36493992295637173 and parameters: {'C': 0.08285052369435587, 'kernel': 'rbf', 'gamma': 55.03403447985832, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:24:51,959] Trial 110 finished with value: 0.37207178072009583 and parameters: {'C': 0.013586672946017246, 'kernel': 'linear', 'gamma': 33.31756846045477, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:25:57,830] Trial 111 finished with value: 0.3814622878833561 and parameters: {'C': 0.001590789869572052, 'kernel': 'linear', 'gamma': 19.641995483320425, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:27:01,489] Trial 112 finished with value: 0.38385207893786055 and parameters: {'C': 1.3286626736284217, 'kernel': 'sigmoid', 'gamma': 12.832321371151725, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:28:04,686] Trial 113 finished with value: 0.3864297939983111 and parameters: {'C': 0.24460837070080174, 'kernel': 'sigmoid', 'gamma': 9.25291150435762, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:29:07,390] Trial 114 finished with value: 0.37965151430388916 and parameters: {'C': 0.5009878848400586, 'kernel': 'sigmoid', 'gamma': 9.041085105354245, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:30:10,926] Trial 115 finished with value: 0.3799972568095543 and parameters: {'C': 0.23398066887504496, 'kernel': 'sigmoid', 'gamma': 4.642629930722623, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:31:14,608] Trial 116 finished with value: 0.3820595942921945 and parameters: {'C': 0.17010308643918007, 'kernel': 'sigmoid', 'gamma': 1.6080642364696272, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:32:18,355] Trial 117 finished with value: 0.37804723182966465 and parameters: {'C': 0.12778018988213155, 'kernel': 'sigmoid', 'gamma': 2.394542064668101, 'class_weight': 'balanced'}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:33:22,052] Trial 118 finished with value: 0.38141498656097605 and parameters: {'C': 0.07265466927585304, 'kernel': 'linear', 'gamma': 18.738410384841576, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:34:27,686] Trial 119 finished with value: 0.1724742493973263 and parameters: {'C': 0.762600410287918, 'kernel': 'linear', 'gamma': 32438247.154159494, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:35:32,511] Trial 120 finished with value: 0.37138570830335993 and parameters: {'C': 0.40551786312048405, 'kernel': 'linear', 'gamma': 38.3315575165012, 'class_weight': None}. Best is trial 85 with value: 0.3899272600645878.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:36:35,304] Trial 121 finished with value: 0.3916332493668341 and parameters: {'C': 0.005519575875891575, 'kernel': 'linear', 'gamma': 8.349765554159637, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:37:38,134] Trial 122 finished with value: 0.3882242563855156 and parameters: {'C': 0.00024407744206734615, 'kernel': 'linear', 'gamma': 8.872167565709805, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:38:41,513] Trial 123 finished with value: 0.38476171642186496 and parameters: {'C': 0.00022027173597952452, 'kernel': 'linear', 'gamma': 4.928273649258091, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:39:43,934] Trial 124 finished with value: 0.38422844850870264 and parameters: {'C': 0.007392379360775625, 'kernel': 'linear', 'gamma': 7.786996058782288, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:40:46,557] Trial 125 finished with value: 0.3822054352252485 and parameters: {'C': 1.657220857951914e-05, 'kernel': 'linear', 'gamma': 10.042463720584259, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:41:49,941] Trial 126 finished with value: 0.38560511912048806 and parameters: {'C': 1.0615093358436102e-05, 'kernel': 'linear', 'gamma': 2.6393106692053157, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:42:56,306] Trial 127 finished with value: 0.37323229637327077 and parameters: {'C': 0.0006721419359893539, 'kernel': 'linear', 'gamma': 26.675868760305672, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:44:00,053] Trial 128 finished with value: 0.384665238520533 and parameters: {'C': 0.00503896843266732, 'kernel': 'linear', 'gamma': 6.229334392381214, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:45:03,713] Trial 129 finished with value: 0.38146862529538217 and parameters: {'C': 0.000305169706397271, 'kernel': 'linear', 'gamma': 3.752707369231455, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:46:09,442] Trial 130 finished with value: 0.36001032000254285 and parameters: {'C': 0.021774765181963283, 'kernel': 'sigmoid', 'gamma': 70.22854292650122, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:47:12,051] Trial 131 finished with value: 0.38462030368515965 and parameters: {'C': 5.1180025122847746e-05, 'kernel': 'linear', 'gamma': 10.044732416220436, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:48:14,477] Trial 132 finished with value: 0.38446111549693757 and parameters: {'C': 9.61322829253448e-05, 'kernel': 'linear', 'gamma': 7.277170731211507, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:49:17,565] Trial 133 finished with value: 0.38388935905920507 and parameters: {'C': 0.0023139598914569816, 'kernel': 'linear', 'gamma': 15.5228800062289, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:50:22,256] Trial 134 finished with value: 0.3844023360483805 and parameters: {'C': 0.19552429547786263, 'kernel': 'linear', 'gamma': 14.743482234286626, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:51:27,131] Trial 135 finished with value: 0.37690092105045203 and parameters: {'C': 0.031992919602509405, 'kernel': 'linear', 'gamma': 23.704175380159278, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:52:31,611] Trial 136 finished with value: 0.38158662254490755 and parameters: {'C': 0.05556053104439106, 'kernel': 'linear', 'gamma': 4.459986658865012, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:53:34,550] Trial 137 finished with value: 0.38803778609589223 and parameters: {'C': 0.09471807592269706, 'kernel': 'rbf', 'gamma': 11.08008028460214, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:54:37,507] Trial 138 finished with value: 0.39033259614575155 and parameters: {'C': 0.0009260207510728671, 'kernel': 'rbf', 'gamma': 10.532349448093292, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:55:41,225] Trial 139 finished with value: 0.3842731689975747 and parameters: {'C': 0.001086366090706145, 'kernel': 'rbf', 'gamma': 1.678751887461832, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:56:46,952] Trial 140 finished with value: 0.1724742493973263 and parameters: {'C': 0.0010181852912283526, 'kernel': 'rbf', 'gamma': 406934.1740540727, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:57:49,474] Trial 141 finished with value: 0.38497564545543195 and parameters: {'C': 0.003479733696940289, 'kernel': 'rbf', 'gamma': 9.986139557702755, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:58:53,822] Trial 142 finished with value: 0.38164523436622133 and parameters: {'C': 0.08665201947816038, 'kernel': 'rbf', 'gamma': 21.194272690956417, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 01:59:57,275] Trial 143 finished with value: 0.388141774083304 and parameters: {'C': 0.2355060087912934, 'kernel': 'rbf', 'gamma': 7.503546559060768, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:01:00,452] Trial 144 finished with value: 0.3910755585693824 and parameters: {'C': 0.25205630896339815, 'kernel': 'rbf', 'gamma': 6.4614704007454264, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:02:03,918] Trial 145 finished with value: 0.3793072867768874 and parameters: {'C': 0.0003963222482410464, 'kernel': 'rbf', 'gamma': 2.938773434893635, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:03:07,547] Trial 146 finished with value: 0.3821825266562594 and parameters: {'C': 0.16150186567175065, 'kernel': 'rbf', 'gamma': 5.268895831251597, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:04:10,337] Trial 147 finished with value: 0.38199683195105666 and parameters: {'C': 0.04117816317087975, 'kernel': 'rbf', 'gamma': 6.601080340908783, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:05:17,604] Trial 148 finished with value: 0.3671624462376079 and parameters: {'C': 0.009828858253923656, 'kernel': 'rbf', 'gamma': 37.792244962165775, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:06:20,775] Trial 149 finished with value: 0.3861880506261304 and parameters: {'C': 0.37172979114040383, 'kernel': 'rbf', 'gamma': 4.164616104618517, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:07:26,416] Trial 150 finished with value: 0.1724742493973263 and parameters: {'C': 2.7757517616213887e-05, 'kernel': 'rbf', 'gamma': 10374.422437463849, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:08:30,943] Trial 151 finished with value: 0.3804228189010138 and parameters: {'C': 0.24693214139954853, 'kernel': 'rbf', 'gamma': 12.67830508802657, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:09:33,306] Trial 152 finished with value: 0.38813067758877506 and parameters: {'C': 0.2640353451566169, 'kernel': 'rbf', 'gamma': 7.944908436789362, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:10:36,235] Trial 153 finished with value: 0.38518434259382606 and parameters: {'C': 0.4815197546453732, 'kernel': 'rbf', 'gamma': 7.3809633629251845, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:11:41,022] Trial 154 finished with value: 0.3772504246327962 and parameters: {'C': 0.16756196795156283, 'kernel': 'rbf', 'gamma': 18.206291825596338, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:12:44,584] Trial 155 finished with value: 0.3843570531837396 and parameters: {'C': 0.1219267568928671, 'kernel': 'rbf', 'gamma': 2.5977473609235697, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:13:48,459] Trial 156 finished with value: 0.38636620135778454 and parameters: {'C': 0.29410400320398833, 'kernel': 'rbf', 'gamma': 11.669787285327054, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:14:52,248] Trial 157 finished with value: 0.38447231868646436 and parameters: {'C': 0.002470516423841287, 'kernel': 'rbf', 'gamma': 5.821281288437932, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:15:55,602] Trial 158 finished with value: 0.38568125008664655 and parameters: {'C': 0.0861432642915511, 'kernel': 'rbf', 'gamma': 3.622652981432116, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:17:01,119] Trial 159 finished with value: 0.3767556063855705 and parameters: {'C': 0.06263509643632639, 'kernel': 'rbf', 'gamma': 29.74009131579959, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:18:06,448] Trial 160 finished with value: 0.3012853035030759 and parameters: {'C': 0.2098371654400077, 'kernel': 'rbf', 'gamma': 2285.840580187237, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:19:09,357] Trial 161 finished with value: 0.38480476476226066 and parameters: {'C': 0.12087173614344435, 'kernel': 'rbf', 'gamma': 8.487312047345114, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:20:12,321] Trial 162 finished with value: 0.38457136858748564 and parameters: {'C': 0.28762915651401866, 'kernel': 'sigmoid', 'gamma': 11.427095924011077, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:21:15,896] Trial 163 finished with value: 0.383055616791322 and parameters: {'C': 0.18920491226649502, 'kernel': 'rbf', 'gamma': 18.56609325724082, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:22:18,572] Trial 164 finished with value: 0.38344461604101077 and parameters: {'C': 0.00016708731273861081, 'kernel': 'rbf', 'gamma': 8.240883731857306, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:23:21,442] Trial 165 finished with value: 0.3794725267267379 and parameters: {'C': 0.580445178127655, 'kernel': 'sigmoid', 'gamma': 5.290555242383845, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:24:26,463] Trial 166 finished with value: 0.38197657248411143 and parameters: {'C': 0.24296952007871112, 'kernel': 'rbf', 'gamma': 24.517486078791084, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:25:29,730] Trial 167 finished with value: 0.38663247010257384 and parameters: {'C': 0.0981845835543251, 'kernel': 'linear', 'gamma': 10.07506339277913, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:26:32,605] Trial 168 finished with value: 0.3829675431686824 and parameters: {'C': 0.09103304134796525, 'kernel': 'linear', 'gamma': 14.017916614117498, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:27:36,124] Trial 169 finished with value: 0.3801231772388277 and parameters: {'C': 0.1442503014553947, 'kernel': 'linear', 'gamma': 3.411854530728678, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:28:39,899] Trial 170 finished with value: 0.381781256268928 and parameters: {'C': 0.06708219609810612, 'kernel': 'linear', 'gamma': 2.099894052736871, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:29:43,451] Trial 171 finished with value: 0.38094751044753933 and parameters: {'C': 0.0007977717856370377, 'kernel': 'linear', 'gamma': 1.001469331874033, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:30:46,130] Trial 172 finished with value: 0.3870221616988911 and parameters: {'C': 0.11256535227364099, 'kernel': 'linear', 'gamma': 8.762466446760815, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:31:49,185] Trial 173 finished with value: 0.3858670669054696 and parameters: {'C': 0.04822308699690405, 'kernel': 'linear', 'gamma': 7.1389732456193356, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:32:52,141] Trial 174 finished with value: 0.38977479686414396 and parameters: {'C': 0.10222797670957652, 'kernel': 'linear', 'gamma': 11.008639054880243, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:33:54,931] Trial 175 finished with value: 0.3805459421865718 and parameters: {'C': 0.108829851264226, 'kernel': 'linear', 'gamma': 4.655466355676749, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:34:59,983] Trial 176 finished with value: 0.3807037288213664 and parameters: {'C': 0.07506827907142287, 'kernel': 'linear', 'gamma': 16.058084728738823, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:36:02,302] Trial 177 finished with value: 0.38050036517890795 and parameters: {'C': 0.15344253256361917, 'kernel': 'linear', 'gamma': 9.860402730935647, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:37:05,623] Trial 178 finished with value: 0.3827927307291076 and parameters: {'C': 6.067560653991387e-05, 'kernel': 'linear', 'gamma': 6.788062575485593, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:38:11,212] Trial 179 finished with value: 0.37927704357864667 and parameters: {'C': 0.10964890139711551, 'kernel': 'linear', 'gamma': 24.617692444661515, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:39:14,885] Trial 180 finished with value: 0.38833059169195017 and parameters: {'C': 0.09327691923426598, 'kernel': 'linear', 'gamma': 10.95506138620907, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:40:20,339] Trial 181 finished with value: 0.3641895045998875 and parameters: {'C': 0.040812984188489124, 'kernel': 'linear', 'gamma': 47.19472037958396, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:41:22,926] Trial 182 finished with value: 0.383531296663073 and parameters: {'C': 0.0895801544378975, 'kernel': 'linear', 'gamma': 10.686864093318404, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:42:26,032] Trial 183 finished with value: 0.3838576185489666 and parameters: {'C': 0.13879872415161107, 'kernel': 'linear', 'gamma': 5.1635048568873545, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:43:31,255] Trial 184 finished with value: 0.38167597738032255 and parameters: {'C': 0.07153108963646426, 'kernel': 'linear', 'gamma': 17.108654248479368, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:44:34,286] Trial 185 finished with value: 0.38415170431591117 and parameters: {'C': 0.058501878252794355, 'kernel': 'linear', 'gamma': 8.087414359284564, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:45:37,566] Trial 186 finished with value: 0.3822748409935652 and parameters: {'C': 0.17958020714644432, 'kernel': 'linear', 'gamma': 12.651399738298714, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:46:40,691] Trial 187 finished with value: 0.3814882840446738 and parameters: {'C': 0.10566125697154645, 'kernel': 'linear', 'gamma': 3.7319344455959835, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:47:43,775] Trial 188 finished with value: 0.38228100343824845 and parameters: {'C': 0.21637497707790224, 'kernel': 'rbf', 'gamma': 6.73724574132418, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:48:48,760] Trial 189 finished with value: 0.37690092105045203 and parameters: {'C': 0.1369586629951928, 'kernel': 'linear', 'gamma': 23.77273788166193, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:49:53,419] Trial 190 finished with value: 0.38508345011848755 and parameters: {'C': 0.0004027811360280702, 'kernel': 'linear', 'gamma': 10.616167835898022, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:50:59,181] Trial 191 finished with value: 0.38154042518245224 and parameters: {'C': 0.052613547341163656, 'kernel': 'rbf', 'gamma': 2.6530130765203745, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:52:02,119] Trial 192 finished with value: 0.3830165824490586 and parameters: {'C': 0.32996567872042243, 'kernel': 'linear', 'gamma': 15.575294703590565, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:53:04,940] Trial 193 finished with value: 0.38228330108946684 and parameters: {'C': 0.08737095031990946, 'kernel': 'linear', 'gamma': 5.351111080682668, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:54:07,363] Trial 194 finished with value: 0.38606960056587425 and parameters: {'C': 0.18371751321948365, 'kernel': 'linear', 'gamma': 9.092381042594415, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:55:10,527] Trial 195 finished with value: 0.38455629249479717 and parameters: {'C': 0.393732519316753, 'kernel': 'linear', 'gamma': 13.650469343026344, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:56:16,662] Trial 196 finished with value: 0.37378422729466654 and parameters: {'C': 0.13639480128506185, 'kernel': 'linear', 'gamma': 35.80934537141646, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:57:20,940] Trial 197 finished with value: 0.38181562972062943 and parameters: {'C': 0.10399672656254098, 'kernel': 'linear', 'gamma': 18.318513430063522, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:58:23,064] Trial 198 finished with value: 0.38190872572279955 and parameters: {'C': 0.2647739212803391, 'kernel': 'rbf', 'gamma': 6.739836449173104, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 02:59:25,863] Trial 199 finished with value: 0.3771736010121731 and parameters: {'C': 0.02935597101425749, 'kernel': 'linear', 'gamma': 4.215473046248151, 'class_weight': None}. Best is trial 121 with value: 0.3916332493668341.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/xgboost/sklearn.py:1395: UserWarning: `use_label_encoder` is deprecated in 1.7.0.
+  warnings.warn("`use_label_encoder` is deprecated in 1.7.0.")
+[I 2025-02-24 03:00:29,414] Trial 200 finished with value: 0.3887228429410671 and parameters: {'C': 0.07607278570226274, 'kernel': 'linear', 'gamma': 10.945914944911976, 'class_weight': 'balanced'}. Best is trial 121 with value: 0.3916332493668341.

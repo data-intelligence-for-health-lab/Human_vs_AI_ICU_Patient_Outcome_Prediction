@@ -1,0 +1,356 @@
+[I 2025-02-24 12:20:32,985] Using an existing study with name 'C001_C_HOSP_EXPIRE_FLAG_LR_C' instead of creating a new one.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:21:39,636] Trial 400 finished with value: 0.35539213075177156 and parameters: {'C': 2.0759158900290644, 'max_iter': 2500, 'l1_ratio': 0.9318486556608353, 'solver': 'liblinear', 'penalty': 'l1'}. Best is trial 295 with value: 0.35733933175351407.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:22:26,974] Trial 401 finished with value: 0.35657508299774066 and parameters: {'C': 0.8194293235793028, 'max_iter': 1800, 'l1_ratio': 0.960452055390803, 'solver': 'liblinear', 'penalty': 'l2'}. Best is trial 295 with value: 0.35733933175351407.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:23:29,814] Trial 402 finished with value: 0.3561376404851684 and parameters: {'C': 6.881485068556922, 'max_iter': 1900, 'l1_ratio': 0.9808692339537312, 'solver': 'liblinear', 'penalty': 'l1'}. Best is trial 295 with value: 0.35733933175351407.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:24:18,067] Trial 403 finished with value: 0.3568810520513386 and parameters: {'C': 1.0619498149892501, 'max_iter': 2200, 'l1_ratio': 0.9170198049182686, 'solver': 'liblinear', 'penalty': 'l2'}. Best is trial 295 with value: 0.35733933175351407.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:25:04,043] Trial 404 finished with value: 0.35657508299774066 and parameters: {'C': 0.7198573368636029, 'max_iter': 1600, 'l1_ratio': 0.9487570530080323, 'solver': 'liblinear', 'penalty': 'l2'}. Best is trial 295 with value: 0.35733933175351407.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l1)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:26:05,445] Trial 405 finished with value: 0.35580888981308073 and parameters: {'C': 1.3535471386100109, 'max_iter': 2400, 'l1_ratio': 0.8024313336353668, 'solver': 'liblinear', 'penalty': 'l1'}. Best is trial 295 with value: 0.35733933175351407.
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1165: UserWarning: l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)
+  warnings.warn(
+/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:1211: UserWarning: 'n_jobs' > 1 does not have any effect when 'solver' is set to 'liblinear'. Got 'n_jobs' = 40.
+  warnings.warn(
+[I 2025-02-24 12:26:53,606] Trial 406 finished with value: 0.3565911806445424 and parameters: {'C': 1.7176073951213515, 'max_iter': 1800, 'l1_ratio': 0.8467683882343389, 'solver': 'liblinear', 'penalty': 'l2'}. Best is trial 295 with value: 0.35733933175351407.
+[W 2025-02-24 12:26:53,649] Trial 407 failed with parameters: {'C': 0.970856177371891, 'max_iter': 1900, 'l1_ratio': 0.890986761410387, 'solver': 'saga'} because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.').
+Traceback (most recent call last):
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 41, in <lambda>
+    study.optimize(lambda trial: objectives.get(mname)(trial, X_train, y_train), n_trials=10)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 86, in lr_c_objective
+    model_params = get_lr_c_search_space(trial)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_search_spaces.py", line 37, in get_lr_c_search_space
+    penalty = trial.suggest_categorical('penalty', penalty_choices[solver])  # <-- FIXED HERE
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/trial/_trial.py", line 402, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/trial/_trial.py", line 637, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 171, in set_trial_param
+    self._backend.set_trial_param(trial_id, param_name, param_value_internal, distribution)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 579, in set_trial_param
+    self._set_trial_param_without_commit(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 601, in _set_trial_param_without_commit
+    trial_param.check_and_add(session, trial.study_id)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/models.py", line 353, in check_and_add
+    self._check_compatibility_with_previous_trial_param_distributions(session, study_id)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/models.py", line 367, in _check_compatibility_with_previous_trial_param_distributions
+    distributions.check_distribution_compatibility(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/distributions.py", line 669, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+[W 2025-02-24 12:26:53,669] Trial 407 failed with value None.
+Traceback (most recent call last):
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/main.py", line 69, in <module>
+    best_params_df = lr_c_model(
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/final_models.py", line 28, in lr_c_model
+    lr_c_hyperparameters = tune_c_hyperparameters(
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 41, in tune_c_hyperparameters
+    study.optimize(lambda trial: objectives.get(mname)(trial, X_train, y_train), n_trials=10)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 41, in <lambda>
+    study.optimize(lambda trial: objectives.get(mname)(trial, X_train, y_train), n_trials=10)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_tunning_optuna.py", line 86, in lr_c_objective
+    model_params = get_lr_c_search_space(trial)
+  File "/home/lu.kuang/thesis/GithubFolder/jupyterlab/optuna_code/source_code/train_scripts/hyperparameter_search_spaces.py", line 37, in get_lr_c_search_space
+    penalty = trial.suggest_categorical('penalty', penalty_choices[solver])  # <-- FIXED HERE
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/trial/_trial.py", line 402, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/trial/_trial.py", line 637, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 171, in set_trial_param
+    self._backend.set_trial_param(trial_id, param_name, param_value_internal, distribution)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 579, in set_trial_param
+    self._set_trial_param_without_commit(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 601, in _set_trial_param_without_commit
+    trial_param.check_and_add(session, trial.study_id)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/models.py", line 353, in check_and_add
+    self._check_compatibility_with_previous_trial_param_distributions(session, study_id)
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/storages/_rdb/models.py", line 367, in _check_compatibility_with_previous_trial_param_distributions
+    distributions.check_distribution_compatibility(
+  File "/home/lu.kuang/miniconda3/envs/myenv/lib/python3.9/site-packages/optuna/distributions.py", line 669, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
