@@ -3,3 +3,4 @@
 tf_env.yml
 SampleCode/emmasample.py
 /optuna_code/output
+/ModelTraining/output
