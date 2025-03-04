@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv('AKI_Cr.csv')
+df = pd.read_csv('AKI_Cr.csv') #csv generated from SQL by filtering all Creatinine values from Measurments 
 
 def determine_aki_status(current_creatinine, baseline_48h, baseline_7d):
    # Check if either baseline is None
