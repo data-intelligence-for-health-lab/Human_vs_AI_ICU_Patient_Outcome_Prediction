@@ -19,7 +19,7 @@ Data preprocessing steps
    4. impute missing values numeric (median) and categorical (most frequent)
    5. scale values
    6. Turn gender into binary
-   7. PCA to select 100 features (alt: SelectKBest)
+   7. Randomforest (100 estimators) to select 100 features 
    8. SMOTE to medigate class imbalance (set random_state = 42)
 
 4) Training
@@ -37,5 +37,6 @@ Data preprocessing steps
    - classification: logistic regression, SVM, Random Forest, XGBoost, NN
    - regression: Elastic net, SVM, Random Forest, XGBoost, NN
 
-5) Select best model on 1000 test samples
-6) Predicting on 1k testing set
+5) Select best model bsed on median AUC
+6) Predicting on testing set
+7) Compare with clinician performances
