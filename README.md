@@ -9,8 +9,11 @@ Data preprocessing steps
    6. Join the 3 tables back to mastertable to create a dataframe
 
 2) Data Cleaning Steps
-   1. Manually select categorical data (value characters that made sense to convert)
-   2. Impute 0 for NaN cells if row sum is over 0 for columns with specific prefixes
+   1. Generate a dataset with creatinine measurements for deriving AKI status
+   2. Derive AKI status for <24hr, 24-48hr, >48hr after ICU admission based on creatinine measurements
+   3. Derive Delirium statusfor <24hr, 24-48hr, >48hr after ICU admission based on delirium measurements
+   4. In SQL, generate 4 tables for mastertable, aggregated tables for measuremnts, prescriptions and interventions for further processing in python
+   5. In python load the 4 tables and perform pivoting, filtering and imputation and save final df as a csv
 
 3) Preprocessing
    1. Extract 1000 testing samples; Extract 50 common patients
