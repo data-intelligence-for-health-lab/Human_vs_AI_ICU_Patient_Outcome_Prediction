@@ -17,13 +17,13 @@ Data preprocessing steps
 
 3) Preprocessing
    1. Extract 1000 testing samples; Extract 50 common patients
-   2. Set up X_train, y_train (47781 patients), X_test, y_test (990 patients)
+   2. Set up X_train, y_train, X_test, y_test
    3. Set up Pipeline (Imblearn Pipeline)
-   4. impute missing values numeric (median) and categorical (most frequent)
-   5. scale values
+   4. Impute missing values numeric (median) and categorical (most frequent)
+   5. Scale values
    6. Turn gender into binary
-   7. Randomforest (100 estimators) to select 100 features 
-   8. SMOTE to medigate class imbalance (set random_state = 42)
+   7. Randomforest (100 estimators) to select top 100 features 
+   8. SMOTE + RandomUnderSampler to medigate class imbalance
 
 4) Training
    1. Predict Outcomes:
