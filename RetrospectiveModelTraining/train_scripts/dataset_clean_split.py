@@ -19,6 +19,10 @@ def data_cleaner(final_df_path, comparison_ids_path, target):
     testing_set = df[df['ADMISSION_ID'].isin(admission_ids)]
     training_set = df[~df['PATIENT_ID'].isin(testing_ids)]
     
+    #Remove NaNs from target
+    testing_set = testing_set.dropna(subset=[target])
+    training_set = training_set.dropna(subset=[target]) 
+    
     # Drop the target columns and patient identifiers to create X_train, X_test
     X_train = training_set.drop(columns=key_columns)
     X_test = testing_set.drop(columns=key_columns)

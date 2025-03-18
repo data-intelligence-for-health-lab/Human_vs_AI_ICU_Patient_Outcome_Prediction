@@ -15,7 +15,7 @@ torch.manual_seed(SEED)
 
 #******************************Classificaion Models************************************#    
 def classification_model(X_train, y_train, X_test, y_test, preprocessor, over_sampler, 
-            under_sampler, feature_selector, target, mtype, mname, run_id, 
+            under_sampler, feature_selector, imbalance_status,target, mtype, mname, run_id, 
             output_path):
     
     best_c_hyperparameters = tune_c_hyperparameters(
@@ -32,19 +32,36 @@ def classification_model(X_train, y_train, X_test, y_test, preprocessor, over_sa
     elif mname == 'XGB_C':
         tuned_c_model = XGBClassifier(**best_c_hyperparameters)
     elif mname == 'NN_C':
-        tuned_c_model = make_final_neural_network((X_train, best_c_hyperparameters))
+        tuned_c_model = make_final_neural_network((best_c_hyperparameters))
     else:
         raise ValueError(f"Model name '{mname}' is not recognized. Please use a valid model name.")
 
     # Construct the pipeline
-    classification_pipeline = Pipeline([
-        ('preprocessor', preprocessor),
-        ('selectfeatures', feature_selector),
-        ('over_sampler', over_sampler),
-        ('under_sampler', under_sampler),
-        ('model', tuned_c_model)
-    ])
-    
+    # classification_pipeline = Pipeline([
+    #     ('preprocessor', preprocessor),
+    #     ('selectfeatures', feature_selector),
+    #     ('over_sampler', over_sampler),
+    #     ('under_sampler', under_sampler),
+    #     ('model', tuned_c_model)
+    # ])
+        # Check if the dataset is imbalanced
+
+    if imbalance_status:
+        pipeline_steps = [
+            ('preprocessor', preprocessor),
+            ('selectfeatures', feature_selector),
+            ('over_sampler', over_sampler),
+            ('under_sampler', under_sampler),
+            ('model', tuned_c_model)
+        ]
+    else:
+        pipeline_steps = [
+            ('preprocessor', preprocessor),
+            ('selectfeatures', feature_selector),
+            ('model', tuned_c_model)
+        ]
+
+    classification_pipeline = Pipeline(pipeline_steps)
     # Fit the pipeline on training data
     classification_pipeline.fit(X_train, y_train)
 

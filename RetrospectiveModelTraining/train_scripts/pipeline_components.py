@@ -1,5 +1,6 @@
 import numpy as np
 import torch
+from collections import Counter
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
@@ -72,7 +73,7 @@ def apply_preprocessor(X_train, y_train, num_features=100, random_state=SEED):
     selected_features = X_train.columns[selector.get_support()]
     
     # Apply SMOTE to balance classes to a 1:1 ratio on the selected features
-    smote = SMOTE(random_state=random_state, sampling_strategy=1.0)
+    smote = SMOTE(random_state=random_state, sampling_strategy=0.5)
     X_train_balanced, y_train_balanced = smote.fit_resample(X_train_selected, y_train)
     
     # Apply under-sampling after SMOTE to ensure balanced classes (if needed)
@@ -84,3 +85,16 @@ def apply_preprocessor(X_train, y_train, num_features=100, random_state=SEED):
     # y_resampled_tensor = torch.tensor(y_resampled, dtype=torch.long)
 
     return X_resampled, y_resampled, selected_features
+
+# Function to check class imbalance
+def check_imbalance(y_train, threshold=0.5):
+    """Check if dataset is imbalanced.
+    Returns True if the smallest class is less than 'threshold' times the largest class.
+    """
+    class_counts = Counter(y_train)
+    min_class_size = min(class_counts.values())
+    max_class_size = max(class_counts.values())
+    print("minority class count = ", min_class_size)
+    print("majority class count = ", max_class_size)
+    imbalance_ratio = min_class_size / max_class_size
+    return imbalance_ratio < threshold  # True if imbalanced, False otherwise

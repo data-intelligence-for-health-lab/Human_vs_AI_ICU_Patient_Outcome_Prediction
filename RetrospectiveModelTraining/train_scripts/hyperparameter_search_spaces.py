@@ -10,12 +10,20 @@ Classification Models:
     Random Forest
     Keras Neural Network
 '''
+# def get_lr_c_search_space(trial):
+#     return {
+#         "solver": trial.suggest_categorical("solver", ("lbfgs", "liblinear", "saga")),
+#         "penalty": trial.suggest_categorical("penalty", ("l1", "l2", "elasticnet")),
+#         "C": trial.suggest_float("C", 1e-4, 10, log=True),
+#         "max_iter": trial.suggest_int("max_iter", 100, 5000),
+#     }
+
 def get_lr_c_search_space(trial):
     return {
-        "solver": trial.suggest_categorical("solver", ("lbfgs", "liblinear", "saga")),
-        "penalty": trial.suggest_categorical("penalty", ("l1", "l2", "elasticnet")),
-        "C": trial.suggest_float("C", 1e-4, 10, log=True),
-        "max_iter": trial.suggest_int("max_iter", 100, 5000),
+        'C': trial.suggest_float('C', 1e-4, 1e2, log=True),
+        'solver': trial.suggest_categorical('solver', ['lbfgs', 'newton-cg', 'liblinear', 'sag', 'saga']),
+        'penalty': 'l2', 
+        'max_iter': trial.suggest_int('max_iter', 100, 4000, step=100)
     }
 
 def get_rf_c_search_space(trial):
@@ -51,7 +59,7 @@ def get_xgb_c_search_space(trial):
 def get_nn_c_search_space(trial):
     return {
         'num_layers': trial.suggest_int('num_layers', 1, 5),  # Number of hidden layers (1 to 5 layers)
-        'neurons_per_layer': [trial.suggest_int(f'neurons_layer_{i}', 16, 512, step=16) for i in range(trial.suggest_int('num_layers', 1, 5))],
+        'neurons_per_layer': [trial.suggest_int(f'neurons_layer_{i}', 16, 512, step=16) for i in range(5)],
         'dropout_rate': trial.suggest_float('dropout_rate', 0.0, 0.5),  # Dropout rate (0.0 to 0.5)
         'learning_rate': trial.suggest_float('learning_rate', 1e-4, 1e-1, log=True),  # Log scale for learning rate
         'batch_size': trial.suggest_categorical('batch_size', [16, 32, 64, 128]),  # Batch size options
@@ -102,7 +110,7 @@ def get_rf_r_search_space(trial):
         'criterion': trial.suggest_categorical('criterion', ['mse', 'mae'])
     }
 
-def get_keras_r_search_space(trial):
+def get_nn_r_search_space(trial):
     return {
         'num_layers': trial.suggest_int('num_layers', 1, 5),
         'units': trial.suggest_int('units', 16, 512, step=16),
