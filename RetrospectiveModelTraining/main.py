@@ -1,6 +1,7 @@
 import os
 import time
 import argparse
+# import torch
 from dotenv import load_dotenv
 from imblearn.over_sampling import SMOTE
 from imblearn.under_sampling import RandomUnderSampler
@@ -8,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import SelectFromModel
 
 from train_scripts.dataset_clean_split import data_cleaner
-from train_scripts.pipeline_components import make_preprocessor
+from train_scripts.pipeline_components import make_preprocessor, check_imbalance
 from train_scripts.final_models import classification_model, regression_model
 
 
@@ -58,13 +59,15 @@ if __name__ == '__main__':
         RandomForestClassifier(n_estimators=100, random_state=SEED),
         max_features=100
     )
-    over_sampler=SMOTE(random_state=SEED, sampling_strategy=0.5)
-    under_sampler=RandomUnderSampler(random_state=SEED, sampling_strategy=1.0)
-
     if mtype == 'C':
+        over_sampler=SMOTE(random_state=SEED, sampling_strategy=0.5)
+        under_sampler=RandomUnderSampler(random_state=SEED, sampling_strategy=1.0)
+        imbalance_status = check_imbalance(y_test)
+        if imbalance_status:
+            print("Imbalance detected in y_test, perform over and under sampling to mitigate")
         best_params_df = classification_model(
         X_train, y_train, X_test, y_test, preprocessor, over_sampler, 
-        under_sampler, feature_selector, target, mtype, mname, run_id, 
+        under_sampler, feature_selector, imbalance_status, target, mtype, mname, run_id, 
         output_path
     )
     elif mtype == 'R':
