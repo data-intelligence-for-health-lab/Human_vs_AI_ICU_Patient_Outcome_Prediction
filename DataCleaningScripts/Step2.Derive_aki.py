@@ -1,19 +1,17 @@
 import pandas as pd
 import os
-# os.environ["CUDA_VISIBLE_DEVICES"] = '2' # change to available 
 
 # Load the dataset
 df = pd.read_csv('AKI_Cr.csv')
 
 def determine_aki_status(current_creatinine, baseline_48h, baseline_7d):
    # Check if either baseline is None
-    if baseline_48h is None or baseline_7d is None:
+    if baseline_48h is None and baseline_7d is None: #changed from OR to AND
         return None  # Set status to None if any baseline is missing
     
     # AKI criteria
-    aki_criteria_1 = (current_creatinine - baseline_48h) >= 26.5
-    aki_criteria_2 = current_creatinine >= 1.5 * baseline_7d
-    
+    aki_criteria_1 = (baseline_48h is not None) and ((current_creatinine - baseline_48h) >= 26.5)
+    aki_criteria_2 = (baseline_7d is not None) and (current_creatinine >= 1.5 * baseline_7d)
     # print('Current Creatinine:', current_creatinine)
     # print('Baseline Creatinine (48h):', baseline_48h)
     # print('Baseline Creatinine (7d):', baseline_7d)
@@ -22,10 +20,12 @@ def determine_aki_status(current_creatinine, baseline_48h, baseline_7d):
     
     return aki_criteria_1 or aki_criteria_2
 
+
+
 # Initialize the AKI status columns as string type
 df['aki_status'] = ''
 
-# # Initialize the AKI status columns
+# Initialize the AKI status columns
 df['aki_status_24h'] = ''
 df['aki_status_24_48h'] = ''
 df['aki_status_48h'] = ''
@@ -57,8 +57,8 @@ for admission_id, patient_data in df.groupby('ADMISSION_ID'):
         past_7_days = current_hour - (7 * 24)
         
         # Filter data within the past 48 hours and 7 days for the current patient
-        recent_data_48h = patient_data[(patient_data['measurement_hour'] >= past_48_hours) & (patient_data['measurement_hour'] <= current_hour)]
-        recent_data_7d = patient_data[(patient_data['measurement_hour'] >= past_7_days) & (patient_data['measurement_hour'] <= current_hour)]
+        recent_data_48h = patient_data[(patient_data['measurement_hour'] >= past_48_hours) & (patient_data['measurement_hour'] < current_hour)] #exclude current hour for comparison
+        recent_data_7d = patient_data[(patient_data['measurement_hour'] >= past_7_days) & (patient_data['measurement_hour'] < current_hour)]
         
         # print(f"Patient {admission_id}, Row {i}")
         # print("Current hour:", current_hour)
@@ -85,7 +85,7 @@ for admission_id, patient_data in df.groupby('ADMISSION_ID'):
         
 # Print the updated DataFrame
 print(df)
-df.to_csv('U_check_aki_status.csv', index=False)
+df.to_csv('Check_aki_status_315.csv', index=False)
 
 # Aggregate by ADMISSION_ID and update the AKI status columns
 aggregated_df = df.groupby('ADMISSION_ID').agg(
@@ -97,4 +97,4 @@ aggregated_df = df.groupby('ADMISSION_ID').agg(
 
 # Print the aggregated DataFrame
 print(aggregated_df)
-aggregated_df.to_csv('U_aggregated_aki_status.csv', index=False)
+aggregated_df.to_csv('Aggregated_aki_status_315.csv', index=False)
