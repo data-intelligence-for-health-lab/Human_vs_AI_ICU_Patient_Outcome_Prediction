@@ -1,4 +1,4 @@
---This table prepares the raw data into AKI_Cr.csv for AKI flag to be derived in AKI.py
+--This table prepares the raw data (exported as AKI_Cr.csv)for AKI flag to be derived in AKI.py
 SELECT 
     M."ADMISSION_ID", 
     M."ITEM_ID", 
@@ -15,4 +15,4 @@ JOIN
 JOIN 
     public."ITEMS" IT ON IT."ITEM_ID" = M."ITEM_ID" 
 WHERE 
-    M."ITEM_ID" = 'I056'
+    M."ITEM_ID" = 'I056' --creatinine
