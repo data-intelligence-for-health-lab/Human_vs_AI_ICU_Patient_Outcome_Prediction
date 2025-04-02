@@ -1,7 +1,7 @@
--- This script creates aggregated tables for measurements, interventions, and prescriptions
+""" This script creates aggregated tables for measurements, interventions, and prescriptions
 -- within the first 24 hours of ICU admission. It calculates various statistics
 -- including average, minimum, maximum, percentiles, range, standard deviation, and IQR
--- This script also creates tables for categorical values in measurements and interventions to further cleaned in python
+-- This script also creates tables for categorical values in measurements and interventions to further cleaned in python"""
 CREATE TABLE measurements_24_agg AS
 SELECT
     M."ADMISSION_ID",

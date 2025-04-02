@@ -1,8 +1,4 @@
-<<<<<<< HEAD:SQL Scripts/AKI_rawdata.sql
---This table prepares the raw data for AKI flag to be derived in AKI.py
-=======
---This table prepares the raw data (exported as AKI_Cr.csv)for AKI flag to be derived in AKI.py
->>>>>>> f42f53877a7cffcc286d980785572b82a861908f:DataCleaningScripts/Step1.Get_creatinine_for_AKI.sql
+--This table prepares the raw data for AKI flag to be derived in Step2.Derive_aki.py
 SELECT 
     M."ADMISSION_ID", 
     M."ITEM_ID", 
