@@ -1,6 +1,11 @@
 
 *.csv
 tf_env.yml
+<<<<<<< HEAD
 SampleCode/emmasample.py
 /optuna_code/output
 /ModelTraining/output
+=======
+*.pkl
+SampleCode/emmasample.py
+>>>>>>> f42f53877a7cffcc286d980785572b82a861908f

@@ -9,18 +9,21 @@ Data preprocessing steps
    6. Join the 3 tables back to mastertable to create a dataframe
 
 2) Data Cleaning Steps
-   1. Manually select categorical data (value characters that made sense to convert)
-   2. Impute 0 for NaN cells if row sum is over 0 for columns with specific prefixes
+   1. Generate a dataset with creatinine measurements for deriving AKI status
+   2. Derive AKI status for <24hr, 24-48hr, >48hr after ICU admission based on creatinine measurements
+   3. Derive Delirium statusfor <24hr, 24-48hr, >48hr after ICU admission based on delirium measurements
+   4. In SQL, generate 4 tables for mastertable, aggregated tables for measuremnts, prescriptions and interventions for further processing in python
+   5. In python load the 4 tables and perform pivoting, filtering and imputation and save final df as a csv
 
 3) Preprocessing
    1. Extract 1000 testing samples; Extract 50 common patients
-   2. Set up X_train, y_train (47781 patients), X_test, y_test (990 patients)
+   2. Set up X_train, y_train, X_test, y_test
    3. Set up Pipeline (Imblearn Pipeline)
-   4. impute missing values numeric (median) and categorical (most frequent)
-   5. scale values
+   4. Impute missing values numeric (median) and categorical (most frequent)
+   5. Scale values
    6. Turn gender into binary
-   7. PCA to select 100 features (alt: SelectKBest)
-   8. SMOTE to medigate class imbalance (set random_state = 42)
+   7. Randomforest (100 estimators) to select top 100 features 
+   8. SMOTE + RandomUnderSampler to medigate class imbalance
 
 4) Training
    1. Predict Outcomes:
@@ -37,5 +40,6 @@ Data preprocessing steps
    - classification: logistic regression, SVM, Random Forest, XGBoost, NN
    - regression: Elastic net, SVM, Random Forest, XGBoost, NN
 
-5) Select best model on 1000 test samples
-6) Predicting on 1k testing set
+5) Select best model bsed on median AUC
+6) Predicting on testing set
+7) Compare with clinician performances
