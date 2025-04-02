@@ -76,7 +76,8 @@ def get_classification_bootstrapped_metrics(pipeline, X_test, y_test, run_id, mn
 
     # Function to compute confidence intervals
     def compute_ci(data):
-        return [round(num, 4) for num in st.norm.interval(confidence=0.95, loc=np.mean(data), scale=st.sem(data))]
+        lower, upper = np.percentile(data, [2.5, 97.5])
+        return [round(lower, 4), round(upper, 4)]
 
     # Store results in a structured format
     results_dict = {
