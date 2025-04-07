@@ -3,11 +3,12 @@ This script is used to pivot datasets from SQL for intervensions, measurements a
 """
 
 import pandas as pd
+import numpy as np
 from sqlalchemy import create_engine
 engine = create_engine('postgresql+psycopg2://lu.kuang:EFTd66Qa3QhnMeA7\
 @10.44.113.30/ABeICU')
 
-# Connect to the database (last updated 2024.08.14)
+# Connect to the database
 master_df = pd.read_sql_query('SELECT * FROM "lu.kuang"."FINAL_MASTERTABLE"',con=engine)
 interventions_df = pd.read_sql_query('SELECT * FROM "lu.kuang".interventions_24_agg',con=engine)
 measurements_df = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_24_agg',con=engine)
@@ -16,6 +17,25 @@ prescription_df = pd.read_sql_query('SELECT * FROM "lu.kuang".prescriptions_24_a
 #Value characters
 measurements_value_char = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_vc_24hr',con=engine)
 interventions_value_char = pd.read_sql_query('SELECT * FROM "lu.kuang".interventions_vc_24hr',con=engine)
+
+# Add derived AKI and Delirium status to master_df
+# Add derived AKI_STATUS column
+aki_conditions = [
+    (master_df['AKI_STATUS_24H'] == 1),  # If AKI_STATUS_24H is 1 then NULL
+    (master_df['AKI_STATUS_24_48H'] == 1) | (master_df['AKI_STATUS_48H_PLUS'] == 1),  # If AKI_24 is not 1 (null or 0) and If either AKI_STATUS_24_48H or AKI_STATUS_48H_PLUS is 1
+    (master_df['AKI_STATUS_24_48H'] == 0) & (master_df['AKI_STATUS_48H_PLUS'] == 0)  # If both AKI_STATUS_24_48H and AKI_STATUS_48H_PLUS are 0
+]
+aki_values = [np.nan, 1, 0]  # Corresponding values for the conditions
+master_df['AKI_STATUS'] = np.select(aki_conditions, aki_values, default=np.nan)  # Default to NaN for other cases
+
+# Add derived DELIRIUM_STATUS column
+delirium_conditions = [
+    (master_df['DELIRIUM_STATUS_24H'] == 1),  # If DELIRIUM_STATUS_24H is 1
+    (master_df['DELIRIUM_STATUS_24_48H'] == 1) | (master_df['DELIRIUM_STATUS_48H_PLUS'] == 1),  # If either DELIRIUM_STATUS_24_48H or DELIRIUMSTATUS_48H_PLUS is 1
+    (master_df['DELIRIUM_STATUS_24_48H'] == 0) & (master_df['DELIRIUM_STATUS_48H_PLUS'] == 0)  # If both DELIRIUM_STATUS_24_48H and DELIRIUMSTATUS_48H_PLUS are 0
+]
+delirium_values = [np.nan, 1, 0]  # Corresponding values for the conditions
+master_df['DELIRIUM_STATUS'] = np.select(delirium_conditions, delirium_values, default=np.nan)  # Default to NaN for other cases
 
 #define functions used to process numeric and categorical data
 def pivot_df(df, index_col, columns_col, values_cols):
@@ -71,10 +91,9 @@ measurements_num_df = pivot_df(measurements_df, "ADMISSION_ID", "ITEM_ID", share
 #=========================Prescriptions========================#
 prescription_num_df = pivot_df(prescription_df, "ADMISSION_ID", "ITEM_ID", prescription_metrics)
 
-# Combine all numeric data into a comined dataframe
-combined_df = master_df.merge(interventions_num_df, on='ADMISSION_ID', how='left') \
-                       .merge(measurements_num_df, on='ADMISSION_ID', how='left') \
-                       .merge(prescription_num_df, on='ADMISSION_ID', how='left')
+# Combine all numeric data into a combined dataframe            
+combined_df = interventions_num_df.merge(measurements_num_df, on='ADMISSION_ID', how='outer') \
+                                  .merge(prescription_num_df, on='ADMISSION_ID', how='outer')
 
 # Remove columns with NaN values above the threshold (30%)
 combined_df_nan_percentage = combined_df.isna().mean()
@@ -86,8 +105,9 @@ combined_df_filtered = combined_df[combined_df_selected_columns]
 pivoted_interventions_vc = one_hot_encode(interventions_value_char, "ADMISSION_ID", ["ITEM_ID", "VALUE_CHAR"])
 pivoted_measurements_vc = one_hot_encode(measurements_value_char, "ADMISSION_ID", ["ITEM_ID", "VALUE_CHAR"])
 
-# Merge interventions and measurements vc back to combined df to generate final df
-final_df = combined_df_filtered.merge(pivoted_interventions_vc, on='ADMISSION_ID', how='left') \
-                               .merge(pivoted_measurements_vc, on='ADMISSION_ID', how='left')
+# Merge interventions and measurements vc with combined_df and master_df to generate final_df
+final_df = master_df.merge(combined_df_filtered, on='ADMISSION_ID', how='left') \
+                    .merge(pivoted_interventions_vc, on='ADMISSION_ID', how='left') \
+                    .merge(pivoted_measurements_vc, on='ADMISSION_ID', how='left')
 
-final_df.to_csv('final_df_0402.csv', index=False)
+final_df.to_csv('final_df_0403.csv', index=False)
