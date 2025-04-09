@@ -5,18 +5,18 @@ This script is used to pivot datasets from SQL for intervensions, measurements a
 import pandas as pd
 from numpy import np
 from sqlalchemy import create_engine
-engine = create_engine('postgresql+psycopg2://lu.kuang:EFTd66Qa3QhnMeA7\
-@10.44.113.30/ABeICU')
+engine = create_engine('postgresql+psycopg2://username:password\
+@server/database')
 
 # Connect to the database (last updated 2025-04)
-master_df = pd.read_sql_query('SELECT * FROM "lu.kuang"."FINAL_MASTERTABLE"',con=engine)
-interventions_df = pd.read_sql_query('SELECT * FROM "lu.kuang".interventions_24_agg',con=engine)
-measurements_df = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_24_agg',con=engine)
-prescription_df = pd.read_sql_query('SELECT * FROM "lu.kuang".prescriptions_24_agg',con=engine)
+master_df = pd.read_sql_query('SELECT * FROM "username"."FINAL_MASTERTABLE"',con=engine)
+interventions_df = pd.read_sql_query('SELECT * FROM "username".interventions_24_agg',con=engine)
+measurements_df = pd.read_sql_query('SELECT * FROM "username".measurements_24_agg',con=engine)
+prescription_df = pd.read_sql_query('SELECT * FROM "username".prescriptions_24_agg',con=engine)
 
 #Value characters
-measurements_value_char = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_vc_24hr',con=engine)
-interventions_value_char = pd.read_sql_query('SELECT * FROM "lu.kuang".interventions_vc_24hr',con=engine)
+measurements_value_char = pd.read_sql_query('SELECT * FROM "username".measurements_vc_24hr',con=engine)
+interventions_value_char = pd.read_sql_query('SELECT * FROM "username".interventions_vc_24hr',con=engine)
 
 # Add derived AKI and Delirium status to master_df
 # Add derived AKI_STATUS column
