@@ -1,7 +1,6 @@
 -- This script creates aggregated tables for measurements, interventions, and prescriptions
 -- within the first 24 hours of ICU admission. It calculates various statistics
 -- including average, minimum, maximum, percentiles, range, standard deviation, and IQR
--- This script also creates tables for categorical values in measurements and interventions to further cleaned in python
 CREATE TABLE measurements_24_agg AS
 SELECT
     M."ADMISSION_ID",
@@ -77,36 +76,3 @@ WHERE
 GROUP BY
     P."ADMISSION_ID",
 	P."ITEM_ID";
-
-CREATE TABLE "lu.kuang"."INTERVENTIONS_VC_24hr" AS
-WITH ItemFrequency AS (
-    SELECT 
-        I."ITEM_ID",
-        COUNT(DISTINCT I."ADMISSION_ID") AS item_count
-    FROM public."INTERVENTIONS" I
-    GROUP BY I."ITEM_ID"
-),
-TotalAdmissions AS (
-    SELECT COUNT(DISTINCT "ADMISSION_ID") AS total_admissions
-    FROM public."ADMISSIONS"
-),
-FilteredItems AS (
-    SELECT IFQ."ITEM_ID"
-    FROM ItemFrequency IFQ
-    CROSS JOIN TotalAdmissions TA
-    WHERE IFQ.item_count > 0.7 * TA.total_admissions --filter to keep items with less than 30% missing 
-)
-SELECT
-    I."ADMISSION_ID",
-    I."ITEM_ID",
-    I."START_DATETIME",
-    I."VALUE_CHAR"
-FROM public."INTERVENTIONS" I
-JOIN public."ADMISSIONS" A 
-    ON A."ADMISSION_ID" = I."ADMISSION_ID"
-JOIN FilteredItems FIQ 
-    ON I."ITEM_ID" = FIQ."ITEM_ID"
-WHERE
-    I."VALUE_NUM" IS NULL
-    AND I."VALUE_CHAR" IS NOT NULL
-    AND EXTRACT(epoch FROM I."START_DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24;
