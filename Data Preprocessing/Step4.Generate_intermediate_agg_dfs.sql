@@ -1,7 +1,7 @@
-""" This script creates aggregated tables for measurements, interventions, and prescriptions
+-- This script creates aggregated tables for measurements, interventions, and prescriptions
 -- within the first 24 hours of ICU admission. It calculates various statistics
 -- including average, minimum, maximum, percentiles, range, standard deviation, and IQR
--- This script also creates tables for categorical values in measurements and interventions to further cleaned in python"""
+-- This script also creates tables for categorical values in measurements and interventions to further cleaned in python
 CREATE TABLE measurements_24_agg AS
 SELECT
     M."ADMISSION_ID",
@@ -55,8 +55,8 @@ SELECT
     P."ADMISSION_ID",
 	P."ITEM_ID",
 	SUM(P."DELTA_TIME") AS TOTAL_TIME,
-	SUM(P."VALUE_NUM") AS TOTAL_VOLUME,
-    AVG(P."VALUE_NUM") AS AVERAGE_RATE,
+	SUM(P."VALUE_NUM") AS TOTAL_VOLUME, 
+    AVG(P."RATE_NUM") AS AVERAGE_RATE, --updated to RATE_NUM
     MIN(P."RATE_NUM") AS MIN_RATE,
     MAX(P."RATE_NUM") AS MAX_RATE,
     PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY P."RATE_NUM") AS PERCENTILE_25_RATE,
@@ -94,7 +94,7 @@ FilteredItems AS (
     SELECT IFQ."ITEM_ID"
     FROM ItemFrequency IFQ
     CROSS JOIN TotalAdmissions TA
-    WHERE IFQ.item_count > 0.3 * TA.total_admissions --filter to keep items with less than 70% missing 
+    WHERE IFQ.item_count > 0.7 * TA.total_admissions --filter to keep items with less than 30% missing 
 )
 SELECT
     I."ADMISSION_ID",
@@ -110,38 +110,3 @@ WHERE
     I."VALUE_NUM" IS NULL
     AND I."VALUE_CHAR" IS NOT NULL
     AND EXTRACT(epoch FROM I."START_DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24;
-
-CREATE TABLE "lu.kuang".MEASUREMENTS_VC_24hr AS
-WITH ItemFrequency AS (
-    SELECT 
-        M."ITEM_ID",
-        COUNT(DISTINCT M."ADMISSION_ID") AS item_count
-    FROM public."MEASUREMENTS" M
-    WHERE M."VALUE_NUM" IS NULL AND M."VALUE_CHAR" IS NOT NULL
-    GROUP BY M."ITEM_ID"
-),
-TotalAdmissions AS (
-    SELECT COUNT(DISTINCT "ADMISSION_ID") AS total_admissions
-    FROM public."ADMISSIONS"
-),
-FilteredItems AS (
-    SELECT IFQ."ITEM_ID"
-    FROM ItemFrequency IFQ
-    CROSS JOIN TotalAdmissions TA
-    WHERE IFQ.item_count > 0.3 * TA.total_admissions
-)
-
-SELECT
-    M."ADMISSION_ID",
-    M."ITEM_ID",
-    M."DATETIME",
-    M."VALUE_CHAR"
-FROM public."MEASUREMENTS" M
-JOIN public."ADMISSIONS" A 
-    ON A."ADMISSION_ID" = M."ADMISSION_ID"
-JOIN FilteredItems FIQ 
-    ON M."ITEM_ID" = FIQ."ITEM_ID"
-WHERE
-    M."VALUE_NUM" IS NULL
-    AND M."VALUE_CHAR" IS NOT NULL
-    AND EXTRACT(epoch FROM M."DATETIME" - A."ICU_ADMIT_DATETIME") / 3600 < 24

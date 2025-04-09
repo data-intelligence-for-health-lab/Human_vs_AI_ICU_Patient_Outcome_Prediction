@@ -3,12 +3,12 @@ This script is used to pivot datasets from SQL for intervensions, measurements a
 """
 
 import pandas as pd
-import numpy as np
+from numpy import np
 from sqlalchemy import create_engine
 engine = create_engine('postgresql+psycopg2://lu.kuang:EFTd66Qa3QhnMeA7\
 @10.44.113.30/ABeICU')
 
-# Connect to the database
+# Connect to the database (last updated 2025-04)
 master_df = pd.read_sql_query('SELECT * FROM "lu.kuang"."FINAL_MASTERTABLE"',con=engine)
 interventions_df = pd.read_sql_query('SELECT * FROM "lu.kuang".interventions_24_agg',con=engine)
 measurements_df = pd.read_sql_query('SELECT * FROM "lu.kuang".measurements_24_agg',con=engine)
@@ -37,6 +37,8 @@ delirium_conditions = [
 delirium_values = [np.nan, 1, 0]  # Corresponding values for the conditions
 master_df['DELIRIUM_STATUS'] = np.select(delirium_conditions, delirium_values, default=np.nan)  # Default to NaN for other cases
 
+master_df.to_csv('master_df_0409.csv', index=False)
+
 #define functions used to process numeric and categorical data
 def pivot_df(df, index_col, columns_col, values_cols):
     """
@@ -53,24 +55,24 @@ def pivot_df(df, index_col, columns_col, values_cols):
     
     return pivoted_df
 
-def one_hot_encode(df, index_col, columns_cols):
-    """
-    One-hot encode categorical values by pivoting.
-    """
-    df["count"] = 1
-    pivoted_df = df.pivot_table(
-        index=index_col, 
-        columns=columns_cols, 
-        values="count", 
-        aggfunc="sum", 
-        fill_value= 0
-    )
+# def one_hot_encode(df, index_col, columns_cols):
+#     """
+#     One-hot encode categorical values by pivoting.
+#     """
+#     df["count"] = 1
+#     pivoted_df = df.pivot_table(
+#         index=index_col, 
+#         columns=columns_cols, 
+#         values="count", 
+#         aggfunc="sum", 
+#         fill_value= 0
+#     )
     
-    # Flatten multi-index columns
-    pivoted_df.columns = [f"{col[0]}_{col[1].replace(' ', '_')}" for col in pivoted_df.columns]
+#     # Flatten multi-index columns
+#     pivoted_df.columns = [f"{col[0]}_{col[1].replace(' ', '_')}" for col in pivoted_df.columns]
     
-    # Reset index
-    return pivoted_df.reset_index()
+#     # Reset index
+#     return pivoted_df.reset_index()
     
 # Process numeric data
 # Define shared and specific metric lists
@@ -95,19 +97,19 @@ prescription_num_df = pivot_df(prescription_df, "ADMISSION_ID", "ITEM_ID", presc
 combined_df = interventions_num_df.merge(measurements_num_df, on='ADMISSION_ID', how='outer') \
                                   .merge(prescription_num_df, on='ADMISSION_ID', how='outer')
 
-# Remove columns with NaN values above the threshold (30%)
+# Remove columns with NaN values above the threshold (missingness < 30%)
 combined_df_nan_percentage = combined_df.isna().mean()
-combined_df_selected_columns = combined_df_nan_percentage[combined_df_nan_percentage <= 0.7].index
+combined_df_selected_columns = combined_df_nan_percentage[combined_df_nan_percentage < 0.3].index
 combined_df_filtered = combined_df[combined_df_selected_columns]
 
 # Process categorical data
-# One-hot encode categorical values
-pivoted_interventions_vc = one_hot_encode(interventions_value_char, "ADMISSION_ID", ["ITEM_ID", "VALUE_CHAR"])
-pivoted_measurements_vc = one_hot_encode(measurements_value_char, "ADMISSION_ID", ["ITEM_ID", "VALUE_CHAR"])
+# One-hot encode categorical values (none of the categorical variables are missing < 30%. )
+# pivoted_interventions_vc = one_hot_encode(interventions_value_char, "ADMISSION_ID", ["ITEM_ID", "VALUE_CHAR"])
+# pivoted_measurements_vc = one_hot_encode(measurements_value_char, "ADMISSION_ID", ["ITEM_ID", "VALUE_CHAR"])
 
 # Merge interventions and measurements vc with combined_df and master_df to generate final_df
-final_df = master_df.merge(combined_df_filtered, on='ADMISSION_ID', how='left') \
-                    .merge(pivoted_interventions_vc, on='ADMISSION_ID', how='left') \
-                    .merge(pivoted_measurements_vc, on='ADMISSION_ID', how='left')
+final_df = master_df.merge(combined_df_filtered, on='ADMISSION_ID', how='left')
+                    # .merge(pivoted_interventions_vc, on='ADMISSION_ID', how='left') \
+                    # .merge(pivoted_measurements_vc, on='ADMISSION_ID', how='left')
 
-final_df.to_csv('final_df_0403.csv', index=False)
+final_df.to_csv('final_df_0409.csv', index=False)

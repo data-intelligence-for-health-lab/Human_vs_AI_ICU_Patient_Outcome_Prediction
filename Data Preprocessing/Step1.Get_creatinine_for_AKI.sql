@@ -1,4 +1,4 @@
---This table prepares the raw data for AKI flag to be derived in Step2.Derive_aki.py
+--This table prepares the raw data (exported as AKI_Cr.csv)for AKI flag to be derived in AKI.py
 SELECT 
     M."ADMISSION_ID", 
     M."ITEM_ID", 
