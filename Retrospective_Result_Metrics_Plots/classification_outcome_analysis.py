@@ -156,6 +156,7 @@ def analyze_outcome(outcome_key, ml_files, df_categories_merged, comparison_ids_
         "Median NPV"
     ]
     
+    # colors = {'Human': '#2ebbf3', 'AI': '#57b02e'}
     for group in sorted(final_df['Group'].unique()):
         df_group = final_df[final_df['Group'] == group]
         y_true, y_human, y_ai = df_group['True_Label'].values, df_group['mapped_prediction'].values, df_group['prediction_outcome'].values
@@ -226,7 +227,7 @@ def analyze_outcome(outcome_key, ml_files, df_categories_merged, comparison_ids_
     sns.set_context("talk", font_scale=1.3)
     sns.set_palette("colorblind")
 
-    fig, axes = plt.subplots(4, 2, figsize=(20, 30))
+    fig, axes = plt.subplots(4, 2, figsize=(20, 40))
     fig.suptitle(
         f'Human vs AI Prediction Performance on {outcome_key.replace("_", " ")}',
         y=1.03, fontsize=28, fontweight='bold'
@@ -238,7 +239,7 @@ def analyze_outcome(outcome_key, ml_files, df_categories_merged, comparison_ids_
             data=metric_data, x='Group', y='Value', hue='Source',
             ax=ax, showfliers=True, fliersize=5, whis=1.5
         )
-        add_significance(ax, metric_data, metric, y_frac=0.96)
+        add_significance(ax, metric_data, metric, y_frac=0.95)
         ax.set_title(metric, fontsize=20, fontweight='bold', pad=10)
         # ax.set_xlabel('Group', fontsize=16, fontweight='bold')
         # ax.set_ylabel('Score', fontsize=16, fontweight='bold')
