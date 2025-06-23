@@ -1,0 +1,22 @@
+CREATE TABLE patient_admissions (     
+    admission_id TEXT,
+    patient_id TEXT,
+    hosp_readmit INTEGER,
+    icu_readmit INTEGER,
+    hosp_admit_datetime TIMESTAMP,
+    hosp_disch_datetime TIMESTAMP,
+    icu_admit_datetime TIMESTAMP,
+    icu_disch_datetime TIMESTAMP,
+    admission_site TEXT,
+    admitted_from TEXT,
+    admission_type TEXT,
+    admission_class TEXT,
+    admission_diagnosis TEXT,
+    icu_survival TEXT,                   
+    hosp_survival TEXT,
+    icu_los FLOAT,
+    hosp_los FLOAT,
+    dod DATE,                           
+    icu_mortality INTEGER,              
+    hosp_mortality INTEGER
+);
