@@ -40,6 +40,6 @@ Data preprocessing steps
    - classification: logistic regression, SVM, Random Forest, XGBoost, NN
    - regression: Elastic net, SVM, Random Forest, XGBoost, NN
 
-5) Select best model bsed on median F1
+5) Select best model bsed on median AUC
 6) Predicting on testing set
 7) Compare with clinician performances
