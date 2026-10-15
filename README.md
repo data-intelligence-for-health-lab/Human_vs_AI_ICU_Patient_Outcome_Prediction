@@ -1,4 +1,16 @@
 # Human_vs_AI_ICU_Patient_Outcome_Prediction
+
+This repository corresponds to the study described in [this published paper](https://www.nature.com/articles/s41746-026-03132-0):
+
+	@article{kuang2026clinicians,
+	title={Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit},
+	author={Kuang, Corin and Valderrama, Camilo E and Stelfox, Henry T and Josephson, Colin B and Lee, Joon},
+	journal={npj Digital Medicine},
+	year={2026},
+	publisher={Nature Publishing Group UK London}
+	}
+
+
 Data preprocessing steps
 1) Retrospective Data (ABeICU)
    1. Create a mastertable with patient demographics and prediction outcomes
